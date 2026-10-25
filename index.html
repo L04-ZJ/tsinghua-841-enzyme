@@ -18,7 +18,10 @@
 .story h2:first-child{margin-top:0}.story h3{font-size:1.18rem;color:#21395b;font-weight:800;margin:30px 0 12px;scroll-margin-top:75px}
 .story h3::before{content:'';display:inline-block;width:6px;height:18px;background:#14a398;border-radius:5px;margin-right:9px;vertical-align:-2px}
 .story h4{font-size:1.02rem;color:#345577;font-weight:750;margin:24px 0 10px;scroll-margin-top:75px}
-.story p{margin:.76em 0}.story strong{color:#0f2f57;font-weight:800}.story a{color:#225fb4;text-underline-offset:3px}.story a:hover{color:#134888}
+/* 正文首行缩进两字；长网址与连续英文在窄屏内换行。 */
+.story{overflow-wrap:anywhere}.story p{margin:.76em 0;text-indent:2em}
+.story :is(.node-links,.practice-links,.source-note,.recite-goal,.recite-question,.recite-boundary,.recite-checklist,.quiz-stem),.story p:has(>.source-note:only-child),.story p:has(>a:only-child),.story :is(li,td,th,blockquote,.note-box,.quiz-card)>p,.story .open-question>p{text-indent:0}
+.story strong{color:#0f2f57;font-weight:800}.story a{color:#225fb4;text-underline-offset:3px}.story a:hover{color:#134888}
 .story ul,.story ol{padding-left:24px}.story li{margin:5px 0}
 .story blockquote{border-left:4px solid #347fc1;background:#edf6ff;padding:13px 19px;margin:18px 0;border-radius:0 10px 10px 0;color:#284a6b}.story blockquote p{margin:.4em 0}
 .note-box{border:1px solid;border-left-width:5px;border-radius:10px;padding:12px 17px;margin:18px 0}.note-box p{margin:0}.note-box.danger{background:#fff4f1;border-color:#efc7c1;border-left-color:#d56d59}.note-box.note{background:#f7f4ff;border-color:#e0d8f4;border-left-color:#9772bd}.note-box.info{background:#ecf8f5;border-color:#cfe9e1;border-left-color:#228d7c}
