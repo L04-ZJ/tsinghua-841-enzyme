@@ -1,0 +1,2764 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta name="description" content="清华841酶学复习讲义：考纲精讲、图解、分级练习与折叠解析，支持手机阅读和闭卷自测。"/><title>清华841｜第3章酶｜二轮强化自测优化版</title><style>
+:root{--paper:#fff;--background:#f3f6fb;--ink:#223047;--muted:#5a6b80;--hair:#e2e8f0;--navy:#142c54;--blue:#235db0;--teal:#087f76;--amber:#a05b04;--red:#b33c31;--purple:#6952a3;}
+*{box-sizing:border-box}html{scroll-behavior:smooth;font-size:16px}body{background:var(--background);color:var(--ink);margin:0;font-family:"Noto Sans CJK SC","PingFang SC","Microsoft YaHei",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.72}
+.sitebar{height:58px;position:sticky;top:0;z-index:10;background:rgba(255,255,255,.97);border-bottom:1px solid var(--hair);backdrop-filter:blur(12px)}
+.navbar{max-width:1400px;margin:auto;height:100%;padding:0 34px;display:flex;align-items:center;justify-content:space-between;gap:15px}.logo{font-weight:800;letter-spacing:.02em;font-size:16px;color:var(--navy)}.sublogo{font-weight:500;color:var(--muted);font-size:12px;margin-left:8px}.nav-actions{display:flex;gap:7px}
+.nav-actions button{font:inherit;cursor:pointer;border-radius:9px;border:1px solid #cbd8e8;background:#fff;color:#263c61;padding:6px 12px;font-size:13px;font-weight:600}.nav-actions button:hover{background:#f1f5ff}
+#progress{height:3px;background:linear-gradient(90deg,#0f766e,#3479c3);width:0;position:absolute;bottom:0;left:0}
+.shell{max-width:1400px;padding:26px 30px 80px;margin:auto;display:grid;grid-template-columns:246px minmax(0,1fr);gap:26px}
+.sidebar{position:sticky;top:83px;align-self:start;max-height:calc(100vh - 103px);overflow:auto;background:#fff;border:1px solid var(--hair);border-radius:18px;padding:18px 12px;box-shadow:0 7px 23px rgba(38,65,92,.04)}
+.sidebar-title{color:#708096;font-size:11px;letter-spacing:.14em;font-weight:800;margin:2px 12px 12px}
+.side-link{font-size:12.8px;color:#4a6077;padding:10px 12px;margin:1px 0;text-decoration:none;border-radius:9px;display:block;line-height:1.45;transition:background .12s}.side-link:hover,.side-link.active{background:#e9f2ff;color:#184d91;font-weight:750}
+.side-caption{padding:14px 12px 4px;font-size:11px;color:#718096;border-top:1px solid var(--hair);margin-top:14px}
+.hero{background:linear-gradient(125deg,#183e74 0%,#255e9f 70%,#337d90 100%);padding:34px 38px;color:white;border-radius:20px;box-shadow:0 18px 38px rgba(23,58,101,.12)}
+.hero .eyebrow{font-size:12px;font-weight:800;letter-spacing:.13em;color:#d8e9ff}.hero h1{font-size:clamp(1.7rem,2.8vw,2.35rem);line-height:1.35;color:white;font-weight:850;margin:12px 0}.hero p{font-size:14px;margin:0;color:#e1efff;max-width:670px}.pills{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}.pills span{font-size:12px;color:#edf5ff;background:#ffffff20;border:1px solid #ffffff28;padding:5px 10px;border-radius:999px}
+.content{min-width:0}.story{overflow-x:clip;border:1px solid var(--hair);box-shadow:0 15px 37px rgba(40,61,85,.055);border-radius:18px;background:#fff;margin-top:20px;padding:30px 42px 48px}
+.story h2{font-size:1.45rem;line-height:1.4;color:#183760;font-weight:800;margin:42px 0 22px;padding:13px 17px;border-left:5px solid #2c72bf;background:linear-gradient(90deg,#eef5ff,#f7faff);border-radius:0 12px 12px 0;scroll-margin-top:75px}
+.story h2:first-child{margin-top:0}.story h3{font-size:1.18rem;color:#21395b;font-weight:800;margin:30px 0 12px;scroll-margin-top:75px}
+.story h3::before{content:'';display:inline-block;width:6px;height:18px;background:#14a398;border-radius:5px;margin-right:9px;vertical-align:-2px}
+.story h4{font-size:1.02rem;color:#345577;font-weight:750;margin:24px 0 10px;scroll-margin-top:75px}
+.story p{margin:.76em 0}.story strong{color:#0f2f57;font-weight:800}.story a{color:#225fb4;text-underline-offset:3px}.story a:hover{color:#134888}
+.story ul,.story ol{padding-left:24px}.story li{margin:5px 0}
+.story blockquote{border-left:4px solid #347fc1;background:#edf6ff;padding:13px 19px;margin:18px 0;border-radius:0 10px 10px 0;color:#284a6b}.story blockquote p{margin:.4em 0}
+.note-box{border:1px solid;border-left-width:5px;border-radius:10px;padding:12px 17px;margin:18px 0}.note-box p{margin:0}.note-box.danger{background:#fff4f1;border-color:#efc7c1;border-left-color:#d56d59}.note-box.note{background:#f7f4ff;border-color:#e0d8f4;border-left-color:#9772bd}.note-box.info{background:#ecf8f5;border-color:#cfe9e1;border-left-color:#228d7c}
+.table-scroll{border:1px solid #dbe5f2;border-radius:13px;overflow-x:auto;margin:18px 0 22px;box-shadow:0 5px 18px rgba(31,55,88,.035)}.story table{border-collapse:collapse;border-spacing:0;width:100%;font-size:.9rem;min-width:440px}.story th{background:#e9f2ff;color:#23466e;font-weight:780;text-align:left}.story td,.story th{border-bottom:1px solid #e4ebf5;border-right:1px solid #edf1f7;padding:11px 12px;vertical-align:top}.story tr:last-child td{border-bottom:0}.story tr:nth-child(even) td{background:#fbfdff}
+.story code{font-family:ui-monospace,Menlo,Consolas,monospace;background:#f1f5fb;color:#2d4c71;font-size:.91em;border-radius:4px;padding:1px 4px;white-space:break-spaces}.story pre{background:#182c45;padding:14px;color:white;overflow:auto;border-radius:10px}.story pre code{color:inherit;background:transparent;white-space:pre}
+.story figure{margin:24px 0}.figure-svg{overflow:hidden;display:block;max-width:100%;height:auto;max-height:790px;margin:16px auto;border:1px solid #e4eaf4;border-radius:10px;background:white}.story hr{border:0;height:1px;background:#e2e8f0;margin:32px 0}
+.story math[display="block"]{display:block;overflow-x:auto;overflow-y:hidden;max-width:100%;padding:14px 8px;margin:16px 0;background:#f3f7fd;border:1px solid #e1eafb;border-radius:10px;font-size:1.12rem}
+.jump{font-size:12px;padding:7px 12px;border-radius:7px;background:#eaf2fb;color:#2a5486;text-decoration:none}.bottom{margin:28px auto;font-size:12px;color:#66778c;text-align:center}
+.mobile-index{display:none}.callout-legend{margin:14px 0 0;background:#fff;border:1px solid #dae6f5;border-radius:14px;padding:16px 20px;font-size:13px;color:#4a6180}.callout-legend span{display:inline-block;margin:4px 8px 4px 0}
+.mobile-index summary{cursor:pointer;font-weight:750;padding:10px;color:#23436b}.mob-links{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;padding:6px}
+@media(max-width:950px){.shell{display:block;padding:18px}.sidebar{display:none}.mobile-index{display:block;background:white;border:1px solid #dbe7f4;border-radius:12px;margin-top:15px}.story{padding:19px 19px 32px}.navbar{padding:0 16px}}
+@media(max-width:600px){.hero{padding:26px 23px}.hero h1{font-size:1.65rem}.navbar .sublogo{display:none}.nav-actions button{padding:6px 8px}.story h2{font-size:1.28rem}.story h3{font-size:1.1rem}.story table{font-size:.84rem}.story td,.story th{padding:8px 10px}.mob-links{grid-template-columns:1fr}}
+@media print{html{font-size:11.2px}body{background:white;color:#111827}.sitebar,.sidebar,.nav-actions,.mobile-index,.callout-legend{display:none!important}.shell{display:block;max-width:100%;padding:0}.hero{background:#f0f4fa!important;box-shadow:none;color:#111827;padding:15px 20px;border:1px solid #ccd8e8}.hero h1,.hero p,.hero .eyebrow{color:#1f3551}.pills span{color:#333;border:1px solid #c4d2e5}.story{padding:0;border:0;box-shadow:none}.story h2{background:#f1f5fc!important;break-after:avoid-page}.story h3,.story h4{break-after:avoid-page}.table-scroll{overflow:visible;break-inside:avoid}.story table{min-width:0}.story svg{break-inside:avoid;max-height:600px}a{color:#1b3966!important}}
+</style><style>
+/* 2026-10-24 选择题结构化排版修订：与正文、答案分离 */
+.story .quiz-card{
+  background:linear-gradient(180deg,#f8fbff 0%,#ffffff 100%);
+  border:1px solid #cbdff5;border-left:5px solid #2764b3;
+  border-radius:13px;padding:17px 19px 19px;
+  margin:19px 0 23px;box-shadow:0 3px 12px rgba(34,72,121,.055);
+}
+.story .quiz-stem{font-weight:600;color:#15365b;font-size:1.02rem;line-height:1.85;margin-bottom:12px}
+.story .quiz-stem strong{display:inline-flex;align-items:center;justify-content:center;
+  margin-right:8px;padding:1px 10px;border-radius:7px;background:#e4efff;color:#174d88;
+  letter-spacing:.025em;font-size:.92rem;white-space:nowrap}
+.story .quiz-options{display:grid;grid-template-columns:1fr;gap:8px}
+.story .quiz-option{display:flex;align-items:baseline;gap:11px;min-width:0;
+  background:#fff;border:1px solid #e5edf7;border-radius:9px;padding:8px 11px;
+  line-height:1.6;break-inside:avoid}
+.story .quiz-letter{display:inline-flex;justify-content:center;align-items:center;
+  flex:none;width:26px;height:26px;border-radius:7px;background:#eef4ff;
+  border:1px solid #d8e6fd;font-size:.89rem;font-weight:800;color:#215a9b}
+.story .quiz-choice{min-width:0;overflow-wrap:anywhere;font-weight:450;color:#223c5e}
+.story .quiz-choice code{white-space:normal}
+@media(max-width:600px){.story .quiz-card{padding:13px 12px;margin:15px 0 18px}
+  .story .quiz-stem{font-size:.98rem}.story .quiz-option{gap:9px;padding:8px 9px}}
+@media print{.story .quiz-card{break-inside:avoid;page-break-inside:avoid;
+  margin:9px 0 12px;padding:9px 11px;background:#f7fbff!important;box-shadow:none}
+  .story .quiz-stem{margin-bottom:6px;font-size:1em;line-height:1.55}
+  .story .quiz-options{gap:3px}
+  .story .quiz-option{padding:4px 7px;border:1px solid #dee7f5;line-height:1.35}
+  .story .quiz-letter{height:20px;width:20px;font-size:.84em}
+}
+</style><style>
+/* 自测优化：答案折叠、独立打印与可放大图表。 */
+.study-tools{scroll-margin-top:78px;margin-top:18px;padding:16px 20px;background:#fff;border:1px solid var(--hair);border-radius:14px;display:flex;flex-wrap:wrap;align-items:center;gap:9px}
+.study-tools button,.study-tools select,.figure-open,.figure-dialog button{font:inherit;font-size:.9rem;padding:8px 12px;border:1px solid #bbcee6;border-radius:8px;background:#fff;color:#23466e;cursor:pointer;min-height:42px}
+.study-tools button[aria-pressed="true"]{background:#e5f1ff;border-color:#235db0}.study-tools small{flex-basis:100%;color:var(--muted)}
+.answer{border:1px solid #d7e3ef;border-radius:10px;margin:16px 0;background:#fafcff}.answer>summary{cursor:pointer;padding:12px 16px;color:#205b91;font-weight:700}.answer[open]>summary{border-bottom:1px solid #d7e3ef}.answer-body{padding:4px 17px 16px;min-width:0}.answer-body h3:first-child{margin-top:15px}.answer table col:first-child{width:10%!important}.answer table col:nth-child(2){width:18%!important}.answer table col:nth-child(3){width:72%!important}
+.source-note{font-size:.85rem;color:var(--muted)}.subjective-question,.textbook-question,.exam-transfer{scroll-margin-top:80px}
+.source-link{overflow-wrap:anywhere}.story td:first-child:has(a[href^="#question-"]){white-space:nowrap}
+.figure-scroll{overflow:auto;max-width:100%;border:1px solid #e4eaf4;border-radius:10px}.figure-scroll .figure-svg{border:0;margin:0;max-height:none}.story figcaption{font-size:.9rem;color:#526a83;margin-top:9px}.figure-open{margin-top:8px}
+.figure-dialog{width:96vw;max-width:1600px;height:92vh;max-height:92vh;border:1px solid #aebfd3;border-radius:14px;padding:16px;background:#fff;color:var(--ink)}.figure-dialog::backdrop{background:#102745b8}.figure-controls{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:12px}.figure-controls strong{margin-right:auto}.figure-stage{height:calc(100% - 100px);overflow:auto;border:1px solid #dbe5ef;touch-action:pan-x pan-y}.figure-stage svg{display:block;max-width:none!important;max-height:none!important;height:auto!important;margin:0}.figure-hint{font-size:.85rem;color:var(--muted);margin:6px 0}
+.questions-only .reading-section,.questions-only .solutions-section{display:none}.questions-only .answer{display:none}
+.questions-only .hero,.questions-only .callout-legend{display:none}.questions-only .story{margin-top:16px}
+button:focus-visible,summary:focus-visible,a:focus-visible,.figure-scroll:focus-visible{outline:3px solid #df931c;outline-offset:3px}
+@media(max-width:600px){.study-tools{padding:12px;gap:7px}.study-tools label{width:100%}.figure-scroll .figure-svg{min-width:65rem;max-width:none;width:65rem;height:auto}.figure-scroll:has(svg[aria-label="Lineweaver-Burk双倒数图四型对照"]) .figure-svg{min-width:75rem;width:75rem}.figure-dialog{padding:10px}.figure-stage{height:calc(100% - 125px)}.answer-body{padding:2px 10px 12px}.navbar{padding:0 10px}.nav-actions{gap:4px}.logo{font-size:14px}.nav-actions button{padding:6px}.table-scroll table col{width:auto!important}}
+@media print{.study-tools,.figure-open,.figure-dialog,.figure-hint{display:none!important}.chapter-section{display:block!important}.answer{border:0;background:white}.answer>summary{display:none}.answer-body{padding:0}.figure-scroll{overflow:visible;border:0}.figure-scroll .figure-svg{min-width:0!important;width:100%!important;max-width:100%!important}.print-questions .reading-section,.print-questions .solutions-section,.print-questions .answer,.print-questions .hero{display:none!important}.print-questions .practice-section{display:block!important}.table-scroll{break-inside:auto}.story tr{break-inside:avoid}.story thead{display:table-header-group}.story a.source-link{font-size:.85em}}
+</style></head><body><header class="sitebar"><div class="navbar"><div class="logo">清华841 · 生物化学 <span class="sublogo">第3章 酶学复习总册</span></div><div class="nav-actions"><button aria-label="减小字号" id="smaller" type="button">A−</button><button aria-label="增大字号" id="larger" type="button">A＋</button><button id="print" type="button">打印 / PDF</button></div></div><div id="progress"></div></header><div class="shell"><aside aria-label="章节目录" class="sidebar"><div class="sidebar-title">CONTENT  ·  章节目录</div><a class="side-link" href="#使用指引先看这里">使用说明</a><a class="side-link" href="#第一部分逐节精讲对应841考纲3.13.15">01 · 逐节精讲</a><a class="side-link" href="#第二部分核心图解与机制推导">02 · 图解与推导</a><a class="side-link" href="#第三部分闭卷背诵与易混辨析">03 · 速记与易错</a><a class="side-link" href="#第四部分原创分级练习共33道动力学主线">04 · 分级练习</a><a class="side-link" href="#第五部分六道主观题示范答案">05 · 主观题答案</a><a class="side-link" href="#第六部分原创分级题详细解析">06 · 练习详细解析</a><a class="side-link" href="#第七部分教材课后习题112逐题导学原题见原书p7677">07 · 教材课后题</a><a class="side-link" href="#第八部分考纲来源试题核验与科学校订">08 · 来源与校订</a><a class="side-link" href="#第九部分90分钟闭卷验收">09 · 闭卷与订正</a><a class="side-link" href="#第十部分考纲薄弱点专项补强12题含详细解析">10 · 应用专项补强</a><a class="side-link" href="#附录资料使用边界和排版依据">附录 · 排版与来源</a><div class="side-caption">资料层级：<br/>[教材] 原书 / 考纲<br/>[校订] 核验后的修正<br/>[拓展] 应用补充<br/>[原创] 自编练习</div></aside><div class="content"><div class="hero" id="top"><div class="eyebrow">2027 考研 · 841 生物医学基础综合</div><h1>第3章 · 酶<br/>二轮强化复习总册</h1><p>沿着“概念 → 机制 → 动力学 → 调节 → 应用”的主线，完成教材精讲、知识辨析、45道原创练习、12道教材习题导学和6道主观题示范。</p><div class="pills"><span>15/15 考纲小节</span><span>教材印刷页 51—77</span><span>4 张矢量图解</span><span>45 道原创训练 · 12 道教材习题导学</span><span>校订事项独立标注</span></div></div><div class="mobile-index"><details><summary>章节目录（点开跳转）</summary><div class="mob-links"><a class="side-link" href="#使用指引先看这里">使用说明</a><a class="side-link" href="#第一部分逐节精讲对应841考纲3.13.15">01 · 逐节精讲</a><a class="side-link" href="#第二部分核心图解与机制推导">02 · 图解与推导</a><a class="side-link" href="#第三部分闭卷背诵与易混辨析">03 · 速记与易错</a><a class="side-link" href="#第四部分原创分级练习共33道动力学主线">04 · 分级练习</a><a class="side-link" href="#第五部分六道主观题示范答案">05 · 主观题答案</a><a class="side-link" href="#第六部分原创分级题详细解析">06 · 练习详细解析</a><a class="side-link" href="#第七部分教材课后习题112逐题导学原题见原书p7677">07 · 教材课后题</a><a class="side-link" href="#第八部分考纲来源试题核验与科学校订">08 · 来源与校订</a><a class="side-link" href="#第九部分90分钟闭卷验收">09 · 闭卷与订正</a><a class="side-link" href="#第十部分考纲薄弱点专项补强12题含详细解析">10 · 应用专项补强</a><a class="side-link" href="#附录资料使用边界和排版依据">附录 · 排版与来源</a></div></details></div><div class="callout-legend"><strong>阅读标识：</strong><span>■ 教材：原书直接内容</span><span>■ 校订：对照原文或权威资料校正</span><span>■ 易错：高风险失分点</span><span>■ 原创：新编练习及建议分值</span></div><div class="study-tools" role="region" aria-label="阅读与自测设置"><button id="questions-toggle" type="button" aria-pressed="false">仅看题目</button><button id="answers-hide" type="button">收起全部答案</button><button id="answers-show" type="button">展开全部答案</button><label for="print-mode">打印内容：</label><select id="print-mode"><option value="handout">完整讲义（含解析）</option><option value="questions">练习题（不含解析）</option></select><small id="view-status" aria-live="polite">阅读模式：答案默认折叠；图表可横向滚动或放大查看。</small></div><main class="story" id="main">
+<blockquote>
+<p><strong>校订版：2026-10-24｜教材优先，考纲逐点覆盖｜精讲＋背诵＋图解＋题解</strong><br>
+教材：刘玉乐《生物化学》第5版，第3章<strong>印刷第51—77页</strong>，扫描PDF<strong>第71—97页</strong>。<span class="source-note">教材定位：印刷第51—77页（请使用自备教材）</span><br>
+考纲：841《生物医学基础综合》3.1—3.15（均覆盖）。<br>
+<strong>事实层次</strong>：<strong>[教材]</strong>
+原书/官方考纲；<strong>[配套资料]</strong>
+项目讲义、笔记、模拟卷；<strong>[校订]</strong>
+科学原理或外部核验；<strong>[原创]</strong>
+本册新编题目与建议分值。未经独立核验的“历年真题”不得视为官方原题。</p>
+</blockquote>
+<section class="chapter-section reading-section" data-chapter="0"><h2 id="使用指引先看这里">使用指引（先看这里）</h2>
+<p><strong>二轮顺序：</strong>
+先独立尝试A02、A06、A12、B02和D05，定位计算、机制或概念卡点；再按错点查第一、二部分，闭卷重做后用第三部分速查表整理。随后完成第四、十部分与教材习题，最后进行80分钟闭卷验收和10分钟订正。答案默认折叠；可切换“仅看题目”，打印时选择练习题版。原书与后续科学校订有分歧时，优先掌握<strong>原书考试口径</strong>，并在答题中避免明显科学错误。</p>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>复习目标</th>
+<th>导航</th>
+<th>完成标志</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>搭建体系</td>
+<td>第一部分：3.1—3.15</td>
+<td>能解释每一个考纲条目</td>
+</tr>
+<tr class="even">
+<td>突破重点</td>
+<td>第二部分：米氏、抑制、能量</td>
+<td>能独立推导、读图、辨型</td>
+</tr>
+<tr class="odd">
+<td>快速背诵</td>
+<td>第三部分：高频表与易混点</td>
+<td>10分钟闭卷重画四张表</td>
+</tr>
+<tr class="even">
+<td>定量训练</td>
+<td>第四部分：33道原创题</td>
+<td>完成A/B/C三级，不查资料</td>
+</tr>
+<tr class="odd">
+<td>规范答题</td>
+<td>第五部分：6道主观题</td>
+<td>答案具备定义、机制、例子</td>
+</tr>
+<tr class="even">
+<td>查漏补缺</td>
+<td>第六部分：分级题解析</td>
+<td>每个错题能讲出错因</td>
+</tr>
+<tr class="odd">
+<td>原书落实</td>
+<td>第七部分：12道教材习题</td>
+<td>重点完成3、4、5、6、8、9、10</td>
+</tr>
+<tr class="even">
+<td>证据校验</td>
+<td>第八部分：来源与校订</td>
+<td>不将模拟题冒充真题</td>
+</tr>
+<tr class="odd">
+<td>应用专项补强</td>
+<td>第十部分：12道专项练习</td>
+<td>3.8—3.15概念理解与应用能准确作答</td>
+</tr>
+<tr class="even">
+<td>验收</td>
+<td>第九部分：90分钟闭卷测试</td>
+<td>按时完成且核心概念无误</td>
+</tr>
+</tbody>
+</table></div>
+<hr/>
+</section><section class="chapter-section reading-section" data-chapter="1"><h2 id="第一部分逐节精讲对应841考纲3.13.15">第一部分｜逐节精讲：对应841考纲3.1—3.15</h2>
+<h3 id="酶的命名与分类-教材p5153">3.1 酶的命名与分类 [教材p51—53]</h3>
+<p><strong>定义</strong>：酶是具有高催化效率、高特异性的生物催化剂，绝大多数为蛋白质，另有具催化活性的核酸（如核酶）。酶与普通催化剂一样：加快达到化学平衡的速度，不改变反应的平衡常数、反应标准自由能或反应的净方向。</p>
+<p><strong>共同特点</strong>：高效、特异、反应条件通常较温和、活性容易受环境影响、受到严格调节。</p>
+<p><strong>专一性分三类</strong>：①绝对专一性（如脲酶催化尿素水解）；②相对专一性（如某些酯酶对同类酯键）；③立体异构专一性（区别不同光学或几何异构体）。不能把“酶具有专一性”写成“每种酶只作用于唯一一种底物”。</p>
+<h4 id="教材采用的六大类">教材采用的六大类</h4>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr class="header">
+<th>EC</th>
+<th>类别</th>
+<th>反应本质</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>氧化还原酶</td>
+<td>电子、氢原子或氧化态的转移</td>
+<td>乳酸脱氢酶</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>转移酶</td>
+<td>基团从供体转移至受体</td>
+<td>转氨酶、激酶</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>水解酶</td>
+<td>水参与的键断裂</td>
+<td>蛋白酶、磷酸酶</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>裂合酶</td>
+<td>非水解、非氧化方式断裂或逆向加成</td>
+<td>丙酮酸脱羧酶</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>异构酶</td>
+<td>分子内部重排与异构体互变</td>
+<td>丙氨酸消旋酶</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>连接酶</td>
+<td>耦联ATP等能量消耗形成新键</td>
+<td>谷氨酰胺合成酶</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>EC编号</strong>：EC
+1.1.1.27为乳酸脱氢酶，四段号码依次表示主类、亚类、亚亚类和具体酶。注意区别<strong>酶的名称与EC反应类别</strong>；不可以仅凭名称里有“合酶”就断定一律属于裂合酶。例如柠檬酸合酶属于转移酶。</p>
+<div class="note-box note"><p><strong>[校订·新旧口径]</strong>：教材第5版正文沿用上述六大类作为考试记忆基础；IUBMB现行酶命名目录已含EC
+7转位酶（translocases）。若考题明确问“教材将酶分为几大类”，答六类；若问“现行EC分类”，答七类并指出EC
+7。参考：<a href="https://iubmb.qmul.ac.uk/enzyme/" target="_blank" rel="noopener">https://iubmb.qmul.ac.uk/enzyme/</a></p></div>
+<h3 id="酶活性与比活-教材p5354">3.2 酶活性与比活 [教材p53—54]</h3>
+<ul>
+<li><strong>酶活性/活力</strong>：反映催化反应能力，通过一定条件下的初速度或底物消耗量/产物生成量测量。</li>
+<li><strong>酶活性单位U</strong>：教材规定在25°C、适宜测定条件下，1分钟催化转化1
+μmol底物的酶量。现代报告必须注明具体测定温度、pH等条件，不应脱离条件比较。</li>
+<li><strong>比活（specific activity）</strong>：总活性U ÷
+总蛋白mg，单位U/mg，是常用的纯化程度指标。</li>
+<li><strong>回收率</strong> = 某步骤总活性 / 初始总活性 × 100%。</li>
+<li><strong>纯化倍数</strong> = 某步骤比活 / 初始比活。</li>
+</ul>
+<p><strong>例题[自拟]</strong>：粗提液总蛋白400 mg，总活性800
+U；纯化后蛋白25 mg，活性500 U。原比活2 U/mg，纯化后20
+U/mg，纯化倍数10倍，活性回收率62.5%。</p>
+<p><strong>高频错误</strong>：把总活性（U）、活性浓度（U/mL）和比活（U/mg）混同；认为纯化后总活性必然增加。教材表3.1可用来练习纯化倍数和回收率。</p>
+<h3 id="酶活性部位-教材p5456">3.3 酶活性部位 [教材p54—56]</h3>
+<p><strong>活性部位/活性中心（active
+site）</strong>：酶通过折叠在三维空间形成的底物结合与催化区域，常位于裂隙。序列上远离的残基可能在空间中靠近。可区分<strong>结合部位</strong>（底物识别、定位）与<strong>催化部位</strong>（直接参与质子/基团转移或稳定过渡态），但在具体酶中两者可能互相影响。</p>
+<p><strong>教材实例</strong>：溶菌酶活性区域中Glu35、Asp52等残基相互靠近，见图3.7（印刷p55）。此例特别适合说明“一级序列位置远不代表空间距离远”。</p>
+<p><strong>锁钥学说</strong>：强调构象互补，适于解释特异性，但不能充分解释结合引起的构象变化。<br>
+<strong>诱导契合学说</strong>：底物结合引起酶及/或底物构象调整，促进催化所需空间与化学环境形成。</p>
+<p><strong>考题表达</strong>：“活性部位不是氨基酸序列上某个固定连续片段，而是蛋白质折叠后的特定三维区域；结合与催化残基以及周围支持构象的残基共同决定效率和特异性。”</p>
+<h3 id="活化能-教材p5657">3.4 活化能 [教材p56—57]</h3>
+<p><strong>活化自由能ΔG‡</strong>：从反应物基态抵达过渡态的自由能障碍。酶通过稳定过渡态、提供替代反应路径等机制降低ΔG‡，因而加快反应。</p>
+<p><strong>牢记两种不同的ΔG</strong>：</p>
+<ul>
+<li>ΔG‡：动力学量，决定反应跨越能障的难易；酶能降低。</li>
+<li>ΔG或ΔG°′：热力学量，涉及反应平衡和自发方向；酶不改变。</li>
+</ul>
+<p><strong>典型判断</strong>：“酶改变反应平衡常数”×；“酶同时加速正向和逆向反应、使平衡更快建立”√。</p>
+<h3 id="酶催化机制-教材p5759">3.5 酶催化机制 [教材p57—59]</h3>
+<p><strong>按教材列出的四类机制组织10分简答题：</strong></p>
+<ol type="1">
+<li><strong>酸碱催化</strong>（general acid-base
+catalysis）：利用侧链或辅基给予、接受质子；His等残基常参与质子传递。<br>
+</li>
+<li><strong>共价催化</strong>（covalent
+catalysis）：形成短暂的酶—底物共价中间体，使反应分步骤进行；如某些Ser/Cys酶形成酰基酶中间体。<br/>
+</li>
+<li><strong>金属离子催化</strong>（metal-ion
+catalysis）：帮助底物定位、稳定电荷、活化水分子或参与氧化还原；如Mg²⁺促进ATP参与磷酸基转移。<br/>
+</li>
+<li><strong>趋近和定向效应</strong>（proximity and
+orientation）：酶将底物与反应基团置于合适距离和方位，提高有效碰撞与反应概率。</li>
+</ol>
+<p><strong>整合性解释</strong>：底物构象调整、过渡态互补与稳定贯穿以上催化过程，可作为总论补充，但不应无标注地将其说成教材单列的第五小节。教材中3.5.1—3.5.4只有上述四节。</p>
+<p><strong>可举的机制组合</strong>：丝氨酸蛋白酶的His参与酸碱催化，Ser参与共价催化，Asp协助调节His环境；具体催化过程可把多种机制协同联系起来。</p>
+<h3 id="米氏方程与酶动力学-教材p5963">3.6 米氏方程与酶动力学
+[教材p59—63]</h3>
+<h4 id="适用模型与稳态推导">适用模型与稳态推导</h4>
+<p>E + S ⇌ ES → E +
+P；正向结合速率常数k₁，逆向解离k₋₁，催化步骤kcat（简单模型中k₂）。<br/>
+<strong>前提</strong>：初速度条件，底物过量、反应物消耗很小，近似忽略产物逆反应；ES达到稳态，并且该体系服从简单米氏动力学。此模型不应未经检验地强套协同酶、变构酶或多底物复杂体系。</p>
+<p>稳态条件下：<br/>
+<code>k₁[E][S] = (k₋₁ + kcat)[ES]</code></p>
+<p><code>Km=(k₋₁+kcat)/k₁</code>，<code>[E]总=[E]+[ES]</code>，<code>Vmax=kcat[E]总</code>，可得：</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><mi>v</mi><mo>=</mo><mfrac><mrow><msub><mi>V</mi><mo>max</mo></msub><mrow><mo form="prefix" stretchy="true">[</mo><mi>S</mi><mo form="postfix" stretchy="true">]</mo></mrow></mrow><mrow><msub><mi>K</mi><mi>m</mi></msub><mo>+</mo><mrow><mo form="prefix" stretchy="true">[</mo><mi>S</mi><mo form="postfix" stretchy="true">]</mo></mrow></mrow></mfrac></mrow></menclose><annotation encoding="application/x-tex">
+\boxed{v=\frac{V_{\max}[S]}{K_m+[S]}}
+</annotation></semantics></math></p>
+<h4 id="参数意义">参数意义</h4>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr class="header">
+<th>指标</th>
+<th>公式或特征</th>
+<th>易错点</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Km</td>
+<td>当v=Vmax/2时，[S]=Km</td>
+<td>不等同于Vmax；不依赖酶总浓度，但依赖条件</td>
+</tr>
+<tr class="even">
+<td>Vmax</td>
+<td>kcat[E]总</td>
+<td>酶量增加时Vmax增加</td>
+</tr>
+<tr class="odd">
+<td>kcat</td>
+<td>Vmax/[E]总</td>
+<td>活性位点浓度应与定义一致，单位s⁻¹</td>
+</tr>
+<tr class="even">
+<td>kcat/Km</td>
+<td>催化效率指标</td>
+<td>单位通常M⁻¹s⁻¹</td>
+</tr>
+</tbody>
+</table></div>
+<div class="note-box note"><p><strong>[校订]</strong>：<code>Km≈Kd=k₋₁/k₁</code>必须有<code>kcat≪k₋₁</code>等条件；一般不能把Km无条件当作酶与底物的真正解离常数。比较不同酶或底物的“亲和力”时要写明条件。</p></div>
+<h4 id="极限与特殊值">极限与特殊值</h4>
+<ul>
+<li><code>[S]≪Km</code>：<code>v≈(Vmax/Km)[S]</code>，近似对底物一级反应。</li>
+<li><code>[S]=Km</code>：<code>v=1/2 Vmax</code>。</li>
+<li><code>[S]=3Km</code>：<code>v=3/4 Vmax</code>。</li>
+<li><code>[S]=9Km</code>：<code>v=0.9 Vmax</code>。</li>
+<li><code>[S]≫Km</code>：<code>v≈Vmax</code>，近似对底物零级反应。</li>
+</ul>
+<h4 id="双倒数图-lineweaverburk">双倒数图 Lineweaver–Burk</h4>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><mfrac><mn>1</mn><mi>v</mi></mfrac><mo>=</mo><mfrac><msub><mi>K</mi><mi>m</mi></msub><msub><mi>V</mi><mo>max</mo></msub></mfrac><mfrac><mn>1</mn><mrow><mo form="prefix" stretchy="true">[</mo><mi>S</mi><mo form="postfix" stretchy="true">]</mo></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><msub><mi>V</mi><mo>max</mo></msub></mfrac></mrow></menclose><annotation encoding="application/x-tex">
+\boxed{\frac1v=\frac{K_m}{V_{\max}}\frac1{[S]}+\frac1{V_{\max}}}
+</annotation></semantics></math></p>
+<ul>
+<li>横轴：<code>1/[S]</code>；纵轴：<code>1/v</code>。</li>
+<li>斜率：<code>Km/Vmax</code>；纵截距：<code>1/Vmax</code>；横截距：<code>-1/Km</code>。</li>
+<li>双倒数图适于辨别变化趋势，但容易放大低[S]实验误差；实际参数估计更宜对原始v—[S]数据做非线性拟合。</li>
+</ul>
+<h4 id="双底物反应">双底物反应</h4>
+<ul>
+<li><strong>顺序（sequential）机制</strong>：两个底物同时处于某一酶复合物中；分有序结合、随机结合。<br/>
+</li>
+<li><strong>乒乓（ping-pong）机制</strong>：第一个底物反应并释放产物后酶暂时改变状态，再与第二底物反应并恢复原状；如某些转氨反应。<br/>
+</li>
+<li>不要把双底物酶的两个底物共用同一个Km。特定条件下，每个底物都有对应的表观动力学参数。</li>
+</ul>
+<h4 id="示例计算原创">示例计算（原创）</h4>
+<p>若<code>Vmax=120 μmol/min</code>、<code>Km=2 mmol/L</code>，求<code>[S]=6 mmol/L</code>时速度：</p>
+<p><code>v=120×6/(2+6)=90 μmol/min</code>。</p>
+<h3 id="可逆抑制-教材p6365">3.7 可逆抑制 [教材p63—65]</h3>
+<p><strong>可逆性抑制</strong>：抑制剂通过可逆结合使酶活性下降。先判断结合游离酶E、ES复合物，还是两者，再看表观Km与Vmax的变化。</p>
+<p>设<code>α=1+[I]/Ki</code>（与E结合），<code>α′=1+[I]/Ki′</code>（与ES结合），通式：</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mfrac><mrow><msub><mi>V</mi><mo>max</mo></msub><mrow><mo form="prefix" stretchy="true">[</mo><mi>S</mi><mo form="postfix" stretchy="true">]</mo></mrow></mrow><mrow><mi>α</mi><msub><mi>K</mi><mi>m</mi></msub><mo>+</mo><mi>α</mi><mi>′</mi><mrow><mo form="prefix" stretchy="true">[</mo><mi>S</mi><mo form="postfix" stretchy="true">]</mo></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+v=\frac{V_{\max}[S]}{\alpha K_m+\alpha'[S]}
+</annotation></semantics></math></p>
+<p>对应：<code>Vmax,app=Vmax/α′</code>，<code>Km,app=αKm/α′</code>。</p>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table style="width:100%;">
+<colgroup>
+<col style="width: 16%"/>
+<col style="width: 16%"/>
+<col style="width: 16%"/>
+<col style="width: 16%"/>
+<col style="width: 16%"/>
+<col style="width: 16%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>类型</th>
+<th>结合对象</th>
+<th>Km,app</th>
+<th>Vmax,app</th>
+<th>Lineweaver–Burk</th>
+<th>升高底物能否解除</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>竞争性</td>
+<td>E</td>
+<td>↑</td>
+<td>不变</td>
+<td>交纵轴</td>
+<td>可明显减弱</td>
+</tr>
+<tr class="even">
+<td>反竞争性</td>
+<td>仅ES</td>
+<td>↓</td>
+<td>↓，同比例</td>
+<td>平行</td>
+<td>不可</td>
+</tr>
+<tr class="odd">
+<td>纯非竞争性</td>
+<td>E与ES等亲和</td>
+<td>不变</td>
+<td>↓</td>
+<td>交横轴</td>
+<td>不可</td>
+</tr>
+<tr class="even">
+<td>混合型</td>
+<td>E与ES不等亲和</td>
+<td>↑或↓</td>
+<td>↓</td>
+<td>常交于坐标轴外</td>
+<td>不能完全解除</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>竞争性</strong>：α&gt;1、α′=1；例如丙二酸与琥珀酸竞争琥珀酸脱氢酶结合部位。<br/>
+<strong>反竞争性</strong>：α=1、α′&gt;1；两个参数同比例下降。<br/>
+<strong>纯非竞争性</strong>：α=α′&gt;1；Km不变，Vmax下降。<br/>
+<strong>混合型</strong>：α、α′均&gt;1但不同；若对E结合更强，则Km升高；若对ES结合更强，则Km降低。</p>
+<p><strong>辨析</strong>：“非竞争性抑制作用一定Km不变”错误——只有<strong>纯</strong>非竞争性时必定不变，混合型可以升降。</p>
+<h3 id="不可逆抑制-教材p6567">3.8 不可逆抑制 [教材p65—67]</h3>
+<p><strong>不可逆抑制</strong>：抑制导致酶失活且在通常实验条件下不易自行恢复，常见机制是抑制剂与活性位点形成稳定共价修饰；例如有机磷类使乙酰胆碱酯酶的关键Ser残基磷酰化，导致正常底物分解受阻。教材还讨论解磷定对某些有机磷中毒的作用。</p>
+<p><strong>易错边界</strong>：</p>
+<ul>
+<li>可逆抑制主要取决于可逆结合与动力学，不能简单认为抑制剂一律“破坏结构”。</li>
+<li>不可逆抑制与蛋白质变性不是同一个概念；变性通常使高级结构改变，但不必切断肽键。</li>
+<li>不能把每一种毒物对酶的抑制都说成“与氨基酸残基共价结合”，例如氰化物的典型作用涉及对含金属中心的结合。</li>
+</ul>
+<h3 id="ph和温度的影响-教材p6768">3.9—3.10 pH和温度的影响
+[教材p67—68]</h3>
+<h4 id="ph催化基团的质子化状态与酶稳定性">pH：催化基团的质子化状态与酶稳定性</h4>
+<p><strong>[教材]</strong>
+pH可改变酶活性中心中酸碱基团的解离状态、底物的离子状态，以及酶蛋白的局部构象。多数酶在特定测定条件下存在最适pH，曲线常呈钟形，但不是每一种酶都严格对称。</p>
+<ul>
+<li>酶需要某一催化残基<strong>质子化</strong>时，该残基在过高pH下失去质子，反应速度可能下降；需要<strong>去质子化</strong>时，在过低pH下可能受抑。</li>
+<li>可以用两个必要基团的酸碱状态说明钟形曲线两侧下降，但完整的酶速率—pH关系还可能受底物解离和酶构象影响。</li>
+<li><strong>[必辨]</strong>
+“最适pH”是<strong>酶在指定反应体系中的测定结果</strong>，不是在任何温度、缓冲液和底物条件下都恒定的物理常数。</li>
+</ul>
+<p><strong>[原创例题]</strong>
+参与催化的His需要质子化，若其有效pKa≈6.0，则在pH从5升至8时，处于质子化状态的His比例明显下降；不能仅凭这一点断定整种酶的最适pH一定为6.0。</p>
+<h4 id="温度动力学加速与酶失活的竞争">温度：动力学加速与酶失活的竞争</h4>
+<p><strong>[教材]</strong>
+在一定范围内升温通常使反应加快，但温度过高会使蛋白质结构不稳定，导致活性下降。常见的初速度—温度关系呈先升后降形态；最适温度还与<strong>测定时间</strong>有关。</p>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>温度区间</th>
+<th>观察现象</th>
+<th>主要原因</th>
+<th>注意限制</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>低温范围</td>
+<td>反应通常较慢</td>
+<td>达到过渡态的过程受温度影响</td>
+<td>低温慢不等于永久失活</td>
+</tr>
+<tr class="even">
+<td>中间范围</td>
+<td>升温可能提高速率</td>
+<td>化学反应动力学加速占优</td>
+<td>与底物、pH和离子强度有关</td>
+</tr>
+<tr class="odd">
+<td>较高温度</td>
+<td>酶活下降、失活加重</td>
+<td>折叠稳定性下降或蛋白变性</td>
+<td>受加热时间与具体酶种影响</td>
+</tr>
+</tbody>
+</table></div>
+<div class="note-box danger"><p><strong>[易错]</strong>
+同一温度下，短时初速度测量和长时间连续反应测得的最适条件可能不同。<strong>“最适温度=37℃”不是酶的普适结论。</strong></p></div>
+<h3 id="酶的调节-教材p6874">3.11 酶的调节 [教材p68—74]</h3>
+<h4 id="酶原激活zymogen-activation">酶原激活（zymogen activation）</h4>
+<p>酶原是没有或几乎没有催化活性的前体，经特定蛋白水解，切断肽键，使酶结构变化并形成或暴露活性部位。典型例子：胰蛋白酶原在肠肽酶启动下转为胰蛋白酶，生成的胰蛋白酶可促进后续自身催化激活；消化酶原机制可避免合成细胞被提前水解，凝血与补体级联则体现放大调控。</p>
+<div class="note-box note"><p><strong>[校订]</strong>：配套分章笔记有一道题将“胰蛋白酶原激活无需其他酶参与”判作正确，同时又写由肠肽酶启动，表述不严谨。考试应答：生理条件下由肠肽酶启动，随后胰蛋白酶可自催化促进酶原激活。</p></div>
+<h4 id="别构调节allosteric-regulation">别构调节（allosteric
+regulation）</h4>
+<p>别构效应物结合活性部位以外的调节部位，引起构象改变，影响酶对底物的结合及/或催化。某些寡聚酶存在亚基之间正协同性，表现为S形底物—速度曲线，<strong>不能把一般米氏双曲线模型直接套用</strong>。</p>
+<p><strong>协同模型</strong>：齐变模型（MWC）强调T/R构象平衡与协同转换；序变模型（KNF）强调配体结合后逐个亚基构象变化。教材例子：天冬氨酸转氨甲酰酶（ATCase）受CTP反馈抑制与ATP激活，帮助协调核苷酸供给。</p>
+<h4 id="共价修饰调节">共价修饰调节</h4>
+<p>通过酶催化可逆修饰改变目标酶活性：蛋白激酶使用ATP催化Ser/Thr/Tyr等位点磷酸化，蛋白磷酸酶催化去磷酸化。<strong>磷酸化≠一律激活</strong>：具体效应依赖酶与修饰位点。例：丙酮酸脱氢酶复合体中的E1经磷酸化受抑制，去磷酸化后活性恢复。</p>
+<h4 id="三种调节横向比较">三种调节横向比较</h4>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>特征</th>
+<th>酶原激活</th>
+<th>别构调节</th>
+<th>共价修饰调节</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>结构事件</td>
+<td>肽键切割</td>
+<td>非共价效应物结合改变构象</td>
+<td>添加/去除共价化学基团</td>
+</tr>
+<tr class="even">
+<td>是否通常可逆</td>
+<td>通常不可逆</td>
+<td>通常可逆</td>
+<td>常可逆</td>
+</tr>
+<tr class="odd">
+<td>常见调节尺度</td>
+<td>快速启动、级联放大</td>
+<td>快速响应代谢物</td>
+<td>快速且可级联放大</td>
+</tr>
+<tr class="even">
+<td>经典例子</td>
+<td>胰蛋白酶原</td>
+<td>ATCase</td>
+<td>丙酮酸脱氢酶</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="同工酶-教材p74">3.12 同工酶 [教材p74]</h3>
+<p><strong>[教材]
+同工酶（isoenzyme/isozyme）</strong>：催化同一种化学反应，但在氨基酸序列、亚基组成、组织分布、动力学性质或调节特点上存在差异的多种酶分子形式。关键不是“名字不同”，而是<strong>化学反应相同、分子形式不同</strong>。</p>
+<p><strong>教材经典例子——乳酸脱氢酶LDH</strong>：H型与M型亚基组成四聚体，组合共5种：<code>H₄、H₃M、H₂M₂、HM₃、M₄</code>。传统同工酶编号为LDH1（H₄）到LDH5（M₄）。心肌等有氧组织富含H型，骨骼肌等富含M型，反映不同组织的代谢需求。</p>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>方面</th>
+<th>同工酶</th>
+<th>酶原</th>
+<th>别构态</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>分子关系</td>
+<td><strong>不同</strong>分子形式催化同一反应</td>
+<td>一种酶的前体和成熟形式</td>
+<td><strong>同一酶</strong>的不同构象状态</td>
+</tr>
+<tr class="even">
+<td>核心判断</td>
+<td>相同反应、不同组成/序列/表达</td>
+<td>需要蛋白水解激活</td>
+<td>配体结合导致可逆构象变化</td>
+</tr>
+<tr class="odd">
+<td>常考例子</td>
+<td>LDH五种四聚体</td>
+<td>胰蛋白酶原</td>
+<td>ATCase的T/R状态</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>考试要点</strong>：为什么各组织需要不同同工酶？由于细胞的氧供、底物水平和代谢功能不同，同工酶可具有不同的动力学与调节性质，从而有助于匹配组织代谢特点。<strong>[校订]</strong>
+同工酶谱可以提供组织损伤辅助信息，但不能单独作为特异诊断结论。</p>
+<h3 id="抗体酶-教材p7475">3.13 抗体酶 [教材p74—75]</h3>
+<p><strong>[教材] 抗体酶（abzyme / catalytic
+antibody）</strong>：某些抗体不仅能结合特定分子，还具有催化化学反应的能力。典型设计基于酶学<strong>过渡态稳定</strong>原理：用模拟过渡态几何和电荷特点的稳定类似物作为抗原，筛选能紧密结合该类似物的抗体；其中一部分抗体可能促进相关反应。</p>
+<p><strong>三步记忆</strong>：设计过渡态类似物 → 诱导或筛选结合抗体 →
+验证是否真正催化及其动力学。教材图3.33有与磷酸吡哆醛有关的实验示例。</p>
+<div class="note-box danger"><p><strong>[易错]</strong> 结合过渡态类似物强 <strong>不必然</strong>
+产生有效催化：真正的催化还涉及底物进入、过渡态稳定、产物释放等步骤。因此抗体酶的催化性能需要实验检测，不能把“能结合”直接视为“能催化”。</p></div>
+<h3 id="酶作为生产工具-教材p75">3.14 酶作为生产工具 [教材p75]</h3>
+<p><strong>[教材]</strong>
+酶生产工具的优势是效率高、底物选择性强、温和条件下工作。教材关注<strong>半合成抗生素</strong>的酶促步骤，以及通过蛋白质工程改变酶性能（例如枯草杆菌蛋白酶Met222位点替换对抗氧化性的改善）。</p>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>生产目标</th>
+<th>酶学依据</th>
+<th>答题关键词</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>药物中间体与半合成抗生素</td>
+<td>化学选择性与区域/立体选择性</td>
+<td>选择性水解、基团改造、减少副反应</td>
+</tr>
+<tr class="even">
+<td>工业酶耐受环境</td>
+<td>提高稳定性、改良活性位点</td>
+<td>蛋白质工程、定点突变、筛选验证</td>
+</tr>
+<tr class="odd">
+<td>酶重复利用</td>
+<td>[拓展] 酶固定化与载体技术</td>
+<td>活性回收、稳定性、传质限制</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>[答题边界]</strong>
+固定化酶是相关工程拓展，不是教材本节唯一核心。定点突变只是得到<strong>候选变体</strong>，最终仍需检测<code>kcat、Km、热稳定性、失活半衰期</code>等指标，不能推断任一突变都使酶更优。</p>
+<h3 id="酶作为活性药物-教材p7576">3.15 酶作为活性药物 [教材p75—76]</h3>
+<p><strong>[教材]</strong>
+酶作为活性药物时，本身是发挥生物化学反应的治疗成分，而非仅作为药物生产的工具；例如<strong>L-天冬酰胺酶</strong>催化细胞外天冬酰胺水解，使依赖外源天冬酰胺的某些肿瘤细胞受到抑制。</p>
+<p><strong>[来源原文与校订分离]</strong>
+教材/配套笔记中出现“急性粒细胞白血病”的表述；NCI对L-天冬酰胺酶的规范定义明确其用于<strong>急性淋巴细胞白血病（ALL）</strong>。复习时保留“教材原表述—现代医学标准术语”的区别，不按错误病种机械背诵：<a class="uri" href="https://www.cancer.gov/publications/dictionaries/cancer-terms/def/l-asparaginase">https://www.cancer.gov/publications/dictionaries/cancer-terms/def/l-asparaginase</a>。</p>
+<p><strong>对比记忆</strong>：</p>
+<ul>
+<li><strong>生产工具</strong>：在制药工艺中催化合成、拆分或改造原料，最终药品不一定含该酶。</li>
+<li><strong>活性药物</strong>：将酶作为治疗制剂施用，其催化反应本身产生治疗效果。</li>
+<li><strong>[拓展]</strong>
+药用酶还需考虑免疫原性、稳定性与体内分布，但本章考纲优先掌握机制与用途，不必扩展到复杂临床给药方案。</li>
+</ul>
+<hr/>
+</section><section class="chapter-section reading-section" data-chapter="2"><h2 id="第二部分核心图解与机制推导">第二部分｜核心图解与机制推导</h2>
+<blockquote>
+<p>本部分四幅SVG为<strong>教学示意图</strong>，非原教材插图，也不代表实测数据。SVG支持无损放大；四幅图均内嵌于本HTML，可离线阅读；手机上可横向滚动，也可点“放大图表”查看。</p>
+</blockquote>
+<h3 id="三组核心图共四幅能量米氏曲线与可逆抑制">三组核心图（共四幅）：能量、米氏曲线与可逆抑制</h3>
+<h4 id="重点1为什么降低活化能不能改变反应平衡考纲3.43.5教材p5659">重点1｜为什么降低活化能不能改变反应平衡？[考纲3.4—3.5；教材p56—59]</h4>
+<figure id="figure-03"><div class="figure-scroll" tabindex="0" role="region" aria-label="图03，可横向滚动"><svg aria-label="无酶与有酶催化的自由能变化" class="figure-svg" height="560" role="img" viewbox="0 0 1000 560" width="1000" xmlns="http://www.w3.org/2000/svg"><title>酶催化降低活化自由能而不改变反应自由能差</title><rect fill="white" height="560" width="1000"></rect>
+<text fill="#24344d" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start" x="38" y="48">酶降低活化能，但不改变反应的 ΔG</text>
+<line stroke="#24344d" stroke-width="2" x1="125.00" x2="935.00" y1="475.00" y2="475.00"></line>
+<line stroke="#24344d" stroke-width="2" x1="125.00" x2="125.00" y1="475.00" y2="100.00"></line>
+<text fill="#24344d" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start" x="925" y="510">反应进程</text>
+<text fill="#24344d" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start" x="22" y="115">自由能 G</text>
+<path d="M 145 390 C 245 390, 270 120, 435 135 C 600 155, 640 430, 890 430" fill="none" stroke="#c45b37" stroke-width="5"></path>
+<path d="M 145 390 C 240 390, 300 265, 435 272 C 590 276, 645 430, 890 430" fill="none" stroke="#2667b2" stroke-width="5"></path>
+<line stroke="#e7e9ee" stroke-dasharray="8 5" stroke-width="1" x1="145.00" x2="890.00" y1="390.00" y2="390.00"></line>
+<line stroke="#e7e9ee" stroke-dasharray="8 5" stroke-width="1" x1="145.00" x2="890.00" y1="430.00" y2="430.00"></line>
+<line stroke="#c45b37" stroke-dasharray="6 5" stroke-width="2" x1="470.00" x2="470.00" y1="390.00" y2="135.00"></line>
+<line stroke="#2667b2" stroke-dasharray="6 5" stroke-width="2" x1="485.00" x2="485.00" y1="390.00" y2="272.00"></line>
+<text fill="#c45b37" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="19" font-weight="400" text-anchor="start" x="500" y="187">无酶：较高 ΔG‡</text>
+<text fill="#2667b2" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="19" font-weight="400" text-anchor="start" x="500" y="288">有酶：较低 ΔG‡</text>
+<text fill="#728093" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="end" x="885" y="390">反应物</text>
+<text fill="#728093" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="end" x="883" y="450">产物</text>
+<line stroke="#27796e" stroke-width="2" x1="925.00" x2="925.00" y1="390.00" y2="430.00"></line>
+<text fill="#27796e" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="end" x="908" y="418">ΔG</text>
+<text fill="#24344d" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="19" font-weight="400" text-anchor="start" x="145" y="534">两个反应通路的起点与终点相同 → ΔG 与平衡常数不变。</text>
+</svg></div>
+<figcaption>图03｜无酶与有酶催化的自由能变化</figcaption><button type="button" class="figure-open" data-figure="figure-03">放大图表 03</button></figure>
+<p><strong>因果链</strong>：反应物要转化为产物，首先必须到达高自由能的过渡态；酶通过形成有利的酶—底物/过渡态相互作用使达到过渡态所需的自由能障碍变小，因此同一温度下更多反应物分子可以在单位时间内完成转化。反应物和产物两端的标准状态自由能并没有因酶的存在而改变，因此：</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Δ</mi><msup><mi>G</mi><mo>∘</mo></msup><mrow></mrow><mi>′</mi><mo>=</mo><mi>−</mi><mi>R</mi><mi>T</mi><mo>ln</mo><mi>K</mi><msub><mi>′</mi><mrow><mi mathvariant="normal">e</mi><mi mathvariant="normal">q</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\Delta G^\circ{}'=-RT\ln K'_{\mathrm{eq}}</annotation></semantics></math></p>
+<p>当温度和其他标准条件固定时，酶不改变<code>ΔG°′</code>，从而不改变<code>K′eq</code>。<strong>注意</strong>“降低活化能”与“使吸能反应自动变为放能反应”不是同一回事。</p>
+<p>答题陷阱：题目若问“酶能否改变反应方向？”常规答案是酶本身不改变热力学平衡方向；酶可以使可逆反应的正、逆过程更快达到平衡。细胞内通过反应偶联、底物和产物浓度变化改变实际ΔG，则属于<strong>代谢体系条件</strong>的变化，不能归功于单独酶分子的催化作用。</p>
+<h4 id="重点2米氏曲线逐点读图考纲3.6教材p5962图3.123.13">重点2｜米氏曲线逐点读图[考纲3.6；教材p59—62，图3.12—3.13]</h4>
+<figure id="figure-01"><div class="figure-scroll" tabindex="0" role="region" aria-label="图01，可横向滚动"><svg aria-label="米氏动力学：无抑制与竞争性抑制" class="figure-svg" height="570" role="img" viewbox="0 0 1040 570" width="1040" xmlns="http://www.w3.org/2000/svg"><title>米氏双曲线、Km、半最大速度和竞争性抑制</title><rect fill="white" height="570" width="1040"></rect>
+<text fill="#24344d" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start" x="44" y="51">米氏动力学：底物浓度与初速度</text>
+<text fill="#728093" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start" x="44" y="84">示意参数：Vmax=100；无抑制 Km=2 mM；竞争性抑制后表观 Km=6 mM</text>
+<line stroke="#24344d" stroke-width="2" x1="112.00" x2="930.00" y1="472.00" y2="472.00"></line>
+<line stroke="#24344d" stroke-width="2" x1="112.00" x2="112.00" y1="472.00" y2="125.00"></line>
+<text fill="#24344d" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start" x="938" y="478">[S] / mM</text>
+<text fill="#24344d" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="19" font-weight="400" text-anchor="start" x="48" y="155">v</text>
+<text fill="#728093" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="end" x="104" y="491">0</text>
+<line stroke="#e7e9ee" stroke-width="1" x1="112.00" x2="920.00" y1="383.25" y2="383.25"></line>
+<text fill="#728093" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="end" x="100" y="388.25">25</text>
+<line stroke="#e7e9ee" stroke-width="1" x1="112.00" x2="920.00" y1="294.50" y2="294.50"></line>
+<text fill="#728093" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="end" x="100" y="299.5">50</text>
+<line stroke="#e7e9ee" stroke-width="1" x1="112.00" x2="920.00" y1="205.75" y2="205.75"></line>
+<text fill="#728093" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="end" x="100" y="210.75">75</text>
+<line stroke="#e7e9ee" stroke-width="1" x1="112.00" x2="920.00" y1="117.00" y2="117.00"></line>
+<text fill="#728093" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="end" x="100" y="122.0">100</text>
+<line stroke="#24344d" stroke-width="1" x1="222.00" x2="222.00" y1="472.00" y2="478.00"></line>
+<text fill="#728093" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" x="222" y="498">2</text>
+<line stroke="#24344d" stroke-width="1" x1="332.00" x2="332.00" y1="472.00" y2="478.00"></line>
+<text fill="#728093" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" x="332" y="498">4</text>
+<line stroke="#24344d" stroke-width="1" x1="442.00" x2="442.00" y1="472.00" y2="478.00"></line>
+<text fill="#728093" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" x="442" y="498">6</text>
+<line stroke="#24344d" stroke-width="1" x1="552.00" x2="552.00" y1="472.00" y2="478.00"></line>
+<text fill="#728093" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" x="552" y="498">8</text>
+<line stroke="#24344d" stroke-width="1" x1="662.00" x2="662.00" y1="472.00" y2="478.00"></line>
+<text fill="#728093" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" x="662" y="498">10</text>
+<line stroke="#24344d" stroke-width="1" x1="772.00" x2="772.00" y1="472.00" y2="478.00"></line>
+<text fill="#728093" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" x="772" y="498">12</text>
+<line stroke="#24344d" stroke-width="1" x1="882.00" x2="882.00" y1="472.00" y2="478.00"></line>
+<text fill="#728093" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" x="882" y="498">14</text>
+<path d="M112.00,472.00 L114.75,463.34 L117.50,455.10 L120.25,447.23 L123.00,439.73 L125.75,432.56 L128.50,425.70 L131.25,419.13 L134.00,412.83 L136.75,406.80 L139.50,401.00 L142.25,395.43 L145.00,390.08 L147.75,384.92 L150.50,379.96 L153.25,375.18 L156.00,370.57 L158.75,366.12 L161.50,361.83 L164.25,357.68 L167.00,353.67 L169.75,349.79 L172.50,346.03 L175.25,342.40 L178.00,338.88 L180.75,335.46 L183.50,332.15 L186.25,328.94 L189.00,325.82 L191.75,322.80 L194.50,319.86 L197.25,317.00 L200.00,314.22 L202.75,311.52 L205.50,308.89 L208.25,306.33 L211.00,303.84 L213.75,301.42 L216.50,299.05 L219.25,296.75 L222.00,294.50 L224.75,292.31 L227.50,290.17 L230.25,288.08 L233.00,286.05 L235.75,284.06 L238.50,282.12 L241.25,280.22 L244.00,278.36 L246.75,276.55 L249.50,274.78 L252.25,273.04 L255.00,271.35 L257.75,269.69 L260.50,268.06 L263.25,266.47 L266.00,264.92 L268.75,263.39 L271.50,261.90 L274.25,260.43 L277.00,259.00 L279.75,257.59 L282.50,256.22 L285.25,254.86 L288.00,253.54 L290.75,252.24 L293.50,250.96 L296.25,249.71 L299.00,248.48 L301.75,247.28 L304.50,246.09 L307.25,244.93 L310.00,243.79 L312.75,242.66 L315.50,241.56 L318.25,240.48 L321.00,239.41 L323.75,238.37 L326.50,237.34 L329.25,236.33 L332.00,235.33 L334.75,234.36 L337.50,233.39 L340.25,232.45 L343.00,231.52 L345.75,230.60 L348.50,229.70 L351.25,228.81 L354.00,227.94 L356.75,227.08 L359.50,226.23 L362.25,225.40 L365.00,224.58 L367.75,223.77 L370.50,222.97 L373.25,222.19 L376.00,221.41 L378.75,220.65 L381.50,219.90 L384.25,219.16 L387.00,218.43 L389.75,217.71 L392.50,217.00 L395.25,216.30 L398.00,215.61 L400.75,214.93 L403.50,214.26 L406.25,213.60 L409.00,212.95 L411.75,212.30 L414.50,211.67 L417.25,211.04 L420.00,210.42 L422.75,209.81 L425.50,209.21 L428.25,208.61 L431.00,208.03 L433.75,207.45 L436.50,206.87 L439.25,206.31 L442.00,205.75 L444.75,205.20 L447.50,204.65 L450.25,204.12 L453.00,203.59 L455.75,203.06 L458.50,202.54 L461.25,202.03 L464.00,201.52 L466.75,201.02 L469.50,200.53 L472.25,200.04 L475.00,199.56 L477.75,199.08 L480.50,198.61 L483.25,198.14 L486.00,197.68 L488.75,197.23 L491.50,196.78 L494.25,196.33 L497.00,195.89 L499.75,195.45 L502.50,195.02 L505.25,194.60 L508.00,194.17 L510.75,193.76 L513.50,193.34 L516.25,192.94 L519.00,192.53 L521.75,192.13 L524.50,191.74 L527.25,191.35 L530.00,190.96 L532.75,190.58 L535.50,190.20 L538.25,189.82 L541.00,189.45 L543.75,189.08 L546.50,188.72 L549.25,188.36 L552.00,188.00 L554.75,187.65 L557.50,187.30 L560.25,186.95 L563.00,186.61 L565.75,186.27 L568.50,185.93 L571.25,185.60 L574.00,185.27 L576.75,184.94 L579.50,184.62 L582.25,184.30 L585.00,183.98 L587.75,183.67 L590.50,183.36 L593.25,183.05 L596.00,182.74 L598.75,182.44 L601.50,182.14 L604.25,181.84 L607.00,181.55 L609.75,181.25 L612.50,180.96 L615.25,180.68 L618.00,180.39 L620.75,180.11 L623.50,179.83 L626.25,179.56 L629.00,179.28 L631.75,179.01 L634.50,178.74 L637.25,178.47 L640.00,178.21 L642.75,177.94 L645.50,177.68 L648.25,177.43 L651.00,177.17 L653.75,176.92 L656.50,176.66 L659.25,176.41 L662.00,176.17 L664.75,175.92 L667.50,175.68 L670.25,175.44 L673.00,175.20 L675.75,174.96 L678.50,174.72 L681.25,174.49 L684.00,174.26 L686.75,174.03 L689.50,173.80 L692.25,173.57 L695.00,173.35 L697.75,173.13 L700.50,172.91 L703.25,172.69 L706.00,172.47 L708.75,172.25 L711.50,172.04 L714.25,171.83 L717.00,171.62 L719.75,171.41 L722.50,171.20 L725.25,170.99 L728.00,170.79 L730.75,170.58 L733.50,170.38 L736.25,170.18 L739.00,169.99 L741.75,169.79 L744.50,169.59 L747.25,169.40 L750.00,169.21 L752.75,169.01 L755.50,168.82 L758.25,168.64 L761.00,168.45 L763.75,168.26 L766.50,168.08 L769.25,167.90 L772.00,167.71 L774.75,167.53 L777.50,167.35 L780.25,167.18 L783.00,167.00 L785.75,166.82 L788.50,166.65 L791.25,166.48 L794.00,166.31 L796.75,166.13 L799.50,165.97 L802.25,165.80 L805.00,165.63 L807.75,165.46 L810.50,165.30 L813.25,165.14 L816.00,164.97 L818.75,164.81 L821.50,164.65 L824.25,164.49 L827.00,164.33 L829.75,164.18 L832.50,164.02 L835.25,163.86 L838.00,163.71 L840.75,163.56 L843.50,163.41 L846.25,163.25 L849.00,163.10 L851.75,162.95 L854.50,162.81 L857.25,162.66 L860.00,162.51 L862.75,162.37 L865.50,162.22 L868.25,162.08 L871.00,161.94 L873.75,161.79 L876.50,161.65 L879.25,161.51 L882.00,161.38 L884.75,161.24 L887.50,161.10 L890.25,160.96 L893.00,160.83 L895.75,160.69 L898.50,160.56 L901.25,160.43 L904.00,160.29 L906.75,160.16 L909.50,160.03 L912.25,159.90 L915.00,159.77 L917.75,159.64 L920.50,159.51 L923.25,159.39 L926.00,159.26 L928.75,159.14 L931.50,159.01 L934.25,158.89 L937.00,158.76" fill="none" stroke="#2667b2" stroke-width="4"></path>
+<path d="M112.00,472.00 L114.75,469.07 L117.50,466.18 L120.25,463.34 L123.00,460.55 L125.75,457.80 L128.50,455.10 L131.25,452.43 L134.00,449.81 L136.75,447.23 L139.50,444.69 L142.25,442.19 L145.00,439.73 L147.75,437.30 L150.50,434.91 L153.25,432.56 L156.00,430.24 L158.75,427.95 L161.50,425.70 L164.25,423.47 L167.00,421.29 L169.75,419.13 L172.50,417.00 L175.25,414.90 L178.00,412.83 L180.75,410.79 L183.50,408.78 L186.25,406.80 L189.00,404.84 L191.75,402.91 L194.50,401.00 L197.25,399.12 L200.00,397.26 L202.75,395.43 L205.50,393.62 L208.25,391.84 L211.00,390.08 L213.75,388.34 L216.50,386.62 L219.25,384.92 L222.00,383.25 L224.75,381.60 L227.50,379.96 L230.25,378.35 L233.00,376.76 L235.75,375.18 L238.50,373.63 L241.25,372.09 L244.00,370.57 L246.75,369.07 L249.50,367.59 L252.25,366.12 L255.00,364.67 L257.75,363.24 L260.50,361.83 L263.25,360.43 L266.00,359.05 L268.75,357.68 L271.50,356.33 L274.25,354.99 L277.00,353.67 L279.75,352.36 L282.50,351.07 L285.25,349.79 L288.00,348.52 L290.75,347.27 L293.50,346.03 L296.25,344.81 L299.00,343.60 L301.75,342.40 L304.50,341.21 L307.25,340.04 L310.00,338.88 L312.75,337.73 L315.50,336.59 L318.25,335.46 L321.00,334.35 L323.75,333.24 L326.50,332.15 L329.25,331.07 L332.00,330.00 L334.75,328.94 L337.50,327.89 L340.25,326.85 L343.00,325.82 L345.75,324.80 L348.50,323.80 L351.25,322.80 L354.00,321.81 L356.75,320.83 L359.50,319.86 L362.25,318.90 L365.00,317.94 L367.75,317.00 L370.50,316.07 L373.25,315.14 L376.00,314.22 L378.75,313.31 L381.50,312.41 L384.25,311.52 L387.00,310.64 L389.75,309.76 L392.50,308.89 L395.25,308.03 L398.00,307.18 L400.75,306.33 L403.50,305.50 L406.25,304.67 L409.00,303.84 L411.75,303.03 L414.50,302.22 L417.25,301.42 L420.00,300.62 L422.75,299.83 L425.50,299.05 L428.25,298.28 L431.00,297.51 L433.75,296.75 L436.50,295.99 L439.25,295.24 L442.00,294.50 L444.75,293.76 L447.50,293.03 L450.25,292.31 L453.00,291.59 L455.75,290.88 L458.50,290.17 L461.25,289.47 L464.00,288.77 L466.75,288.08 L469.50,287.40 L472.25,286.72 L475.00,286.05 L477.75,285.38 L480.50,284.72 L483.25,284.06 L486.00,283.41 L488.75,282.76 L491.50,282.12 L494.25,281.48 L497.00,280.85 L499.75,280.22 L502.50,279.60 L505.25,278.98 L508.00,278.36 L510.75,277.75 L513.50,277.15 L516.25,276.55 L519.00,275.96 L521.75,275.36 L524.50,274.78 L527.25,274.20 L530.00,273.62 L532.75,273.04 L535.50,272.47 L538.25,271.91 L541.00,271.35 L543.75,270.79 L546.50,270.24 L549.25,269.69 L552.00,269.14 L554.75,268.60 L557.50,268.06 L560.25,267.53 L563.00,267.00 L565.75,266.47 L568.50,265.95 L571.25,265.43 L574.00,264.92 L576.75,264.40 L579.50,263.90 L582.25,263.39 L585.00,262.89 L587.75,262.39 L590.50,261.90 L593.25,261.41 L596.00,260.92 L598.75,260.43 L601.50,259.95 L604.25,259.47 L607.00,259.00 L609.75,258.53 L612.50,258.06 L615.25,257.59 L618.00,257.13 L620.75,256.67 L623.50,256.22 L626.25,255.76 L629.00,255.31 L631.75,254.86 L634.50,254.42 L637.25,253.98 L640.00,253.54 L642.75,253.10 L645.50,252.67 L648.25,252.24 L651.00,251.81 L653.75,251.38 L656.50,250.96 L659.25,250.54 L662.00,250.12 L664.75,249.71 L667.50,249.30 L670.25,248.89 L673.00,248.48 L675.75,248.08 L678.50,247.67 L681.25,247.28 L684.00,246.88 L686.75,246.48 L689.50,246.09 L692.25,245.70 L695.00,245.31 L697.75,244.93 L700.50,244.54 L703.25,244.16 L706.00,243.79 L708.75,243.41 L711.50,243.04 L714.25,242.66 L717.00,242.29 L719.75,241.93 L722.50,241.56 L725.25,241.20 L728.00,240.84 L730.75,240.48 L733.50,240.12 L736.25,239.77 L739.00,239.41 L741.75,239.06 L744.50,238.71 L747.25,238.37 L750.00,238.02 L752.75,237.68 L755.50,237.34 L758.25,237.00 L761.00,236.66 L763.75,236.33 L766.50,235.99 L769.25,235.66 L772.00,235.33 L774.75,235.01 L777.50,234.68 L780.25,234.36 L783.00,234.03 L785.75,233.71 L788.50,233.39 L791.25,233.08 L794.00,232.76 L796.75,232.45 L799.50,232.14 L802.25,231.82 L805.00,231.52 L807.75,231.21 L810.50,230.90 L813.25,230.60 L816.00,230.30 L818.75,230.00 L821.50,229.70 L824.25,229.40 L827.00,229.11 L829.75,228.81 L832.50,228.52 L835.25,228.23 L838.00,227.94 L840.75,227.65 L843.50,227.36 L846.25,227.08 L849.00,226.79 L851.75,226.51 L854.50,226.23 L857.25,225.95 L860.00,225.67 L862.75,225.40 L865.50,225.12 L868.25,224.85 L871.00,224.58 L873.75,224.30 L876.50,224.04 L879.25,223.77 L882.00,223.50 L884.75,223.23 L887.50,222.97 L890.25,222.71 L893.00,222.45 L895.75,222.19 L898.50,221.93 L901.25,221.67 L904.00,221.41 L906.75,221.16 L909.50,220.90 L912.25,220.65 L915.00,220.40 L917.75,220.15 L920.50,219.90 L923.25,219.65 L926.00,219.40 L928.75,219.16 L931.50,218.91 L934.25,218.67 L937.00,218.43" fill="none" stroke="#c45b37" stroke-dasharray="10 7" stroke-width="4"></path>
+<line stroke="#2667b2" stroke-dasharray="5 5" stroke-width="1" x1="112.00" x2="222.00" y1="294.50" y2="294.50"></line>
+<line stroke="#2667b2" stroke-dasharray="5 5" stroke-width="1" x1="222.00" x2="222.00" y1="294.50" y2="472.00"></line>
+<circle cx="222.0" cy="294.5" fill="#2667b2" r="6" stroke="white" stroke-width="2"></circle>
+<text fill="#2667b2" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start" x="232" y="281.5">Km=2；v=Vmax/2</text>
+<line stroke="#728093" stroke-dasharray="7 6" stroke-width="2" x1="112.00" x2="920.00" y1="117.00" y2="117.00"></line>
+<text fill="#728093" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start" x="924" y="123.0">Vmax</text>
+<line stroke="#2667b2" stroke-width="4" x1="740.00" x2="780.00" y1="44.00" y2="44.00"></line>
+<text fill="#24344d" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start" x="792" y="50">无抑制</text>
+<line stroke="#c45b37" stroke-dasharray="10 7" stroke-width="4" x1="740.00" x2="780.00" y1="77.00" y2="77.00"></line>
+<text fill="#24344d" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="400" text-anchor="start" x="792" y="83">竞争性抑制</text>
+<text fill="#24344d" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="19" font-weight="400" text-anchor="start" x="112" y="545">结论：高底物浓度时两条曲线趋向相同的 Vmax；竞争性抑制主要表现为右移。</text>
+</svg></div>
+<figcaption>图01｜米氏动力学：无抑制与竞争性抑制</figcaption><button type="button" class="figure-open" data-figure="figure-01">放大图表 01</button></figure>
+<p>把抽象公式化成三步：</p>
+<ol type="1">
+<li>分子部分<code>Vmax[S]</code>体现酶量固定时的底物依赖性；分母<code>Km+[S]</code>体现逐渐饱和。</li>
+<li>当<code>[S]=Km</code>时，上下式中的<code>[S]</code>相等，因此<code>v=Vmax/2</code>，图上的Km是<strong>半最大速度对应的横坐标</strong>，不是纵坐标。</li>
+<li><code>Km</code>增大意味着要把底物浓度提高到更大的数值才能达到同一半饱和程度。<strong>在竞争性抑制下</strong>其曲线向右移动，高[S]时可以趋近相同<code>Vmax</code>。</li>
+</ol>
+<p><strong>米氏方程稳态推导，必须能闭卷写出：</strong></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>+</mo><mi>S</mi><munder><mover><mo>⇌</mo><msub><mi>k</mi><mn>1</mn></msub></mover><msub><mi>k</mi><mrow><mi>−</mi><mn>1</mn></mrow></msub></munder><mi>E</mi><mi>S</mi><mover><mo>→</mo><msub><mi>k</mi><mn>2</mn></msub></mover><mi>E</mi><mo>+</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">E+S\underset{k_{-1}}{\overset{k_1}{\rightleftharpoons}}ES\overset{k_2}{\longrightarrow}E+P</annotation></semantics></math></p>
+<p>底物过量、取初速度、忽略产物逆反应，在稳态下：</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>d</mi><mrow><mo form="prefix" stretchy="true">[</mo><mi>E</mi><mi>S</mi><mo form="postfix" stretchy="true">]</mo></mrow></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><msub><mi>k</mi><mn>1</mn></msub><mrow><mo form="prefix" stretchy="true">[</mo><mi>E</mi><mo form="postfix" stretchy="true">]</mo></mrow><mrow><mo form="prefix" stretchy="true">[</mo><mi>S</mi><mo form="postfix" stretchy="true">]</mo></mrow><mo>−</mo><mrow><mo form="prefix" stretchy="true">(</mo><msub><mi>k</mi><mrow><mi>−</mi><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>k</mi><mn>2</mn></msub><mo form="postfix" stretchy="true">)</mo></mrow><mrow><mo form="prefix" stretchy="true">[</mo><mi>E</mi><mi>S</mi><mo form="postfix" stretchy="true">]</mo></mrow><mo>≈</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\frac{d[ES]}{dt}=k_1[E][S]-(k_{-1}+k_2)[ES]\approx0</annotation></semantics></math></p>
+<p>把游离酶表示为<code>[E]=[E]T−[ES]</code>，有：</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mn>1</mn></msub><mrow><mo form="prefix" stretchy="true">(</mo><msub><mrow><mo form="prefix" stretchy="true">[</mo><mi>E</mi><mo form="postfix" stretchy="true">]</mo></mrow><mi>T</mi></msub><mo>−</mo><mrow><mo form="prefix" stretchy="true">[</mo><mi>E</mi><mi>S</mi><mo form="postfix" stretchy="true">]</mo></mrow><mo form="postfix" stretchy="true">)</mo></mrow><mrow><mo form="prefix" stretchy="true">[</mo><mi>S</mi><mo form="postfix" stretchy="true">]</mo></mrow><mo>=</mo><mrow><mo form="prefix" stretchy="true">(</mo><msub><mi>k</mi><mrow><mi>−</mi><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>k</mi><mn>2</mn></msub><mo form="postfix" stretchy="true">)</mo></mrow><mrow><mo form="prefix" stretchy="true">[</mo><mi>E</mi><mi>S</mi><mo form="postfix" stretchy="true">]</mo></mrow></mrow><annotation encoding="application/x-tex">k_1([E]_T-[ES])[S]=(k_{-1}+k_2)[ES]</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⇒</mo><mrow><mo form="prefix" stretchy="true">[</mo><mi>E</mi><mi>S</mi><mo form="postfix" stretchy="true">]</mo></mrow><mo>=</mo><mfrac><mrow><msub><mrow><mo form="prefix" stretchy="true">[</mo><mi>E</mi><mo form="postfix" stretchy="true">]</mo></mrow><mi>T</mi></msub><mrow><mo form="prefix" stretchy="true">[</mo><mi>S</mi><mo form="postfix" stretchy="true">]</mo></mrow></mrow><mrow><mrow><mo form="prefix" stretchy="true">(</mo><msub><mi>k</mi><mrow><mi>−</mi><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>k</mi><mn>2</mn></msub><mo form="postfix" stretchy="true">)</mo></mrow><mi>/</mi><msub><mi>k</mi><mn>1</mn></msub><mo>+</mo><mrow><mo form="prefix" stretchy="true">[</mo><mi>S</mi><mo form="postfix" stretchy="true">]</mo></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">\Rightarrow [ES]=\frac{[E]_T[S]}{(k_{-1}+k_2)/k_1+[S]}</annotation></semantics></math></p>
+<p>定义<code>Km=(k-1+k2)/k1</code>，<code>v0=k2[ES]</code>，<code>Vmax=k2[E]T</code>，即得到前述米氏方程。导出公式后的<strong>物理解释</strong>比机械推导更重要：低底物未饱和，中等底物逐渐饱和，高底物趋于全占据，故呈矩形双曲线。</p>
+<p><strong>严谨区分：</strong><code>Km</code>为动力学综合参数，只有满足<code>k2≪k-1</code>时才近似等于<code>Kd=k-1/k1</code>；把“Km越小亲和力必然越大”用于所有酶、所有机制，是过度简化。第二轮建议先背教材的常规经验表达，再能补出这一条件。</p>
+<h4 id="重点3四类抑制从结合机制到图像考纲3.7教材p6365图3.163.19表3.4">重点3｜四类抑制——从结合机制到图像[考纲3.7；教材p63—65，图3.16—3.19、表3.4]</h4>
+<figure id="figure-02"><div class="figure-scroll" tabindex="0" role="region" aria-label="图02，可横向滚动"><svg aria-label="四类抑制剂的结合模式" class="figure-svg" height="430" role="img" viewbox="0 0 1260 430" width="1260" xmlns="http://www.w3.org/2000/svg"><title>可逆抑制剂与游离酶和酶底物复合物结合的机制示意图</title><rect fill="white" height="430" width="1260"></rect>
+<text fill="#24344d" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="start" x="39" y="45">先看抑制剂和谁结合，再判断 Km 与 Vmax</text>
+<rect fill="#fbfcfe" height="295" rx="14" stroke="#d9e2ed" width="292" x="22" y="80"></rect>
+<text fill="#24344d" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="21" font-weight="700" text-anchor="start" x="42" y="120">竞争性</text>
+<text fill="#728093" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start" x="42" y="161">I → E（不结合 ES）</text>
+<text fill="#2667b2" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start" x="42" y="224">E + S ⇌ ES → P</text>
+<text fill="#c45b37" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start" x="42" y="272">E + I ⇌ EI</text>
+<text fill="#24344d" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" x="42" y="330">Km↑；Vmax＝</text>
+<rect fill="#fbfcfe" height="295" rx="14" stroke="#d9e2ed" width="292" x="333" y="80"></rect>
+<text fill="#24344d" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="21" font-weight="700" text-anchor="start" x="353" y="120">反竞争性</text>
+<text fill="#728093" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start" x="353" y="161">I → ES（不结合 E）</text>
+<text fill="#2667b2" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start" x="353" y="224">E + S ⇌ ES → P</text>
+<text fill="#c45b37" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start" x="353" y="272">ES + I ⇌ ESI</text>
+<text fill="#24344d" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" x="353" y="330">Km↓；Vmax↓</text>
+<rect fill="#fbfcfe" height="295" rx="14" stroke="#d9e2ed" width="292" x="644" y="80"></rect>
+<text fill="#24344d" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="21" font-weight="700" text-anchor="start" x="664" y="120">纯非竞争性</text>
+<text fill="#728093" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start" x="664" y="161">I → E 及 ES（等亲和）</text>
+<text fill="#2667b2" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start" x="664" y="224">E + I ⇌ EI</text>
+<text fill="#c45b37" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start" x="664" y="272">ES + I ⇌ ESI</text>
+<text fill="#24344d" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" x="664" y="330">Km＝；Vmax↓</text>
+<rect fill="#fbfcfe" height="295" rx="14" stroke="#d9e2ed" width="292" x="955" y="80"></rect>
+<text fill="#24344d" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="21" font-weight="700" text-anchor="start" x="975" y="120">混合型</text>
+<text fill="#728093" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start" x="975" y="161">I → E 及 ES（亲和力不同）</text>
+<text fill="#2667b2" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start" x="975" y="224">E + I ⇌ EI</text>
+<text fill="#c45b37" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="400" text-anchor="start" x="975" y="272">ES + I ⇌ ESI</text>
+<text fill="#24344d" font-family="Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" x="975" y="330">Km↑/↓；Vmax↓</text>
+</svg></div>
+<figcaption>图02｜四类抑制剂的结合模式</figcaption><button type="button" class="figure-open" data-figure="figure-02">放大图表 02</button></figure>
+<figure id="figure-04"><div class="figure-scroll" tabindex="0" role="region" aria-label="图04，可横向滚动"><svg aria-label="Lineweaver-Burk双倒数图四型对照" class="figure-svg" height="625.277156pt" role="img" version="1.1" viewbox="0 0 875.52 625.277156" width="875.52pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<metadata>
+<rdf:rdf xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<cc:work>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+<dc:date>2026-10-24T13:41:53.456619</dc:date>
+<dc:format>image/svg+xml</dc:format>
+<dc:creator>
+<cc:agent>
+<dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+</cc:agent>
+</dc:creator>
+</cc:work>
+</rdf:rdf>
+</metadata>
+<defs>
+<style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+</defs>
+<g id="figure_1">
+<g id="patch_1">
+<path d="M 0 625.277156  L 875.52 625.277156  L 875.52 0  L 0 0  z " style="fill: #ffffff"></path>
+</g>
+<g id="axes_1">
+<g id="patch_2">
+<path d="M 44.64 292.013333  L 407.494626 292.013333  L 407.494626 94.68  L 44.64 94.68  z " style="fill: #fbfdff"></path>
+</g>
+<g id="matplotlib.axis_1">
+<g id="xtick_1">
+<g id="line2d_1">
+<defs>
+<path d="M 0 0  L 0 3.5  " id="m172e11c9e1" style="stroke: #64748b; stroke-width: 0.8"></path>
+</defs>
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="80.4144" xlink:href="#m172e11c9e1" y="292.013333"></use>
+</g>
+</g>
+<g id="text_1">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #64748b" transform="rotate(-0 80.4144 306.972708)" x="80.4144" y="306.972708">−0.8</text>
+</g>
+</g>
+<g id="xtick_2">
+<g id="line2d_2">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="162.184456" xlink:href="#m172e11c9e1" y="292.013333"></use>
+</g>
+</g>
+<g id="text_2">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #64748b" transform="rotate(-0 162.184456 306.972708)" x="162.184456" y="306.972708">0</text>
+</g>
+</g>
+<g id="xtick_3">
+<g id="line2d_3">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="264.397027" xlink:href="#m172e11c9e1" y="292.013333"></use>
+</g>
+</g>
+<g id="text_3">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #64748b" transform="rotate(-0 264.397027 306.972708)" x="264.397027" y="306.972708">1</text>
+</g>
+</g>
+<g id="xtick_4">
+<g id="line2d_4">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="366.609597" xlink:href="#m172e11c9e1" y="292.013333"></use>
+</g>
+</g>
+<g id="text_4">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #64748b" transform="rotate(-0 366.609597 306.972708)" x="366.609597" y="306.972708">2</text>
+</g>
+</g>
+<g id="text_5">
+<text style="font-size: 10.5px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #475569" transform="rotate(-0 226.067313 321.725677)" x="226.067313" y="321.725677">1/[S]（示意单位）</text>
+</g>
+</g>
+<g id="matplotlib.axis_2">
+<g id="ytick_1">
+<g id="line2d_5">
+<path clip-path="url(#p5ffd2fdb13)" d="M 44.64 290.274714  L 407.494626 290.274714  " style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_6">
+<defs>
+<path d="M 0 0  L -3.5 0  " id="m64ac5cd8fd" style="stroke: #64748b; stroke-width: 0.8"></path>
+</defs>
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="44.64" xlink:href="#m64ac5cd8fd" y="290.274714"></use>
+</g>
+</g>
+<g id="text_6">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #64748b" transform="rotate(-0 37.64 294.254401)" x="37.64" y="294.254401">0.0</text>
+</g>
+</g>
+<g id="ytick_2">
+<g id="line2d_7">
+<path clip-path="url(#p5ffd2fdb13)" d="M 44.64 246.809222  L 407.494626 246.809222  " style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_8">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="44.64" xlink:href="#m64ac5cd8fd" y="246.809222"></use>
+</g>
+</g>
+<g id="text_7">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #64748b" transform="rotate(-0 37.64 250.788909)" x="37.64" y="250.788909">0.2</text>
+</g>
+</g>
+<g id="ytick_3">
+<g id="line2d_9">
+<path clip-path="url(#p5ffd2fdb13)" d="M 44.64 203.34373  L 407.494626 203.34373  " style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_10">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="44.64" xlink:href="#m64ac5cd8fd" y="203.34373"></use>
+</g>
+</g>
+<g id="text_8">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #64748b" transform="rotate(-0 37.64 207.323417)" x="37.64" y="207.323417">0.4</text>
+</g>
+</g>
+<g id="ytick_4">
+<g id="line2d_11">
+<path clip-path="url(#p5ffd2fdb13)" d="M 44.64 159.878238  L 407.494626 159.878238  " style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_12">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="44.64" xlink:href="#m64ac5cd8fd" y="159.878238"></use>
+</g>
+</g>
+<g id="text_9">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #64748b" transform="rotate(-0 37.64 163.857925)" x="37.64" y="163.857925">0.6</text>
+</g>
+</g>
+<g id="ytick_5">
+<g id="line2d_13">
+<path clip-path="url(#p5ffd2fdb13)" d="M 44.64 116.412746  L 407.494626 116.412746  " style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_14">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="44.64" xlink:href="#m64ac5cd8fd" y="116.412746"></use>
+</g>
+</g>
+<g id="text_10">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #64748b" transform="rotate(-0 37.64 120.392433)" x="37.64" y="120.392433">0.8</text>
+</g>
+</g>
+<g id="text_11">
+<text style="font-size: 10.5px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #475569" transform="rotate(-90 17.355156 193.346667)" x="17.355156" y="193.346667">1/v（示意单位）</text>
+</g>
+</g>
+<g id="line2d_15">
+<path clip-path="url(#p5ffd2fdb13)" d="M 162.748034 268.302308  L 417.715883 159.878238  L 417.715883 159.878238  " style="fill: none; stroke: #2459ab; stroke-width: 2.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_16">
+<path clip-path="url(#p5ffd2fdb13)" d="M 111.564897 290.067735  L 112.512733 289.664672  L 113.460569 289.261608  L 114.408405 288.858545  L 115.356241 288.455481  L 116.304077 288.052418  L 117.251913 287.649354  L 118.199748 287.246291  L 119.147584 286.843227  L 120.09542 286.440164  L 121.043256 286.037101  L 121.991092 285.634037  L 122.938928 285.230974  L 123.886764 284.82791  L 124.8346 284.424847  L 125.782435 284.021783  L 126.730271 283.61872  L 127.678107 283.215656  L 128.625943 282.812593  L 129.573779 282.409529  L 130.521615 282.006466  L 131.469451 281.603402  L 132.417286 281.200339  L 133.365122 280.797276  L 134.312958 280.394212  L 135.260794 279.991149  L 136.20863 279.588085  L 137.156466 279.185022  L 138.104302 278.781958  L 139.052138 278.378895  L 139.999973 277.975831  L 140.947809 277.572768  L 141.895645 277.169704  L 142.843481 276.766641  L 143.791317 276.363578  L 144.739153 275.960514  L 145.686989 275.557451  L 146.634824 275.154387  L 147.58266 274.751324  L 148.530496 274.34826  L 149.478332 273.945197  L 150.426168 273.542133  L 151.374004 273.13907  L 152.32184 272.736006  L 153.269676 272.332943  L 154.217511 271.929879  L 155.165347 271.526816  L 156.113183 271.123753  L 157.061019 270.720689  L 158.008855 270.317626  L 158.956691 269.914562  L 159.904527 269.511499  L 160.852363 269.108435  L 161.800198 268.705372  " style="fill: none; stroke-dasharray: 1.5,2.475; stroke-dashoffset: 0; stroke: #2459ab; stroke-opacity: 0.7; stroke-width: 1.5"></path>
+</g>
+<g id="line2d_17">
+<path clip-path="url(#p5ffd2fdb13)" d="M 162.748034 268.062649  L 417.715883 51.214508  L 417.715883 51.214508  " style="fill: none; stroke-dasharray: 10.36,4.48; stroke-dashoffset: 0; stroke: #c34d29; stroke-width: 2.8"></path>
+</g>
+<g id="line2d_18">
+<path clip-path="url(#p5ffd2fdb13)" d="M 137.156466 289.828076  L 138.104302 289.021949  L 139.052138 288.215822  L 139.999973 287.409695  L 140.947809 286.603568  L 141.895645 285.797441  L 142.843481 284.991314  L 143.791317 284.185187  L 144.739153 283.37906  L 145.686989 282.572934  L 146.634824 281.766807  L 147.58266 280.96068  L 148.530496 280.154553  L 149.478332 279.348426  L 150.426168 278.542299  L 151.374004 277.736172  L 152.32184 276.930045  L 153.269676 276.123918  L 154.217511 275.317791  L 155.165347 274.511664  L 156.113183 273.705537  L 157.061019 272.89941  L 158.008855 272.093284  L 158.956691 271.287157  L 159.904527 270.48103  L 160.852363 269.674903  L 161.800198 268.868776  " style="fill: none; stroke-dasharray: 1.5,2.475; stroke-dashoffset: 0; stroke: #c34d29; stroke-opacity: 0.7; stroke-width: 1.5"></path>
+</g>
+<g id="line2d_19">
+<path clip-path="url(#p5ffd2fdb13)" d="M 44.64 290.274714  L 407.494626 290.274714  " style="fill: none; stroke: #7c8ba4; stroke-linecap: square"></path>
+</g>
+<g id="line2d_20">
+<path clip-path="url(#p5ffd2fdb13)" d="M 162.184456 292.013333  L 162.184456 94.68  " style="fill: none; stroke: #7c8ba4; stroke-linecap: square"></path>
+</g>
+<g id="patch_3">
+<path d="M 44.64 292.013333  L 44.64 94.68  " style="fill: none; stroke: #dbe6f4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path>
+</g>
+<g id="patch_4">
+<path d="M 407.494626 292.013333  L 407.494626 94.68  " style="fill: none; stroke: #dbe6f4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path>
+</g>
+<g id="patch_5">
+<path d="M 44.64 292.013333  L 407.494626 292.013333  " style="fill: none; stroke: #dbe6f4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path>
+</g>
+<g id="patch_6">
+<path d="M 44.64 94.68  L 407.494626 94.68  " style="fill: none; stroke: #dbe6f4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path>
+</g>
+<g id="text_12">
+<text style="font-size: 11px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #475569" transform="rotate(-0 44.64 84.813333)" x="44.64" y="84.813333">Km ↑  ·  Vmax 不变</text>
+</g>
+<g id="text_13">
+<g id="patch_7">
+<path d="M 50.082819 289.910625  L 190.082819 289.910625  Q 193.582819 289.910625 193.582819 286.410625  L 193.582819 276.160625  Q 193.582819 272.660625 190.082819 272.660625  L 50.082819 272.660625  Q 46.582819 272.660625 46.582819 276.160625  L 46.582819 286.410625  Q 46.582819 289.910625 50.082819 289.910625  z " style="fill: #f1f5f9; opacity: 0.95"></path>
+</g>
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #334155" transform="rotate(-0 50.082819 284.12)" x="50.082819" y="284.12">纵截距相同；高底物可减弱抑制</text>
+</g>
+<g id="text_14">
+<text style="font-weight: 700; font-size: 16px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #172b4d" transform="rotate(-0 44.64 58.68)" x="44.64" y="58.68">竞争性抑制</text>
+</g>
+<g id="legend_1">
+<g id="patch_8">
+<path d="M 320.274626 132.41  L 400.634626 132.41  Q 402.594626 132.41 402.594626 130.45  L 402.594626 101.54  Q 402.594626 99.58 400.634626 99.58  L 320.274626 99.58  Q 318.314626 99.58 318.314626 101.54  L 318.314626 130.45  Q 318.314626 132.41 320.274626 132.41  z " style="fill: #ffffff; opacity: 0.95; stroke: #dbe6f4; stroke-linejoin: miter"></path>
+</g>
+<g id="line2d_21">
+<path d="M 322.234626 107.870187  L 332.034626 107.870187  L 341.834626 107.870187  " style="fill: none; stroke: #2459ab; stroke-width: 2.8; stroke-linecap: square"></path>
+</g>
+<g id="text_15">
+<text style="font-size: 9.8px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start" transform="rotate(-0 349.674626 111.300187)" x="349.674626" y="111.300187">无抑制</text>
+</g>
+<g id="line2d_22">
+<path d="M 322.234626 122.815187  L 332.034626 122.815187  L 341.834626 122.815187  " style="fill: none; stroke-dasharray: 10.36,4.48; stroke-dashoffset: 0; stroke: #c34d29; stroke-width: 2.8"></path>
+</g>
+<g id="text_16">
+<text style="font-size: 9.8px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start" transform="rotate(-0 349.674626 126.245187)" x="349.674626" y="126.245187">加入抑制剂</text>
+</g>
+</g>
+</g>
+<g id="axes_2">
+<g id="patch_9">
+<path d="M 505.465374 292.013333  L 868.32 292.013333  L 868.32 94.68  L 505.465374 94.68  z " style="fill: #fbfdff"></path>
+</g>
+<g id="matplotlib.axis_3">
+<g id="xtick_5">
+<g id="line2d_23">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="541.239774" xlink:href="#m172e11c9e1" y="292.013333"></use>
+</g>
+</g>
+<g id="text_17">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #64748b" transform="rotate(-0 541.239774 306.972708)" x="541.239774" y="306.972708">−0.8</text>
+</g>
+</g>
+<g id="xtick_6">
+<g id="line2d_24">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="623.009831" xlink:href="#m172e11c9e1" y="292.013333"></use>
+</g>
+</g>
+<g id="text_18">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #64748b" transform="rotate(-0 623.009831 306.972708)" x="623.009831" y="306.972708">0</text>
+</g>
+</g>
+<g id="xtick_7">
+<g id="line2d_25">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="725.222401" xlink:href="#m172e11c9e1" y="292.013333"></use>
+</g>
+</g>
+<g id="text_19">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #64748b" transform="rotate(-0 725.222401 306.972708)" x="725.222401" y="306.972708">1</text>
+</g>
+</g>
+<g id="xtick_8">
+<g id="line2d_26">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="827.434972" xlink:href="#m172e11c9e1" y="292.013333"></use>
+</g>
+</g>
+<g id="text_20">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #64748b" transform="rotate(-0 827.434972 306.972708)" x="827.434972" y="306.972708">2</text>
+</g>
+</g>
+<g id="text_21">
+<text style="font-size: 10.5px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #475569" transform="rotate(-0 686.892687 321.725677)" x="686.892687" y="321.725677">1/[S]（示意单位）</text>
+</g>
+</g>
+<g id="matplotlib.axis_4">
+<g id="ytick_6">
+<g id="line2d_27">
+<path clip-path="url(#p0d78e71a8e)" d="M 505.465374 290.274714  L 868.32 290.274714  " style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_28">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="505.465374" xlink:href="#m64ac5cd8fd" y="290.274714"></use>
+</g>
+</g>
+<g id="text_22">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #64748b" transform="rotate(-0 498.465374 294.254401)" x="498.465374" y="294.254401">0.0</text>
+</g>
+</g>
+<g id="ytick_7">
+<g id="line2d_29">
+<path clip-path="url(#p0d78e71a8e)" d="M 505.465374 246.809222  L 868.32 246.809222  " style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_30">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="505.465374" xlink:href="#m64ac5cd8fd" y="246.809222"></use>
+</g>
+</g>
+<g id="text_23">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #64748b" transform="rotate(-0 498.465374 250.788909)" x="498.465374" y="250.788909">0.2</text>
+</g>
+</g>
+<g id="ytick_8">
+<g id="line2d_31">
+<path clip-path="url(#p0d78e71a8e)" d="M 505.465374 203.34373  L 868.32 203.34373  " style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_32">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="505.465374" xlink:href="#m64ac5cd8fd" y="203.34373"></use>
+</g>
+</g>
+<g id="text_24">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #64748b" transform="rotate(-0 498.465374 207.323417)" x="498.465374" y="207.323417">0.4</text>
+</g>
+</g>
+<g id="ytick_9">
+<g id="line2d_33">
+<path clip-path="url(#p0d78e71a8e)" d="M 505.465374 159.878238  L 868.32 159.878238  " style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_34">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="505.465374" xlink:href="#m64ac5cd8fd" y="159.878238"></use>
+</g>
+</g>
+<g id="text_25">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #64748b" transform="rotate(-0 498.465374 163.857925)" x="498.465374" y="163.857925">0.6</text>
+</g>
+</g>
+<g id="ytick_10">
+<g id="line2d_35">
+<path clip-path="url(#p0d78e71a8e)" d="M 505.465374 116.412746  L 868.32 116.412746  " style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_36">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="505.465374" xlink:href="#m64ac5cd8fd" y="116.412746"></use>
+</g>
+</g>
+<g id="text_26">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #64748b" transform="rotate(-0 498.465374 120.392433)" x="498.465374" y="120.392433">0.8</text>
+</g>
+</g>
+<g id="text_27">
+<text style="font-size: 10.5px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #475569" transform="rotate(-90 478.180531 193.346667)" x="478.180531" y="193.346667">1/v（示意单位）</text>
+</g>
+</g>
+<g id="line2d_37">
+<path clip-path="url(#p0d78e71a8e)" d="M 623.573409 268.302308  L 876.52 160.737769  L 876.52 160.737769  " style="fill: none; stroke: #2459ab; stroke-width: 2.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_38">
+<path clip-path="url(#p0d78e71a8e)" d="M 572.390272 290.067735  L 573.338108 289.664672  L 574.285944 289.261608  L 575.233779 288.858545  L 576.181615 288.455481  L 577.129451 288.052418  L 578.077287 287.649354  L 579.025123 287.246291  L 579.972959 286.843227  L 580.920795 286.440164  L 581.868631 286.037101  L 582.816466 285.634037  L 583.764302 285.230974  L 584.712138 284.82791  L 585.659974 284.424847  L 586.60781 284.021783  L 587.555646 283.61872  L 588.503482 283.215656  L 589.451317 282.812593  L 590.399153 282.409529  L 591.346989 282.006466  L 592.294825 281.603402  L 593.242661 281.200339  L 594.190497 280.797276  L 595.138333 280.394212  L 596.086169 279.991149  L 597.034004 279.588085  L 597.98184 279.185022  L 598.929676 278.781958  L 599.877512 278.378895  L 600.825348 277.975831  L 601.773184 277.572768  L 602.72102 277.169704  L 603.668855 276.766641  L 604.616691 276.363578  L 605.564527 275.960514  L 606.512363 275.557451  L 607.460199 275.154387  L 608.408035 274.751324  L 609.355871 274.34826  L 610.303707 273.945197  L 611.251542 273.542133  L 612.199378 273.13907  L 613.147214 272.736006  L 614.09505 272.332943  L 615.042886 271.929879  L 615.990722 271.526816  L 616.938558 271.123753  L 617.886393 270.720689  L 618.834229 270.317626  L 619.782065 269.914562  L 620.729901 269.511499  L 621.677737 269.108435  L 622.625573 268.705372  " style="fill: none; stroke-dasharray: 1.5,2.475; stroke-dashoffset: 0; stroke: #2459ab; stroke-opacity: 0.7; stroke-width: 1.5"></path>
+</g>
+<g id="line2d_39">
+<path clip-path="url(#p0d78e71a8e)" d="M 623.573409 246.569562  L 876.52 139.005024  L 876.52 139.005024  " style="fill: none; stroke-dasharray: 10.36,4.48; stroke-dashoffset: 0; stroke: #c34d29; stroke-width: 2.8"></path>
+</g>
+<g id="line2d_40">
+<path clip-path="url(#p0d78e71a8e)" d="M 521.207135 290.100416  L 522.154971 289.697352  L 523.102807 289.294289  L 524.050643 288.891226  L 524.998478 288.488162  L 525.946314 288.085099  L 526.89415 287.682035  L 527.841986 287.278972  L 528.789822 286.875908  L 529.737658 286.472845  L 530.685494 286.069781  L 531.63333 285.666718  L 532.581165 285.263654  L 533.529001 284.860591  L 534.476837 284.457528  L 535.424673 284.054464  L 536.372509 283.651401  L 537.320345 283.248337  L 538.268181 282.845274  L 539.216016 282.44221  L 540.163852 282.039147  L 541.111688 281.636083  L 542.059524 281.23302  L 543.00736 280.829956  L 543.955196 280.426893  L 544.903032 280.023829  L 545.850868 279.620766  L 546.798703 279.217703  L 547.746539 278.814639  L 548.694375 278.411576  L 549.642211 278.008512  L 550.590047 277.605449  L 551.537883 277.202385  L 552.485719 276.799322  L 553.433555 276.396258  L 554.38139 275.993195  L 555.329226 275.590131  L 556.277062 275.187068  L 557.224898 274.784005  L 558.172734 274.380941  L 559.12057 273.977878  L 560.068406 273.574814  L 561.016241 273.171751  L 561.964077 272.768687  L 562.911913 272.365624  L 563.859749 271.96256  L 564.807585 271.559497  L 565.755421 271.156433  L 566.703257 270.75337  L 567.651093 270.350306  L 568.598928 269.947243  L 569.546764 269.54418  L 570.4946 269.141116  L 571.442436 268.738053  L 572.390272 268.334989  L 573.338108 267.931926  L 574.285944 267.528862  L 575.233779 267.125799  L 576.181615 266.722735  L 577.129451 266.319672  L 578.077287 265.916608  L 579.025123 265.513545  L 579.972959 265.110481  L 580.920795 264.707418  L 581.868631 264.304355  L 582.816466 263.901291  L 583.764302 263.498228  L 584.712138 263.095164  L 585.659974 262.692101  L 586.60781 262.289037  L 587.555646 261.885974  L 588.503482 261.48291  L 589.451317 261.079847  L 590.399153 260.676783  L 591.346989 260.27372  L 592.294825 259.870657  L 593.242661 259.467593  L 594.190497 259.06453  L 595.138333 258.661466  L 596.086169 258.258403  L 597.034004 257.855339  L 597.98184 257.452276  L 598.929676 257.049212  L 599.877512 256.646149  L 600.825348 256.243085  L 601.773184 255.840022  L 602.72102 255.436958  L 603.668855 255.033895  L 604.616691 254.630832  L 605.564527 254.227768  L 606.512363 253.824705  L 607.460199 253.421641  L 608.408035 253.018578  L 609.355871 252.615514  L 610.303707 252.212451  L 611.251542 251.809387  L 612.199378 251.406324  L 613.147214 251.00326  L 614.09505 250.600197  L 615.042886 250.197134  L 615.990722 249.79407  L 616.938558 249.391007  L 617.886393 248.987943  L 618.834229 248.58488  L 619.782065 248.181816  L 620.729901 247.778753  L 621.677737 247.375689  L 622.625573 246.972626  " style="fill: none; stroke-dasharray: 1.5,2.475; stroke-dashoffset: 0; stroke: #c34d29; stroke-opacity: 0.7; stroke-width: 1.5"></path>
+</g>
+<g id="line2d_41">
+<path clip-path="url(#p0d78e71a8e)" d="M 505.465374 290.274714  L 868.32 290.274714  " style="fill: none; stroke: #7c8ba4; stroke-linecap: square"></path>
+</g>
+<g id="line2d_42">
+<path clip-path="url(#p0d78e71a8e)" d="M 623.009831 292.013333  L 623.009831 94.68  " style="fill: none; stroke: #7c8ba4; stroke-linecap: square"></path>
+</g>
+<g id="patch_10">
+<path d="M 505.465374 292.013333  L 505.465374 94.68  " style="fill: none; stroke: #dbe6f4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path>
+</g>
+<g id="patch_11">
+<path d="M 868.32 292.013333  L 868.32 94.68  " style="fill: none; stroke: #dbe6f4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path>
+</g>
+<g id="patch_12">
+<path d="M 505.465374 292.013333  L 868.32 292.013333  " style="fill: none; stroke: #dbe6f4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path>
+</g>
+<g id="patch_13">
+<path d="M 505.465374 94.68  L 868.32 94.68  " style="fill: none; stroke: #dbe6f4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path>
+</g>
+<g id="text_28">
+<text style="font-size: 11px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #475569" transform="rotate(-0 505.465374 84.813333)" x="505.465374" y="84.813333">Km ↓  ·  Vmax ↓</text>
+</g>
+<g id="text_29">
+<g id="patch_14">
+<path d="M 510.908194 289.910625  L 630.908194 289.910625  Q 634.408194 289.910625 634.408194 286.410625  L 634.408194 276.160625  Q 634.408194 272.660625 630.908194 272.660625  L 510.908194 272.660625  Q 507.408194 272.660625 507.408194 276.160625  L 507.408194 286.410625  Q 507.408194 289.910625 510.908194 289.910625  z " style="fill: #f1f5f9; opacity: 0.95"></path>
+</g>
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #334155" transform="rotate(-0 510.908194 284.12)" x="510.908194" y="284.12">斜率相同，双倒数直线平行</text>
+</g>
+<g id="text_30">
+<text style="font-weight: 700; font-size: 16px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #172b4d" transform="rotate(-0 505.465374 58.68)" x="505.465374" y="58.68">反竞争性抑制</text>
+</g>
+<g id="legend_2">
+<g id="patch_15">
+<path d="M 781.1 132.41  L 861.46 132.41  Q 863.42 132.41 863.42 130.45  L 863.42 101.54  Q 863.42 99.58 861.46 99.58  L 781.1 99.58  Q 779.14 99.58 779.14 101.54  L 779.14 130.45  Q 779.14 132.41 781.1 132.41  z " style="fill: #ffffff; opacity: 0.95; stroke: #dbe6f4; stroke-linejoin: miter"></path>
+</g>
+<g id="line2d_43">
+<path d="M 783.06 107.870187  L 792.86 107.870187  L 802.66 107.870187  " style="fill: none; stroke: #2459ab; stroke-width: 2.8; stroke-linecap: square"></path>
+</g>
+<g id="text_31">
+<text style="font-size: 9.8px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start" transform="rotate(-0 810.5 111.300187)" x="810.5" y="111.300187">无抑制</text>
+</g>
+<g id="line2d_44">
+<path d="M 783.06 122.815187  L 792.86 122.815187  L 802.66 122.815187  " style="fill: none; stroke-dasharray: 10.36,4.48; stroke-dashoffset: 0; stroke: #c34d29; stroke-width: 2.8"></path>
+</g>
+<g id="text_32">
+<text style="font-size: 9.8px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start" transform="rotate(-0 810.5 126.245187)" x="810.5" y="126.245187">加入抑制剂</text>
+</g>
+</g>
+</g>
+<g id="axes_3">
+<g id="patch_16">
+<path d="M 44.64 574.2  L 407.494626 574.2  L 407.494626 376.866667  L 44.64 376.866667  z " style="fill: #fbfdff"></path>
+</g>
+<g id="matplotlib.axis_5">
+<g id="xtick_9">
+<g id="line2d_45">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="80.4144" xlink:href="#m172e11c9e1" y="574.2"></use>
+</g>
+</g>
+<g id="text_33">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #64748b" transform="rotate(-0 80.4144 589.159375)" x="80.4144" y="589.159375">−0.8</text>
+</g>
+</g>
+<g id="xtick_10">
+<g id="line2d_46">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="162.184456" xlink:href="#m172e11c9e1" y="574.2"></use>
+</g>
+</g>
+<g id="text_34">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #64748b" transform="rotate(-0 162.184456 589.159375)" x="162.184456" y="589.159375">0</text>
+</g>
+</g>
+<g id="xtick_11">
+<g id="line2d_47">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="264.397027" xlink:href="#m172e11c9e1" y="574.2"></use>
+</g>
+</g>
+<g id="text_35">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #64748b" transform="rotate(-0 264.397027 589.159375)" x="264.397027" y="589.159375">1</text>
+</g>
+</g>
+<g id="xtick_12">
+<g id="line2d_48">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="366.609597" xlink:href="#m172e11c9e1" y="574.2"></use>
+</g>
+</g>
+<g id="text_36">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #64748b" transform="rotate(-0 366.609597 589.159375)" x="366.609597" y="589.159375">2</text>
+</g>
+</g>
+<g id="text_37">
+<text style="font-size: 10.5px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #475569" transform="rotate(-0 226.067313 603.912344)" x="226.067313" y="603.912344">1/[S]（示意单位）</text>
+</g>
+</g>
+<g id="matplotlib.axis_6">
+<g id="ytick_11">
+<g id="line2d_49">
+<path clip-path="url(#p088e49a69d)" d="M 44.64 572.46138  L 407.494626 572.46138  " style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_50">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="44.64" xlink:href="#m64ac5cd8fd" y="572.46138"></use>
+</g>
+</g>
+<g id="text_38">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #64748b" transform="rotate(-0 37.64 576.441068)" x="37.64" y="576.441068">0.0</text>
+</g>
+</g>
+<g id="ytick_12">
+<g id="line2d_51">
+<path clip-path="url(#p088e49a69d)" d="M 44.64 528.995888  L 407.494626 528.995888  " style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_52">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="44.64" xlink:href="#m64ac5cd8fd" y="528.995888"></use>
+</g>
+</g>
+<g id="text_39">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #64748b" transform="rotate(-0 37.64 532.975576)" x="37.64" y="532.975576">0.2</text>
+</g>
+</g>
+<g id="ytick_13">
+<g id="line2d_53">
+<path clip-path="url(#p088e49a69d)" d="M 44.64 485.530396  L 407.494626 485.530396  " style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_54">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="44.64" xlink:href="#m64ac5cd8fd" y="485.530396"></use>
+</g>
+</g>
+<g id="text_40">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #64748b" transform="rotate(-0 37.64 489.510084)" x="37.64" y="489.510084">0.4</text>
+</g>
+</g>
+<g id="ytick_14">
+<g id="line2d_55">
+<path clip-path="url(#p088e49a69d)" d="M 44.64 442.064905  L 407.494626 442.064905  " style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_56">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="44.64" xlink:href="#m64ac5cd8fd" y="442.064905"></use>
+</g>
+</g>
+<g id="text_41">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #64748b" transform="rotate(-0 37.64 446.044592)" x="37.64" y="446.044592">0.6</text>
+</g>
+</g>
+<g id="ytick_15">
+<g id="line2d_57">
+<path clip-path="url(#p088e49a69d)" d="M 44.64 398.599413  L 407.494626 398.599413  " style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_58">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="44.64" xlink:href="#m64ac5cd8fd" y="398.599413"></use>
+</g>
+</g>
+<g id="text_42">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #64748b" transform="rotate(-0 37.64 402.5791)" x="37.64" y="402.5791">0.8</text>
+</g>
+</g>
+<g id="text_43">
+<text style="font-size: 10.5px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #475569" transform="rotate(-90 17.355156 475.533333)" x="17.355156" y="475.533333">1/v（示意单位）</text>
+</g>
+</g>
+<g id="line2d_59">
+<path clip-path="url(#p088e49a69d)" d="M 162.748034 550.488975  L 417.715883 442.064905  L 417.715883 442.064905  " style="fill: none; stroke: #2459ab; stroke-width: 2.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_60">
+<path clip-path="url(#p088e49a69d)" d="M 111.564897 572.254402  L 112.512733 571.851338  L 113.460569 571.448275  L 114.408405 571.045211  L 115.356241 570.642148  L 116.304077 570.239084  L 117.251913 569.836021  L 118.199748 569.432958  L 119.147584 569.029894  L 120.09542 568.626831  L 121.043256 568.223767  L 121.991092 567.820704  L 122.938928 567.41764  L 123.886764 567.014577  L 124.8346 566.611513  L 125.782435 566.20845  L 126.730271 565.805386  L 127.678107 565.402323  L 128.625943 564.99926  L 129.573779 564.596196  L 130.521615 564.193133  L 131.469451 563.790069  L 132.417286 563.387006  L 133.365122 562.983942  L 134.312958 562.580879  L 135.260794 562.177815  L 136.20863 561.774752  L 137.156466 561.371688  L 138.104302 560.968625  L 139.052138 560.565561  L 139.999973 560.162498  L 140.947809 559.759435  L 141.895645 559.356371  L 142.843481 558.953308  L 143.791317 558.550244  L 144.739153 558.147181  L 145.686989 557.744117  L 146.634824 557.341054  L 147.58266 556.93799  L 148.530496 556.534927  L 149.478332 556.131863  L 150.426168 555.7288  L 151.374004 555.325737  L 152.32184 554.922673  L 153.269676 554.51961  L 154.217511 554.116546  L 155.165347 553.713483  L 156.113183 553.310419  L 157.061019 552.907356  L 158.008855 552.504292  L 158.956691 552.101229  L 159.904527 551.698165  L 160.852363 551.295102  L 161.800198 550.892038  " style="fill: none; stroke-dasharray: 1.5,2.475; stroke-dashoffset: 0; stroke: #2459ab; stroke-opacity: 0.7; stroke-width: 1.5"></path>
+</g>
+<g id="line2d_61">
+<path clip-path="url(#p088e49a69d)" d="M 162.748034 528.51657  L 417.715883 311.668429  L 417.715883 311.668429  " style="fill: none; stroke-dasharray: 10.36,4.48; stroke-dashoffset: 0; stroke: #c34d29; stroke-width: 2.8"></path>
+</g>
+<g id="line2d_62">
+<path clip-path="url(#p088e49a69d)" d="M 111.564897 572.047423  L 112.512733 571.241296  L 113.460569 570.435169  L 114.408405 569.629043  L 115.356241 568.822916  L 116.304077 568.016789  L 117.251913 567.210662  L 118.199748 566.404535  L 119.147584 565.598408  L 120.09542 564.792281  L 121.043256 563.986154  L 121.991092 563.180027  L 122.938928 562.3739  L 123.886764 561.567773  L 124.8346 560.761646  L 125.782435 559.955519  L 126.730271 559.149393  L 127.678107 558.343266  L 128.625943 557.537139  L 129.573779 556.731012  L 130.521615 555.924885  L 131.469451 555.118758  L 132.417286 554.312631  L 133.365122 553.506504  L 134.312958 552.700377  L 135.260794 551.89425  L 136.20863 551.088123  L 137.156466 550.281996  L 138.104302 549.47587  L 139.052138 548.669743  L 139.999973 547.863616  L 140.947809 547.057489  L 141.895645 546.251362  L 142.843481 545.445235  L 143.791317 544.639108  L 144.739153 543.832981  L 145.686989 543.026854  L 146.634824 542.220727  L 147.58266 541.4146  L 148.530496 540.608473  L 149.478332 539.802347  L 150.426168 538.99622  L 151.374004 538.190093  L 152.32184 537.383966  L 153.269676 536.577839  L 154.217511 535.771712  L 155.165347 534.965585  L 156.113183 534.159458  L 157.061019 533.353331  L 158.008855 532.547204  L 158.956691 531.741077  L 159.904527 530.93495  L 160.852363 530.128824  L 161.800198 529.322697  " style="fill: none; stroke-dasharray: 1.5,2.475; stroke-dashoffset: 0; stroke: #c34d29; stroke-opacity: 0.7; stroke-width: 1.5"></path>
+</g>
+<g id="line2d_63">
+<path clip-path="url(#p088e49a69d)" d="M 44.64 572.46138  L 407.494626 572.46138  " style="fill: none; stroke: #7c8ba4; stroke-linecap: square"></path>
+</g>
+<g id="line2d_64">
+<path clip-path="url(#p088e49a69d)" d="M 162.184456 574.2  L 162.184456 376.866667  " style="fill: none; stroke: #7c8ba4; stroke-linecap: square"></path>
+</g>
+<g id="patch_17">
+<path d="M 44.64 574.2  L 44.64 376.866667  " style="fill: none; stroke: #dbe6f4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path>
+</g>
+<g id="patch_18">
+<path d="M 407.494626 574.2  L 407.494626 376.866667  " style="fill: none; stroke: #dbe6f4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path>
+</g>
+<g id="patch_19">
+<path d="M 44.64 574.2  L 407.494626 574.2  " style="fill: none; stroke: #dbe6f4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path>
+</g>
+<g id="patch_20">
+<path d="M 44.64 376.866667  L 407.494626 376.866667  " style="fill: none; stroke: #dbe6f4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path>
+</g>
+<g id="text_44">
+<text style="font-size: 11px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #475569" transform="rotate(-0 44.64 367)" x="44.64" y="367">Km 不变  ·  Vmax ↓</text>
+</g>
+<g id="text_45">
+<g id="patch_21">
+<path d="M 50.082819 572.097292  L 100.082819 572.097292  Q 103.582819 572.097292 103.582819 568.597292  L 103.582819 558.347292  Q 103.582819 554.847292 100.082819 554.847292  L 50.082819 554.847292  Q 46.582819 554.847292 46.582819 558.347292  L 46.582819 568.597292  Q 46.582819 572.097292 50.082819 572.097292  z " style="fill: #f1f5f9; opacity: 0.95"></path>
+</g>
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #334155" transform="rotate(-0 50.082819 566.306667)" x="50.082819" y="566.306667">横截距相同</text>
+</g>
+<g id="text_46">
+<text style="font-weight: 700; font-size: 16px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #172b4d" transform="rotate(-0 44.64 340.866667)" x="44.64" y="340.866667">纯非竞争性抑制</text>
+</g>
+<g id="legend_3">
+<g id="patch_22">
+<path d="M 320.274626 414.596667  L 400.634626 414.596667  Q 402.594626 414.596667 402.594626 412.636667  L 402.594626 383.726667  Q 402.594626 381.766667 400.634626 381.766667  L 320.274626 381.766667  Q 318.314626 381.766667 318.314626 383.726667  L 318.314626 412.636667  Q 318.314626 414.596667 320.274626 414.596667  z " style="fill: #ffffff; opacity: 0.95; stroke: #dbe6f4; stroke-linejoin: miter"></path>
+</g>
+<g id="line2d_65">
+<path d="M 322.234626 390.056854  L 332.034626 390.056854  L 341.834626 390.056854  " style="fill: none; stroke: #2459ab; stroke-width: 2.8; stroke-linecap: square"></path>
+</g>
+<g id="text_47">
+<text style="font-size: 9.8px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start" transform="rotate(-0 349.674626 393.486854)" x="349.674626" y="393.486854">无抑制</text>
+</g>
+<g id="line2d_66">
+<path d="M 322.234626 405.001854  L 332.034626 405.001854  L 341.834626 405.001854  " style="fill: none; stroke-dasharray: 10.36,4.48; stroke-dashoffset: 0; stroke: #c34d29; stroke-width: 2.8"></path>
+</g>
+<g id="text_48">
+<text style="font-size: 9.8px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start" transform="rotate(-0 349.674626 408.431854)" x="349.674626" y="408.431854">加入抑制剂</text>
+</g>
+</g>
+</g>
+<g id="axes_4">
+<g id="patch_23">
+<path d="M 505.465374 574.2  L 868.32 574.2  L 868.32 376.866667  L 505.465374 376.866667  z " style="fill: #fbfdff"></path>
+</g>
+<g id="matplotlib.axis_7">
+<g id="xtick_13">
+<g id="line2d_67">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="541.239774" xlink:href="#m172e11c9e1" y="574.2"></use>
+</g>
+</g>
+<g id="text_49">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #64748b" transform="rotate(-0 541.239774 589.159375)" x="541.239774" y="589.159375">−0.8</text>
+</g>
+</g>
+<g id="xtick_14">
+<g id="line2d_68">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="623.009831" xlink:href="#m172e11c9e1" y="574.2"></use>
+</g>
+</g>
+<g id="text_50">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #64748b" transform="rotate(-0 623.009831 589.159375)" x="623.009831" y="589.159375">0</text>
+</g>
+</g>
+<g id="xtick_15">
+<g id="line2d_69">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="725.222401" xlink:href="#m172e11c9e1" y="574.2"></use>
+</g>
+</g>
+<g id="text_51">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #64748b" transform="rotate(-0 725.222401 589.159375)" x="725.222401" y="589.159375">1</text>
+</g>
+</g>
+<g id="xtick_16">
+<g id="line2d_70">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="827.434972" xlink:href="#m172e11c9e1" y="574.2"></use>
+</g>
+</g>
+<g id="text_52">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #64748b" transform="rotate(-0 827.434972 589.159375)" x="827.434972" y="589.159375">2</text>
+</g>
+</g>
+<g id="text_53">
+<text style="font-size: 10.5px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #475569" transform="rotate(-0 686.892687 603.912344)" x="686.892687" y="603.912344">1/[S]（示意单位）</text>
+</g>
+</g>
+<g id="matplotlib.axis_8">
+<g id="ytick_16">
+<g id="line2d_71">
+<path clip-path="url(#paf8b9c0834)" d="M 505.465374 572.46138  L 868.32 572.46138  " style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_72">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="505.465374" xlink:href="#m64ac5cd8fd" y="572.46138"></use>
+</g>
+</g>
+<g id="text_54">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #64748b" transform="rotate(-0 498.465374 576.441068)" x="498.465374" y="576.441068">0.0</text>
+</g>
+</g>
+<g id="ytick_17">
+<g id="line2d_73">
+<path clip-path="url(#paf8b9c0834)" d="M 505.465374 528.995888  L 868.32 528.995888  " style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_74">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="505.465374" xlink:href="#m64ac5cd8fd" y="528.995888"></use>
+</g>
+</g>
+<g id="text_55">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #64748b" transform="rotate(-0 498.465374 532.975576)" x="498.465374" y="532.975576">0.2</text>
+</g>
+</g>
+<g id="ytick_18">
+<g id="line2d_75">
+<path clip-path="url(#paf8b9c0834)" d="M 505.465374 485.530396  L 868.32 485.530396  " style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_76">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="505.465374" xlink:href="#m64ac5cd8fd" y="485.530396"></use>
+</g>
+</g>
+<g id="text_56">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #64748b" transform="rotate(-0 498.465374 489.510084)" x="498.465374" y="489.510084">0.4</text>
+</g>
+</g>
+<g id="ytick_19">
+<g id="line2d_77">
+<path clip-path="url(#paf8b9c0834)" d="M 505.465374 442.064905  L 868.32 442.064905  " style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_78">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="505.465374" xlink:href="#m64ac5cd8fd" y="442.064905"></use>
+</g>
+</g>
+<g id="text_57">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #64748b" transform="rotate(-0 498.465374 446.044592)" x="498.465374" y="446.044592">0.6</text>
+</g>
+</g>
+<g id="ytick_20">
+<g id="line2d_79">
+<path clip-path="url(#paf8b9c0834)" d="M 505.465374 398.599413  L 868.32 398.599413  " style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.22; stroke-width: 0.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_80">
+<g>
+<use style="fill: #64748b; stroke: #64748b; stroke-width: 0.8" x="505.465374" xlink:href="#m64ac5cd8fd" y="398.599413"></use>
+</g>
+</g>
+<g id="text_58">
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: end; fill: #64748b" transform="rotate(-0 498.465374 402.5791)" x="498.465374" y="402.5791">0.8</text>
+</g>
+</g>
+<g id="text_59">
+<text style="font-size: 10.5px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #475569" transform="rotate(-90 478.180531 475.533333)" x="478.180531" y="475.533333">1/v（示意单位）</text>
+</g>
+</g>
+<g id="line2d_81">
+<path clip-path="url(#paf8b9c0834)" d="M 623.573409 550.488975  L 876.52 442.924436  L 876.52 442.924436  " style="fill: none; stroke: #2459ab; stroke-width: 2.8; stroke-linecap: square"></path>
+</g>
+<g id="line2d_82">
+<path clip-path="url(#paf8b9c0834)" d="M 572.390272 572.254402  L 573.338108 571.851338  L 574.285944 571.448275  L 575.233779 571.045211  L 576.181615 570.642148  L 577.129451 570.239084  L 578.077287 569.836021  L 579.025123 569.432958  L 579.972959 569.029894  L 580.920795 568.626831  L 581.868631 568.223767  L 582.816466 567.820704  L 583.764302 567.41764  L 584.712138 567.014577  L 585.659974 566.611513  L 586.60781 566.20845  L 587.555646 565.805386  L 588.503482 565.402323  L 589.451317 564.99926  L 590.399153 564.596196  L 591.346989 564.193133  L 592.294825 563.790069  L 593.242661 563.387006  L 594.190497 562.983942  L 595.138333 562.580879  L 596.086169 562.177815  L 597.034004 561.774752  L 597.98184 561.371688  L 598.929676 560.968625  L 599.877512 560.565561  L 600.825348 560.162498  L 601.773184 559.759435  L 602.72102 559.356371  L 603.668855 558.953308  L 604.616691 558.550244  L 605.564527 558.147181  L 606.512363 557.744117  L 607.460199 557.341054  L 608.408035 556.93799  L 609.355871 556.534927  L 610.303707 556.131863  L 611.251542 555.7288  L 612.199378 555.325737  L 613.147214 554.922673  L 614.09505 554.51961  L 615.042886 554.116546  L 615.990722 553.713483  L 616.938558 553.310419  L 617.886393 552.907356  L 618.834229 552.504292  L 619.782065 552.101229  L 620.729901 551.698165  L 621.677737 551.295102  L 622.625573 550.892038  " style="fill: none; stroke-dasharray: 1.5,2.475; stroke-dashoffset: 0; stroke: #2459ab; stroke-opacity: 0.7; stroke-width: 1.5"></path>
+</g>
+<g id="line2d_83">
+<path clip-path="url(#paf8b9c0834)" d="M 623.573409 528.27691  L 876.52 205.583294  L 876.52 205.583294  " style="fill: none; stroke-dasharray: 10.36,4.48; stroke-dashoffset: 0; stroke: #c34d29; stroke-width: 2.8"></path>
+</g>
+<g id="line2d_84">
+<path clip-path="url(#paf8b9c0834)" d="M 589.451317 571.807764  L 590.399153 570.598574  L 591.346989 569.389383  L 592.294825 568.180193  L 593.242661 566.971002  L 594.190497 565.761812  L 595.138333 564.552622  L 596.086169 563.343431  L 597.034004 562.134241  L 597.98184 560.925051  L 598.929676 559.71586  L 599.877512 558.50667  L 600.825348 557.297479  L 601.773184 556.088289  L 602.72102 554.879099  L 603.668855 553.669908  L 604.616691 552.460718  L 605.564527 551.251527  L 606.512363 550.042337  L 607.460199 548.833147  L 608.408035 547.623956  L 609.355871 546.414766  L 610.303707 545.205576  L 611.251542 543.996385  L 612.199378 542.787195  L 613.147214 541.578004  L 614.09505 540.368814  L 615.042886 539.159624  L 615.990722 537.950433  L 616.938558 536.741243  L 617.886393 535.532053  L 618.834229 534.322862  L 619.782065 533.113672  L 620.729901 531.904481  L 621.677737 530.695291  L 622.625573 529.486101  " style="fill: none; stroke-dasharray: 1.5,2.475; stroke-dashoffset: 0; stroke: #c34d29; stroke-opacity: 0.7; stroke-width: 1.5"></path>
+</g>
+<g id="line2d_85">
+<path clip-path="url(#paf8b9c0834)" d="M 505.465374 572.46138  L 868.32 572.46138  " style="fill: none; stroke: #7c8ba4; stroke-linecap: square"></path>
+</g>
+<g id="line2d_86">
+<path clip-path="url(#paf8b9c0834)" d="M 623.009831 574.2  L 623.009831 376.866667  " style="fill: none; stroke: #7c8ba4; stroke-linecap: square"></path>
+</g>
+<g id="patch_24">
+<path d="M 505.465374 574.2  L 505.465374 376.866667  " style="fill: none; stroke: #dbe6f4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path>
+</g>
+<g id="patch_25">
+<path d="M 868.32 574.2  L 868.32 376.866667  " style="fill: none; stroke: #dbe6f4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path>
+</g>
+<g id="patch_26">
+<path d="M 505.465374 574.2  L 868.32 574.2  " style="fill: none; stroke: #dbe6f4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path>
+</g>
+<g id="patch_27">
+<path d="M 505.465374 376.866667  L 868.32 376.866667  " style="fill: none; stroke: #dbe6f4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path>
+</g>
+<g id="text_60">
+<text style="font-size: 11px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #475569" transform="rotate(-0 505.465374 367)" x="505.465374" y="367">Km 可↑或↓  ·  Vmax ↓</text>
+</g>
+<g id="text_61">
+<g id="patch_28">
+<path d="M 510.908194 572.097292  L 590.908194 572.097292  Q 594.408194 572.097292 594.408194 568.597292  L 594.408194 558.347292  Q 594.408194 554.847292 590.908194 554.847292  L 510.908194 554.847292  Q 507.408194 554.847292 507.408194 558.347292  L 507.408194 568.597292  Q 507.408194 572.097292 510.908194 572.097292  z " style="fill: #f1f5f9; opacity: 0.95"></path>
+</g>
+<text style="font-size: 10px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #334155" transform="rotate(-0 510.908194 566.306667)" x="510.908194" y="566.306667">一般交于坐标轴外</text>
+</g>
+<g id="text_62">
+<text style="font-weight: 700; font-size: 16px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #172b4d" transform="rotate(-0 505.465374 340.866667)" x="505.465374" y="340.866667">混合型抑制</text>
+</g>
+<g id="legend_4">
+<g id="patch_29">
+<path d="M 781.1 414.596667  L 861.46 414.596667  Q 863.42 414.596667 863.42 412.636667  L 863.42 383.726667  Q 863.42 381.766667 861.46 381.766667  L 781.1 381.766667  Q 779.14 381.766667 779.14 383.726667  L 779.14 412.636667  Q 779.14 414.596667 781.1 414.596667  z " style="fill: #ffffff; opacity: 0.95; stroke: #dbe6f4; stroke-linejoin: miter"></path>
+</g>
+<g id="line2d_87">
+<path d="M 783.06 390.056854  L 792.86 390.056854  L 802.66 390.056854  " style="fill: none; stroke: #2459ab; stroke-width: 2.8; stroke-linecap: square"></path>
+</g>
+<g id="text_63">
+<text style="font-size: 9.8px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start" transform="rotate(-0 810.5 393.486854)" x="810.5" y="393.486854">无抑制</text>
+</g>
+<g id="line2d_88">
+<path d="M 783.06 405.001854  L 792.86 405.001854  L 802.66 405.001854  " style="fill: none; stroke-dasharray: 10.36,4.48; stroke-dashoffset: 0; stroke: #c34d29; stroke-width: 2.8"></path>
+</g>
+<g id="text_64">
+<text style="font-size: 9.8px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start" transform="rotate(-0 810.5 408.431854)" x="810.5" y="408.431854">加入抑制剂</text>
+</g>
+</g>
+</g>
+<g id="text_65">
+<text style="font-weight: 700; font-size: 22px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #15243b" transform="rotate(-0 7.2 24.755312)" x="7.2" y="24.755312">四类可逆抑制：双倒数作图与参数变化</text>
+</g>
+<g id="text_66">
+<text style="font-size: 11.5px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #4b5563" transform="rotate(-0 7.2 36.36)" x="7.2" y="36.36">斜率＝Km/Vmax；纵截距＝1/Vmax；横截距＝−1/Km（截距为直线外推）</text>
+</g>
+<g id="text_67">
+<text style="font-size: 10.5px; font-family: 'Noto Sans CJK JP', 'DejaVu Sans', sans-serif; text-anchor: start; fill: #66758a" transform="rotate(-0 7.2 615.672)" x="7.2" y="615.672">说明：为呈现机制而设定的理想化米氏抑制模型；负的1/[S]仅用于外推，真实底物浓度始终为正。</text>
+</g>
+</g>
+<defs>
+<clippath id="p5ffd2fdb13">
+<rect height="197.333333" width="362.854626" x="44.64" y="94.68"></rect>
+</clippath>
+<clippath id="p0d78e71a8e">
+<rect height="197.333333" width="362.854626" x="505.465374" y="94.68"></rect>
+</clippath>
+<clippath id="p088e49a69d">
+<rect height="197.333333" width="362.854626" x="44.64" y="376.866667"></rect>
+</clippath>
+<clippath id="paf8b9c0834">
+<rect height="197.333333" width="362.854626" x="505.465374" y="376.866667"></rect>
+</clippath>
+</defs>
+</svg></div>
+<figcaption>图04｜Lineweaver-Burk双倒数图四型对照</figcaption><button type="button" class="figure-open" data-figure="figure-04">放大图表 04</button></figure>
+<p>用<code>I</code>表示抑制剂。令<code>Ki</code>描述<code>E+I⇌EI</code>的结合强度，<code>Ki′</code>描述<code>ES+I⇌ESI</code>的结合强度，定义：</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mn>1</mn><mo>+</mo><mfrac><mrow><mo form="prefix" stretchy="true">[</mo><mi>I</mi><mo form="postfix" stretchy="true">]</mo></mrow><msub><mi>K</mi><mi>i</mi></msub></mfrac><mo>,</mo><mspace width="2.0em"></mspace><mi>α</mi><mi>′</mi><mo>=</mo><mn>1</mn><mo>+</mo><mfrac><mrow><mo form="prefix" stretchy="true">[</mo><mi>I</mi><mo form="postfix" stretchy="true">]</mo></mrow><mrow><msub><mi>K</mi><mi>i</mi></msub><mi>′</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\alpha=1+\frac{[I]}{K_i},\qquad\alpha'=1+\frac{[I]}{K_i'}</annotation></semantics></math></p>
+<p>常用混合抑制形式：</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mfrac><mrow><msub><mi>V</mi><mo>max</mo></msub><mrow><mo form="prefix" stretchy="true">[</mo><mi>S</mi><mo form="postfix" stretchy="true">]</mo></mrow></mrow><mrow><mi>α</mi><msub><mi>K</mi><mi>m</mi></msub><mo>+</mo><mi>α</mi><mi>′</mi><mrow><mo form="prefix" stretchy="true">[</mo><mi>S</mi><mo form="postfix" stretchy="true">]</mo></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">v=\frac{V_{\max}[S]}{\alpha K_m+\alpha'[S]}</annotation></semantics></math></p>
+<p>因此：</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mrow><mo>max</mo><mo>,</mo><mi>a</mi><mi>p</mi><mi>p</mi></mrow></msub><mo>=</mo><mfrac><msub><mi>V</mi><mo>max</mo></msub><mrow><mi>α</mi><mi>′</mi></mrow></mfrac><mo>,</mo><mspace width="2.0em"></mspace><msub><mi>K</mi><mrow><mi>m</mi><mo>,</mo><mi>a</mi><mi>p</mi><mi>p</mi></mrow></msub><mo>=</mo><mfrac><mrow><mi>α</mi><msub><mi>K</mi><mi>m</mi></msub></mrow><mrow><mi>α</mi><mi>′</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">V_{\max,app}=\frac{V_{\max}}{\alpha'},\qquad K_{m,app}=\frac{\alpha K_m}{\alpha'}</annotation></semantics></math></p>
+<p>将其倒数化：</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><menclose notation="box"><mrow><mfrac><mn>1</mn><mi>v</mi></mfrac><mo>=</mo><mfrac><mrow><mi>α</mi><msub><mi>K</mi><mi>m</mi></msub></mrow><msub><mi>V</mi><mo>max</mo></msub></mfrac><mfrac><mn>1</mn><mrow><mo form="prefix" stretchy="true">[</mo><mi>S</mi><mo form="postfix" stretchy="true">]</mo></mrow></mfrac><mo>+</mo><mfrac><mrow><mi>α</mi><mi>′</mi></mrow><msub><mi>V</mi><mo>max</mo></msub></mfrac></mrow></menclose><annotation encoding="application/x-tex">\boxed{\frac{1}{v}=\frac{\alpha K_m}{V_{\max}}\frac{1}{[S]}+\frac{\alpha'}{V_{\max}}}</annotation></semantics></math></p>
+<p>这是读图的<strong>唯一主线</strong>：<code>横坐标1/[S]</code>，纵轴截距只和表观<code>Vmax</code>有关，斜率和<code>αKm</code>有关。记住以下逻辑：</p>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 20%"/>
+<col style="width: 20%"/>
+<col style="width: 20%"/>
+<col style="width: 20%"/>
+<col style="width: 20%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>类型</th>
+<th>对谁结合</th>
+<th>α / α′</th>
+<th>速度效应</th>
+<th>双倒数线如何变</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>竞争性</td>
+<td>只结合E</td>
+<td>α&gt;1、α′=1</td>
+<td><code>Km,app=αKm↑</code>，<code>Vmax</code>不变</td>
+<td>纵截距相同、斜率增大</td>
+</tr>
+<tr class="even">
+<td>反竞争性</td>
+<td>只结合ES</td>
+<td>α=1、α′&gt;1</td>
+<td><code>Km,app=Km/α′↓</code>，<code>Vmax,app=Vmax/α′↓</code></td>
+<td>斜率不变、平行上移</td>
+</tr>
+<tr class="odd">
+<td>纯非竞争性</td>
+<td>对E、ES等亲和</td>
+<td>α=α′&gt;1</td>
+<td><code>Km</code>不变，<code>Vmax↓</code></td>
+<td>横截距相同、斜率及纵截距增加</td>
+</tr>
+<tr class="even">
+<td>混合型</td>
+<td>对E、ES不等亲和</td>
+<td>α≠α′，均&gt;1</td>
+<td><code>Vmax↓</code>，<code>Km</code>由比值决定</td>
+<td>两直线交于坐标轴外（典型情形）</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>图形三道逆向推理：</strong></p>
+<ul>
+<li>两条直线<strong>纵轴交点相同</strong> → <code>1/Vmax</code>相同 →
+<code>Vmax</code>相同；若另有斜率增大 → <strong>竞争性</strong>。</li>
+<li>两条直线<strong>斜率相同</strong> →
+<code>Km/Vmax</code>不变；抑制后纵轴截距增大 →
+<strong>反竞争性</strong>。</li>
+<li>两条直线<strong>横轴交点相同</strong> → <code>−1/Km</code>相同 →
+<code>Km</code>相同；抑制后纵轴截距增大 →
+<strong>纯非竞争性</strong>。</li>
+</ul>
+<p><strong>特别提醒：</strong>
+双倒数图负横轴是直线<strong>外推</strong>结果，不意味着存在负底物浓度；对未知抑制剂的真实机制，不能仅凭两条有限噪声数据拟合线就下结论，应做多抑制剂浓度、宽底物梯度和适当的非线性全局拟合。</p>
+<h3 id="六个常见误区的深入拆解">六个常见误区的深入拆解</h3>
+<p><strong>误区1：“酶提高反应速度，是因为改变ΔG。”</strong>
+反应速度由动力学势垒决定，化学平衡由反应物与产物自由能差决定。答题时专门写<code>ΔG‡</code>（活化自由能）与<code>ΔG</code>（反应自由能）。</p>
+<p><strong>误区2：“Km越小，催化效率一定越高。”</strong>
+<code>Km</code>反映特定模型与实验条件下的动力学特征；催化效率还要考虑<code>kcat</code>。例如A的<code>kcat=2 s⁻¹、Km=1 mM</code>，B的<code>kcat=20 s⁻¹、Km=2 mM</code>，分别有<code>kcat/Km=2</code>和<code>10 mM⁻¹s⁻¹</code>，因此B的低底物浓度催化效率反而更高。</p>
+<p><strong>误区3：“增加底物浓度能解除所有可逆抑制。”</strong>
+只有在经典<strong>竞争性抑制</strong>模型下，高底物可竞争抑制剂的结合、使速度趋近原<code>Vmax</code>。反竞争性和纯非竞争性不能以此恢复未抑制的<code>Vmax</code>。</p>
+<p><strong>误区4：“不可逆抑制就是蛋白变性。”</strong>
+蛋白变性侧重整体空间结构扰乱；不可逆抑制可仅在关键催化位点发生定向共价修饰、蛋白整体仍保持折叠。因此二者不等价；有机磷抑制AChE是典型例子。</p>
+<p><strong>误区5：“磷酸化一定使酶活性增加。”</strong>
+磷酸化/去磷酸化只是调控方式，方向取决于酶。例如PDH
+E1磷酸化后受抑，而某些糖原分解相关酶的磷酸化增强活性。涉及激酶级联时特别要区分<strong>被修饰的是谁</strong>。</p>
+<p><strong>误区6：“同工酶和酶原只是两种不同名称。”</strong>
+同工酶是多种分子形式催化相同反应，通常组织分布、亚基组成或动力学不同；酶原则是某一种酶的低活性/无活性前体，经蛋白酶切割才激活。</p>
+<h3 id="联结章节跨章应用桥梁适合841综合题">联结章节：跨章应用桥梁（适合841综合题）</h3>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>第3章知识点</th>
+<th>关联章节</th>
+<th>要会解释的连接关系</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mg²⁺与金属离子催化</td>
+<td>第4章辅因子</td>
+<td>MgATP²⁻常是激酶的实际反应底物形式；金属酶与金属激活酶不同</td>
+</tr>
+<tr class="even">
+<td>LDH的可逆反应</td>
+<td>第12章糖酵解</td>
+<td>乳酸发酵再生NAD⁺，连接酶动力学与能量代谢</td>
+</tr>
+<tr class="odd">
+<td>PDH E1磷酸化调节</td>
+<td>第13章乙酰CoA生成</td>
+<td>代谢通量既由底物供给决定，也由共价修饰和反馈调节决定</td>
+</tr>
+<tr class="even">
+<td>琥珀酸脱氢酶受丙二酸抑制</td>
+<td>第13、14章</td>
+<td>既是TCA循环酶又是呼吸链复合体Ⅱ组成部分</td>
+</tr>
+<tr class="odd">
+<td>ATCase反馈调节</td>
+<td>第18章嘧啶核苷酸合成</td>
+<td>CTP反馈抑制、ATP激活，平衡核苷酸供给</td>
+</tr>
+<tr class="even">
+<td>抗体酶、酶定向进化与药物</td>
+<td>第19章技术</td>
+<td>从结构/过渡态假说提出设计，再做实验和动力学验证</td>
+</tr>
+</tbody>
+</table></div>
+<hr/>
+</section><section class="chapter-section reading-section" data-chapter="3"><h2 id="第三部分闭卷背诵与易混辨析">第三部分｜闭卷背诵与易混辨析</h2>
+<h3 id="四张闭卷速记表">四张闭卷速记表</h3>
+<p><strong>表1　六大传统酶类（教材口径）</strong></p>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr class="header">
+<th>EC</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>类别</td>
+<td>氧化还原</td>
+<td>转移</td>
+<td>水解</td>
+<td>裂合</td>
+<td>异构</td>
+<td>连接</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>表2　酶催化的四种机制（教材3.5.1—3.5.4）</strong></p>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 20%"/>
+<col style="width: 20%"/>
+<col style="width: 20%"/>
+<col style="width: 20%"/>
+<col style="width: 20%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>机制</th>
+<th>酸碱</th>
+<th>共价</th>
+<th>金属离子</th>
+<th>趋近和定向</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>关键作用</td>
+<td>质子转移</td>
+<td>暂时共价中间体</td>
+<td>电荷稳定/底物活化</td>
+<td>提高有效相遇与定位</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>表3　四种可逆抑制的经典动力学特征</strong></p>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr class="header">
+<th>类型</th>
+<th>竞争性</th>
+<th>反竞争性</th>
+<th>纯非竞争性</th>
+<th>混合型</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>表观Km</td>
+<td>增大</td>
+<td>减小</td>
+<td>不变</td>
+<td>增大或减小</td>
+</tr>
+<tr class="even">
+<td>表观Vmax</td>
+<td>不变</td>
+<td>减小</td>
+<td>减小</td>
+<td>减小</td>
+</tr>
+<tr class="odd">
+<td>双倒数特征</td>
+<td>交纵轴</td>
+<td>平行</td>
+<td>交横轴</td>
+<td>通常交坐标轴外</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>表4　影响初速度的六类因素</strong></p>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table style="width:100%;">
+<colgroup>
+<col style="width: 14%"/>
+<col style="width: 14%"/>
+<col style="width: 14%"/>
+<col style="width: 14%"/>
+<col style="width: 14%"/>
+<col style="width: 14%"/>
+<col style="width: 14%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>因素</th>
+<th>[S]</th>
+<th>酶浓度</th>
+<th>pH</th>
+<th>温度</th>
+<th>抑制剂</th>
+<th>激活剂</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>主要影响</td>
+<td>饱和程度</td>
+<td>最大速度</td>
+<td>解离/构象</td>
+<td>反应速率与稳定性</td>
+<td>结合/活性</td>
+<td>活化所需离子或效应</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>记忆验收</strong>：先遮住下面的内容，独立画四张表；抑制剂四型不仅记参数，还要解释E与ES的结合对象。</p>
+<h3 id="易混概念辨析优先熟记">易混概念辨析（优先熟记）</h3>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>易混点</th>
+<th>正确区分</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ΔG‡ 与 ΔG</td>
+<td>酶降低动力学势垒，不改变反应热力学平衡</td>
+</tr>
+<tr class="even">
+<td>Km 与 Kd</td>
+<td>只有在适当动力学条件下才可近似相等</td>
+</tr>
+<tr class="odd">
+<td>Km 与 Vmax</td>
+<td>Km与底物亲和及动力学常数有关；Vmax取决于酶总量及kcat</td>
+</tr>
+<tr class="even">
+<td>高底物浓度与无抑制</td>
+<td>可逆竞争性抑制可被削弱；反竞争、非竞争不能因此完全消失</td>
+</tr>
+<tr class="odd">
+<td>非竞争与混合型</td>
+<td>纯非竞争Km不变；混合型Km可能升降</td>
+</tr>
+<tr class="even">
+<td>最适温度与酶本性</td>
+<td>最适温度依赖测定条件，不能当作普遍固定值</td>
+</tr>
+<tr class="odd">
+<td>酶原激活与磷酸化</td>
+<td>前者通常特异性切肽键，后者多为可逆添加/移除化学基团</td>
+</tr>
+<tr class="even">
+<td>可逆抑制与不可逆抑制</td>
+<td>前者主要按可逆结合判定；后者常由稳定失活修饰导致</td>
+</tr>
+<tr class="odd">
+<td>酶活力与比活</td>
+<td>U为活力，U/mg为比活；回收率和纯化倍数是不同指标</td>
+</tr>
+<tr class="even">
+<td>抗体酶与普通抗体</td>
+<td>抗体酶具有可检测的催化功能，普通结合抗体不必有催化功能</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="主观题答题模板可直接训练">主观题答题模板（可直接训练）</h3>
+<h4 id="模板a简述影响酶促反应速度的因素810分">模板A：简述影响酶促反应速度的因素（8—10分）</h4>
+<p>先交代“其他条件不变、测初速度”，再分点：①[S]通过米氏关系影响速度（低浓度一级、高浓度近零级）；②酶总浓度影响Vmax；③pH改变催化残基解离及空间构象；④温度通过动力学加速与高温失活的竞争产生最适区间；⑤可逆或不可逆抑制剂降低活性，其中竞争与非竞争作用机制不同；⑥激活剂（如Mg²⁺等）可使特定酶活性提高。总结：最适pH和温度须指明测定条件。</p>
+<h4 id="模板b论述酶如何降低活化能10分">模板B：论述酶如何降低活化能（10分）</h4>
+<p>总起“酶提供低活化能途径，不改变ΔG与Keq”→依序阐述酸碱、共价、金属离子、趋近定向四项→补充诱导契合及过渡态稳定→说明几种机制可协同→举Ser蛋白酶实例并作总结。</p>
+<h4 id="模板c比较可逆抑制的类型10分">模板C：比较可逆抑制的类型（10分）</h4>
+<p>先定义E、S、ES、I、Ki→画E/S/ES连接关系→给竞争、反竞争、纯非竞争和混合型的结合对象→列Km/Vmax变化表→用1/v—1/[S]图判断交点→举丙二酸竞争琥珀酸脱氢酶等实例。必须标明“非竞争性Km不变”仅适用纯非竞争性。</p>
+<h4 id="模板d比较酶原激活别构调节和共价修饰调节8分">模板D：比较酶原激活、别构调节和共价修饰调节（8分）</h4>
+<p>每种依次写“定义—结构变化—可逆性—生理意义—实例”，最后回答三种方式在时间尺度和代谢响应上的不同。</p>
+<h3 id="最小背诵卡考前5分钟">最小背诵卡（考前5分钟）</h3>
+<p><strong>定义</strong>：酶是生物催化剂；活性部位是特定三维功能区域；U代表给定条件下的酶活力，U/mg为比活；Km是简单米氏酶速度达Vmax/2的底物浓度。</p>
+<p><strong>公式</strong>：<code>v=Vmax[S]/(Km+[S])</code>；<code>Vmax=kcat[E]T</code>；<code>1/v=(Km/Vmax)(1/[S])+1/Vmax</code>；<code>kcat/Km</code>衡量低[S]的催化效率。</p>
+<p><strong>四型抑制</strong>：竞争<code>Km↑、Vmax＝</code>；反竞争<code>Km↓、Vmax↓、直线平行</code>；纯非竞争<code>Km＝、Vmax↓</code>；混合<code>Km↑/↓、Vmax↓</code>。</p>
+<p><strong>四机制</strong>：酸碱催化、共价催化、金属离子催化、趋近和定向效应；加一句“过渡态稳定”。</p>
+<p><strong>三调节</strong>：酶原激活（常切肽键、不可逆）、别构调节（非共价、常可逆、可能协同）、共价修饰（蛋白激酶/磷酸酶、常可逆）。</p>
+<p><strong>最后两句</strong>：酶不改变<code>ΔG°′</code>或平衡常数；最适pH和温度不是脱离条件固定的常数。</p>
+<p><strong>验收标准</strong>：能不看书推导米氏方程、说清四型抑制的因果机制、独立解决混合型参数计算，并能用教材例子写出10分简答。本章才算完成二轮复习。</p>
+<hr/>
+</section><section class="chapter-section practice-section" data-chapter="4"><h2 id="第四部分原创分级练习共33道动力学主线">第四部分｜原创分级练习（共33道，动力学主线）</h2>
+<p><strong>A档：12道选择＋10道判断；B档：7道计算；C档：4道分析。</strong>
+全部为原创训练（D级），不是历史正式考题。</p>
+<h3 id="a档基础选择题12题">A档｜基础选择题（12题）</h3>
+<section id="question-A01" aria-label="选择题 A01" class="quiz-card"><div class="quiz-stem"><strong>A01</strong> 在[S]和温度等条件固定时，仅将服从米氏动力学的酶总浓度增加一倍，其<code>Vmax</code>通常如何变化？</div><div aria-label="A01题备选答案" class="quiz-options" role="group"><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">A</span><span class="quiz-choice">不变</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">B</span><span class="quiz-choice">加倍</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">C</span><span class="quiz-choice">减半</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">D</span><span class="quiz-choice">变成四倍。</span></div></div></section>
+<section id="question-A02" aria-label="选择题 A02" class="quiz-card"><div class="quiz-stem"><strong>A02</strong>
+对一般的简单米氏酶，<code>[S]=3Km</code>时，<code>v/Vmax</code>为：</div><div aria-label="A02题备选答案" class="quiz-options" role="group"><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">A</span><span class="quiz-choice">1/4</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">B</span><span class="quiz-choice">1/2</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">C</span><span class="quiz-choice">3/4</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">D</span><span class="quiz-choice">1。</span></div></div></section>
+<section id="question-A03" aria-label="选择题 A03" class="quiz-card"><div class="quiz-stem"><strong>A03</strong>
+竞争性抑制的典型参数组合是：</div><div aria-label="A03题备选答案" class="quiz-options" role="group"><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">A</span><span class="quiz-choice"><code>Km↑，Vmax不变</code></span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">B</span><span class="quiz-choice"><code>Km↓，Vmax↓</code></span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">C</span><span class="quiz-choice"><code>Km不变，Vmax↓</code></span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">D</span><span class="quiz-choice"><code>Km不变，Vmax↑</code>。</span></div></div></section>
+<section id="question-A04" aria-label="选择题 A04" class="quiz-card"><div class="quiz-stem"><strong>A04</strong>
+在经典反竞争性抑制中，Lineweaver–Burk两条直线通常：</div><div aria-label="A04题备选答案" class="quiz-options" role="group"><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">A</span><span class="quiz-choice">交于纵轴</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">B</span><span class="quiz-choice">交于横轴</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">C</span><span class="quiz-choice">平行</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">D</span><span class="quiz-choice">重合。</span></div></div></section>
+<section id="question-A05" aria-label="选择题 A05" class="quiz-card"><div class="quiz-stem"><strong>A05</strong>
+<code>1/v</code>对<code>1/[S]</code>作图，横轴截距为：</div><div aria-label="A05题备选答案" class="quiz-options" role="group"><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">A</span><span class="quiz-choice"><code>Km</code></span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">B</span><span class="quiz-choice"><code>−Km</code></span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">C</span><span class="quiz-choice"><code>1/Vmax</code></span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">D</span><span class="quiz-choice"><code>−1/Km</code>。</span></div></div></section>
+<section id="question-A06" aria-label="选择题 A06" class="quiz-card"><div class="quiz-stem"><strong>A06</strong> “酶降低活化能”意味着：</div><div aria-label="A06题备选答案" class="quiz-options" role="group"><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">A</span><span class="quiz-choice">可改变平衡常数</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">B</span><span class="quiz-choice">只能催化正向反应</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">C</span><span class="quiz-choice">提高达到过渡态的有效反应几率</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">D</span><span class="quiz-choice">必然提高产物平衡含量。</span></div></div></section>
+<section id="question-A07" aria-label="选择题 A07" class="quiz-card"><div class="quiz-stem"><strong>A07</strong>
+下列最能说明酶的结合与催化位点由立体结构决定的是：</div><div aria-label="A07题备选答案" class="quiz-options" role="group"><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">A</span><span class="quiz-choice">所有关键残基序列连续</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">B</span><span class="quiz-choice">序列远隔残基折叠后相邻</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">C</span><span class="quiz-choice">所有残基都参与催化</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">D</span><span class="quiz-choice">蛋白质一级结构与功能无关。</span></div></div></section>
+<section id="question-A08" aria-label="选择题 A08" class="quiz-card"><div class="quiz-stem"><strong>A08</strong>
+哪一种调节方式最直接涉及靶酶特定位点肽键的水解？</div><div aria-label="A08题备选答案" class="quiz-options" role="group"><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">A</span><span class="quiz-choice">酶原激活</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">B</span><span class="quiz-choice">别构调节</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">C</span><span class="quiz-choice">竞争性抑制</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">D</span><span class="quiz-choice">纯非竞争性抑制。</span></div></div></section>
+<section id="question-A09" aria-label="选择题 A09" class="quiz-card"><div class="quiz-stem"><strong>A09</strong> LDH常见五种同工酶由哪两种亚基形成？</div><div aria-label="A09题备选答案" class="quiz-options" role="group"><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">A</span><span class="quiz-choice">α、β</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">B</span><span class="quiz-choice">H、M</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">C</span><span class="quiz-choice">A、T</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">D</span><span class="quiz-choice">γ、δ。</span></div></div></section>
+<section id="question-A10" aria-label="选择题 A10" class="quiz-card"><div class="quiz-stem"><strong>A10</strong>
+较多丝氨酸蛋白酶催化中的Ser羟基与底物形成短暂共价中间体，属于：</div><div aria-label="A10题备选答案" class="quiz-options" role="group"><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">A</span><span class="quiz-choice">金属离子催化</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">B</span><span class="quiz-choice">共价催化</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">C</span><span class="quiz-choice">同工酶调控</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">D</span><span class="quiz-choice">酶原激活。</span></div></div></section>
+<section id="question-A11" aria-label="选择题 A11" class="quiz-card"><div class="quiz-stem"><strong>A11</strong> 测定酶纯化程度时，较合适的指标是：</div><div aria-label="A11题备选答案" class="quiz-options" role="group"><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">A</span><span class="quiz-choice">总蛋白质量</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">B</span><span class="quiz-choice">产物总量</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">C</span><span class="quiz-choice">比活(U/mg)</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">D</span><span class="quiz-choice">酶溶液体积。</span></div></div></section>
+<section id="question-A12" aria-label="选择题 A12" class="quiz-card"><div class="quiz-stem"><strong>A12</strong>
+在固定酶浓度、其他测定条件相同的反应体系中加入可逆抑制剂，实测<code>Km</code>不变、<code>Vmax</code>降低，并证明抑制剂对E、ES有相等亲和力，应判断为：</div><div aria-label="A12题备选答案" class="quiz-options" role="group"><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">A</span><span class="quiz-choice">竞争性</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">B</span><span class="quiz-choice">反竞争性</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">C</span><span class="quiz-choice">纯非竞争性</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">D</span><span class="quiz-choice">不可逆性。</span></div></div></section>
+<h3 id="a档判断题10题要求写出理由">A档｜判断题（10题，要求写出理由）</h3>
+<ul>
+<li id="question-J01"><strong>J01</strong>
+酶在一定条件下可以加快反应达到平衡的速度，但不改变平衡常数。</li>
+<li id="question-J02"><strong>J02</strong>
+在单底物简单米氏机制中，<code>Km</code>一定等于酶-底物复合物的解离常数<code>Kd</code>。</li>
+<li id="question-J03"><strong>J03</strong>
+竞争性抑制剂会使真实的<code>kcat</code>因结合底物而自动加倍。</li>
+<li id="question-J04"><strong>J04</strong>
+反竞争性抑制的<code>Km</code>与<code>Vmax</code>在简单模型中按同一比例减小。</li>
+<li id="question-J05"><strong>J05</strong>
+只要某种酶的最适温度为37℃，就能在任何测定时间和pH下维持37℃不变。</li>
+<li id="question-J06"><strong>J06</strong>
+对服从简单米氏动力学、且无底物抑制的酶，在其他条件不变时，[S]远大于Km，初速度越来越不依赖底物浓度。</li>
+<li id="question-J07"><strong>J07</strong> 酶原激活通常会切断一个或数个特定肽键。</li>
+<li id="question-J08"><strong>J08</strong> 别构酶一定严格服从普通米氏双曲线。</li>
+<li id="question-J09"><strong>J09</strong>
+所有不可逆抑制都只能通过破坏蛋白质一级结构实现。</li>
+<li id="question-J10"><strong>J10</strong>
+酶的EC类别应以其催化反应性质而不是仅以俗名中的“合成酶/合酶”判断。</li>
+</ul>
+<h3 id="b档公式与计算7题">B档｜公式与计算（7题）</h3>
+<p id="question-B01"><strong>B01 半饱和与饱和程度。</strong>
+某酶<code>Vmax=80 μmol/min，Km=2 mmol/L</code>。求<code>[S]=1、2、6、18 mmol/L</code>时的<code>v</code>和对应的<code>v/Vmax</code>；说明哪一个最接近饱和。</p>
+<p id="question-B02"><strong>B02 参数反算。</strong>
+固定酶浓度测得<code>[S]=2 mmol/L</code>时<code>v=30 μmol/min</code>，<code>[S]=6 mmol/L</code>时<code>v=45 μmol/min</code>，并假定严格服从米氏方程。求<code>Km</code>及<code>Vmax</code>。</p>
+<p id="question-B03"><strong>B03 抑制剂识别。</strong>
+无抑制时<code>Km=2 mmol/L、Vmax=100 μmol/min</code>；有抑制时<code>Km,app=6 mmol/L、Vmax,app=100 μmol/min</code>。指出类型并求<code>α</code>。若<code>[I]=4 μmol/L</code>，求<code>Ki</code>。</p>
+<p id="question-B04"><strong>B04 反竞争性计算。</strong>
+某酶<code>Km=4 mmol/L，Vmax=120 μmol/min</code>，加入抑制剂后<code>α′=3，α=1</code>。求<code>Km,app、Vmax,app</code>及<code>[S]=4 mmol/L</code>时的初速度。</p>
+<p id="question-B05"><strong>B05 纯非竞争性计算。</strong>
+某酶<code>Km=1 mmol/L，Vmax=90 μmol/min</code>；实验提示<code>α=α′=3</code>。求有抑制时<code>Vmax,app、Km,app</code>，分别计算<code>[S]=1和9 mmol/L</code>时的速度，说明为何大量底物不能恢复原有的Vmax。</p>
+<p id="question-B06"><strong>B06 纯化核算。</strong> 某酶粗提液：总蛋白320 mg、总活力1600
+U；部分纯化后：总蛋白40 mg、总活力1000
+U。计算粗提与纯化后的比活、纯化倍数和活力回收率，说明比活升高但回收率降低的原因。</p>
+<p id="question-B07"><strong>B07 双倒数数据。</strong>
+令<code>x=1/[S]</code>（单位L/mmol）、<code>y=1/v</code>（单位min/μmol），数据拟合为<code>y=3x+0.5</code>；斜率单位为mmol·min/(L·μmol)，截距单位为min/μmol。求<code>Vmax、Km</code>；如加入抑制剂后<code>y=6x+0.5</code>，判断抑制类型并说明理由。</p>
+<h3 id="c档综合与实验分析4题">C档｜综合与实验分析（4题）</h3>
+<p id="question-C01"><strong>C01 多浓度图像论证。</strong>
+一种新药使酶表观<code>Km</code>从2上升到4
+mmol/L，<code>Vmax</code>由80降至40
+U；请给出一组相容的<code>α、α′</code>，判断更接近哪种抑制，说明为什么不能简单归为纯非竞争性，并提出2项验证措施。</p>
+<p id="question-C02"><strong>C02 联结代谢。</strong>
+丙二酸与琥珀酸结构相似，对琥珀酸脱氢酶产生抑制。说明（1）经典抑制类型；（2）提高琥珀酸浓度对抑制的影响；（3）该酶关联TCA循环和呼吸链的原因；（4）真实体系中高底物浓度实验有何注意事项。</p>
+<p id="question-C03"><strong>C03 药物筛选方案。</strong>
+从测定初速度出发，设计区分竞争性、反竞争性、纯非竞争性、混合型以及不可逆失活的初步实验。要求说明对照、底物/抑制剂浓度组合、数据拟合、预孵育、稀释或脱盐恢复实验及局限性。</p>
+<p id="question-C04"><strong>C04 概念辨析论述。</strong>
+“一种变构抑制剂使S形底物反应曲线右移，因此一定属于竞争性抑制。”判断并说明：何时能用普通<code>Km</code>，何时应使用<code>K0.5</code>或经验半饱和浓度？</p>
+<hr/>
+</section><section class="chapter-section practice-section" data-chapter="5"><h2 id="第五部分六道主观题示范答案">第五部分｜六道主观题示范答案</h2>
+<blockquote>
+<p>采用<strong>建议给分点</strong>组织；不是清华官方评分细则。先根据题目独立作答，再展开对应解析核对。</p>
+</blockquote>
+<div class="subjective-question" id="subjective-01"><h3 id="分题简述影响酶促反应速度的因素">S01 · 10分题：简述影响酶促反应速度的因素</h3><details class="answer"><summary>查看参考答案与解析</summary><div class="answer-body">
+<p><strong>标准答案（六因素各约1—2分）</strong></p>
+<ol type="1">
+<li><strong>底物浓度</strong>：固定酶浓度时，简单米氏酶的初速度满足<code>v=Vmax[S]/(Km+[S])</code>。低[S]近似一级动力学，随[S]增加速度升高；高[S]接近Vmax，近似零级动力学。</li>
+<li><strong>酶浓度</strong>：底物足量且其他条件不变时<code>Vmax=kcat[E]T</code>，因此初速度与有效酶浓度通常成正比。</li>
+<li><strong>pH</strong>：影响活性位点可解离基团的质子化状态、底物离子状态和酶构象；过高或过低pH可使酶活性下降甚至失活，常表现出实验条件依赖的最适pH。</li>
+<li><strong>温度</strong>：在酶结构稳定范围内升温通常加快反应；超过稳定范围则可能造成变性或失活，最适温度受测定条件和反应时间影响。</li>
+<li><strong>抑制剂</strong>：可逆抑制按与E/ES结合的方式影响<code>Km,app</code>和<code>Vmax,app</code>；不可逆失活可使有效活性酶量减少。</li>
+<li><strong>激活剂及酶调节</strong>：如特定金属离子或别构激活剂可增强催化；酶原激活、共价修饰、酶量变化也会调控反应速度。</li>
+</ol>
+<p><strong>失分风险</strong>：只写名词不说机制；把最适pH视为不变常数；把“时间越久产物越多”当成初速度决定因素；把所有抑制剂都写成竞争性抑制。</p>
+</div></details></div><div class="subjective-question" id="subjective-02"><h3 id="分题论述酶如何降低活化能">S02 · 10分题：论述酶如何降低活化能</h3><details class="answer"><summary>查看参考答案与解析</summary><div class="answer-body">
+<p><strong>标准答案：</strong>
+酶是高效、具有选择性的生物催化剂，主要通过稳定过渡态、提供更易发生反应的微环境或反应路径，使从反应物到过渡态所需的活化自由能<code>ΔG‡</code>下降；它不改变底物与产物之间的<code>ΔG°′</code>和反应的平衡常数。（总论2分）</p>
+<p>①<strong>广义酸碱催化</strong>：活性中心基团向底物给予或接受质子，促进键的断裂与生成；His、Glu、Asp等残基可参与。（2分）②<strong>共价催化</strong>：酶中的反应性基团与底物形成短暂共价中间体，再通过后续步骤释放产物、再生酶，例如Ser蛋白酶的酰基酶中间体。（2分）③<strong>金属离子催化</strong>：金属离子可结合定位底物、活化水、稳定负电荷、参与氧化还原；例如激酶反应中的Mg²⁺。（2分）④<strong>趋近和定向效应</strong>：将底物与催化基团置于有利方位，降低不利的分子碰撞取向所造成的限制。底物变形、诱导契合及过渡态稳定也能协同提高催化效率。（2分）</p>
+<p><strong>作答结构</strong>：“定义及热力学边界 → 四类机制 → 串联例证 →
+小结”，优于仅背四个名称。</p>
+</div></details></div><div class="subjective-question" id="subjective-03"><h3 id="分题比较四种可逆抑制作用">S03 · 10分题：比较四种可逆抑制作用</h3><details class="answer"><summary>查看参考答案与解析</summary><div class="answer-body">
+<p><strong>标准答案：</strong>
+可逆抑制是指抑制剂与酶或酶—底物复合物可逆结合，降低反应速度，典型表现为不同动力学参数变化。（1分）</p>
+<ul>
+<li><strong>竞争性</strong>：I主要与游离E结合，竞争底物结合，<code>Km,app↑、Vmax不变</code>；双倒数图交纵轴，高底物可减弱抑制。（2分）</li>
+<li><strong>反竞争性</strong>：I仅与ES结合，<code>Km,app↓、Vmax,app↓</code>且按同一比例减小；双倒数线平行，高底物不能解除。（2分）</li>
+<li><strong>纯非竞争性</strong>：I对E及ES亲和力相同，<code>Km</code>不变、<code>Vmax↓</code>；双倒数线交横轴。（2分）</li>
+<li><strong>混合型</strong>：I对E及ES均能结合但亲和力不同，<code>Vmax↓</code>，<code>Km</code>根据相对亲和力可升可降，双倒数线典型地交坐标轴外。（2分）</li>
+<li><strong>总结与例证</strong>：丙二酸竞争琥珀酸脱氢酶；说明上述规律是经典动力学模型下的参数特征。（1分）</li>
+</ul>
+</div></details></div><div class="subjective-question" id="subjective-04"><h3 id="分题比较酶原激活别构调节与共价修饰">S04 · 10分题：比较酶原激活、别构调节与共价修饰</h3><details class="answer"><summary>查看参考答案与解析</summary><div class="answer-body">
+<p><strong>标准答案：</strong> 三者均能调节酶催化，但分子机制不同。</p>
+<p><strong>酶原激活</strong>：无活性或低活性酶前体被特定蛋白酶切断肽键，改变一级结构并使活性部位形成/暴露，常不可逆。胰蛋白酶原由肠肽酶启动激活，既保护产生消化酶的细胞，又实现特定部位激活。（3分）</p>
+<p><strong>别构调节</strong>：别构效应物与酶的调节位点非共价结合，诱导构象与底物结合/催化性质改变，作用快且通常可逆。ATCase受CTP反馈抑制与ATP激活是经典例子，寡聚别构酶常出现协同性和S形动力学曲线。（3分）</p>
+<p><strong>共价修饰调节</strong>：由其他酶使目标酶特定基团发生共价修饰并可在相应酶作用下撤销，常见蛋白质磷酸化与去磷酸化。PDH
+E1经磷酸化受抑制、去磷酸化激活；不同酶对磷酸化的响应方向不一定相同。（3分）</p>
+<p><strong>总结</strong>：比较“肽键是否被切断—是否非共价—是否可逆—是否存在级联放大”，说明生理调节意义。（1分）</p>
+</div></details></div><div class="subjective-question" id="subjective-05"><h3 id="分题从米氏方程推出kmvmax的意义">S05 · 10分题：从米氏方程推出Km、Vmax的意义</h3><details class="answer"><summary>查看参考答案与解析</summary><div class="answer-body">
+<p><strong>标准答案：</strong>（1）写反应模型<code>E+S⇌ES→E+P</code>及初速度、底物过量、ES稳态条件（2分）；（2）由<code>d[ES]/dt=0</code>求得<code>Km=(k-1+k2)/k1</code>，再求得<code>v=Vmax[S]/(Km+[S])</code>、<code>Vmax=k2[E]T</code>（3分）；（3）令<code>v=Vmax/2</code>得到<code>[S]=Km</code>，解释Km量纲为浓度、Vmax量纲为速度，与酶浓度的关系不同（2分）；（4）解释极限情况：低底物一级、高底物零级（1分）；（5）写双倒数式、截距及斜率，指出Km与Kd近似相等需要额外动力学条件（2分）。</p>
+</div></details></div><div class="subjective-question" id="subjective-06"><h3 id="分题实验判断新化合物的抑制机制">S06 · 12分题：实验判断新化合物的抑制机制</h3><details class="answer"><summary>查看参考答案与解析</summary><div class="answer-body">
+<p><strong>标准答案（建议答题模板）：</strong></p>
+<ol type="1">
+<li><strong>实验目的与对照（2分）</strong>：选用纯化目标酶与可靠产物检测法；设无药溶剂对照、无酶背景、无底物背景及必要的已知抑制剂阳性对照。</li>
+<li><strong>梯度设计（2分）</strong>：在相同酶量、pH、温度下，设置从低于Km到远高于Km的底物浓度系列，以及多级抑制剂浓度；每组生物/技术重复并记录真实检测条件。</li>
+<li><strong>初速度测量（2分）</strong>：监测产物在早期线性区间的形成速率，避免明显底物耗竭、产物抑制和检测信号饱和。</li>
+<li><strong>数学拟合与机制分析（3分）</strong>：对全浓度矩阵进行竞争、反竞争、纯非竞争/混合模型的非线性拟合，比较<code>Km、Vmax</code>及参数可信区间；用双倒数图辅助展示，但不独自作为判定依据。</li>
+<li><strong>可逆性与特异性验证（2分）</strong>：预孵育时间梯度、稀释/脱盐恢复，排除时间依赖不可逆失活；可用正交法验证抑制剂不干扰比色/荧光读数。</li>
+<li><strong>结论与局限（1分）</strong>：依据多重证据判定抑制类型，并说明异常协同、多底物、底物抑制等体系可能不满足简单模型。</li>
+</ol>
+<hr/>
+</div></details></div></section><section class="chapter-section solutions-section" data-chapter="6"><h2 id="第六部分原创分级题详细解析">第六部分｜原创分级题详细解析</h2>
+<details class="answer"><summary>展开A档选择题解析</summary><div class="answer-body"><h3 id="a档选择题答案与原因">A档选择题答案与原因</h3>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>题号</th>
+<th>答案</th>
+<th>解析</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="#question-A01">A01</a></td>
+<td>B</td>
+<td><code>Vmax=kcat[E]T</code>，酶量加倍、每个酶分子的催化性质不变时，Vmax加倍。</td>
+</tr>
+<tr class="even">
+<td><a href="#question-A02">A02</a></td>
+<td>C</td>
+<td><code>v/Vmax=3Km/(Km+3Km)=3/4</code>，不是1或1/2。</td>
+</tr>
+<tr class="odd">
+<td><a href="#question-A03">A03</a></td>
+<td>A</td>
+<td>竞争性抑制可被高[S]克服，表观Km增大而Vmax维持。</td>
+</tr>
+<tr class="even">
+<td><a href="#question-A04">A04</a></td>
+<td>C</td>
+<td>反竞争时Km与Vmax同倍缩小，因此<code>Km/Vmax</code>不变，双倒数图斜率不变。</td>
+</tr>
+<tr class="odd">
+<td><a href="#question-A05">A05</a></td>
+<td>D</td>
+<td>令<code>1/v=0</code>解得<code>1/[S]=−1/Km</code>，横截距是负数。</td>
+</tr>
+<tr class="even">
+<td><a href="#question-A06">A06</a></td>
+<td>C</td>
+<td>酶降低到过渡态的自由能障碍；其余选项均错误地宣称改变热力学平衡。</td>
+</tr>
+<tr class="odd">
+<td><a href="#question-A07">A07</a></td>
+<td>B</td>
+<td>三维折叠可让序列不相邻的残基共同组成活性部位，例如教材溶菌酶。</td>
+</tr>
+<tr class="even">
+<td><a href="#question-A08">A08</a></td>
+<td>A</td>
+<td>酶原激活涉及特异肽键断裂，别构和通常可逆抑制并不需要切断靶酶肽键。</td>
+</tr>
+<tr class="odd">
+<td><a href="#question-A09">A09</a></td>
+<td>B</td>
+<td>H、M组合成四聚体LDH的5种同工酶。</td>
+</tr>
+<tr class="even">
+<td><a href="#question-A10">A10</a></td>
+<td>B</td>
+<td>直接形成瞬时共价催化中间体是共价催化的定义。</td>
+</tr>
+<tr class="odd">
+<td><a href="#question-A11">A11</a></td>
+<td>C</td>
+<td>U/mg把酶催化能力按总蛋白质量归一化，可用于衡量纯化程度。</td>
+</tr>
+<tr class="even">
+<td><a href="#question-A12">A12</a></td>
+<td>C</td>
+<td>既有E/ES等亲和力，又观测Km不变Vmax降低，符合纯非竞争模型。</td>
+</tr>
+</tbody>
+</table></div>
+</div></details><details class="answer"><summary>展开A档判断题解析</summary><div class="answer-body"><h3 id="a档判断题答案与解析">A档判断题答案与解析</h3>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>题号</th>
+<th>结论</th>
+<th>必须写出的理由</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="#question-J01">J01</a></td>
+<td>对</td>
+<td>反应平衡由自由能差决定，不由催化途径决定。</td>
+</tr>
+<tr class="even">
+<td><a href="#question-J02">J02</a></td>
+<td>错</td>
+<td><code>Km=(k-1+k2)/k1</code>，<code>Kd=k-1/k1</code>，只有k2相对k-1足够小时近似相等。</td>
+</tr>
+<tr class="odd">
+<td><a href="#question-J03">J03</a></td>
+<td>错</td>
+<td>抑制剂降低有效催化或结合，不意味着未被抑制的酶分子kcat自动加倍。</td>
+</tr>
+<tr class="even">
+<td><a href="#question-J04">J04</a></td>
+<td>对</td>
+<td>反竞争抑制<code>α=1、α′&gt;1</code>，两参数均除以α′。</td>
+</tr>
+<tr class="odd">
+<td><a href="#question-J05">J05</a></td>
+<td>错</td>
+<td>温度最适点受实验时长、pH、体系稳定性等影响。</td>
+</tr>
+<tr class="even">
+<td><a href="#question-J06">J06</a></td>
+<td>对</td>
+<td>在题设简单米氏模型且无底物抑制的前提下，高底物使酶趋于饱和，速度逐渐接近Vmax。</td>
+</tr>
+<tr class="odd">
+<td><a href="#question-J07">J07</a></td>
+<td>对</td>
+<td>蛋白酶定点切割常改变前体的一级结构与活性部位。</td>
+</tr>
+<tr class="even">
+<td><a href="#question-J08">J08</a></td>
+<td>错</td>
+<td>存在协同作用的别构酶可呈S形动力学，而非简单米氏双曲线。</td>
+</tr>
+<tr class="odd">
+<td><a href="#question-J09">J09</a></td>
+<td>错</td>
+<td>不可逆抑制可以是稳定共价修饰，但也有其他持续性失活机制；并非必须整体破坏一级结构。</td>
+</tr>
+<tr class="even">
+<td><a href="#question-J10">J10</a></td>
+<td>对</td>
+<td>EC号码按照催化反应类别而非俗名的字面词判断。</td>
+</tr>
+</tbody>
+</table></div>
+</div></details><details class="answer"><summary>展开B档计算题解析</summary><div class="answer-body"><h3 id="b档计算题完整解答">B档计算题完整解答</h3>
+<p><strong>B01</strong> 逐一代入<code>v=80[S]/(2+[S])</code>：</p>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">[S] (mmol/L)</th>
+<th style="text-align: right;">速度（μmol/min）</th>
+<th style="text-align: right;"><code>v/Vmax</code></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">26.67</td>
+<td style="text-align: right;">33.33%</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">50%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">75%</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">90%</td>
+</tr>
+</tbody>
+</table></div>
+<p><code>[S]=18 mmol/L</code>最接近饱和，但仍不是严格等于Vmax；与<code>[S]→∞</code>的数学极限要区分。</p>
+<p><strong>B02</strong>
+写两式<code>30=2Vmax/(Km+2)</code>、<code>45=6Vmax/(Km+6)</code>。整理成<code>Vmax=15(Km+2)</code>及<code>Vmax=7.5(Km+6)</code>，联立：<code>15Km+30=7.5Km+45</code>，故<code>Km=2 mmol/L</code>，<code>Vmax=60 μmol/min</code>。检验：底物2时60×2/4=30；底物6时60×6/8=45。</p>
+<p><strong>B03</strong>
+<code>Vmax</code>不变且<code>Km</code>由2增到6，属于竞争性抑制。<code>α=Km,app/Km=6/2=3</code>。由<code>α=1+[I]/Ki</code>得<code>3=1+4/Ki</code>，<code>Ki=2 μmol/L</code>。注意：<code>Ki</code>与<code>Km</code>单位可不同，此处分别使用μmol/L和mmol/L。</p>
+<p><strong>B04</strong>
+反竞争<code>Km,app=Km/α′=4/3 mmol/L≈1.333</code>；<code>Vmax,app=120/3=40 μmol/min</code>。当<code>[S]=4 mmol/L</code>：<code>v=40×4/(4/3+4)=30 μmol/min</code>。或用通式<code>120×4/(4+3×4)=30</code>，两法一致。</p>
+<p><strong>B05</strong>
+纯非竞争<code>Km,app=1 mmol/L</code>、<code>Vmax,app=90/3=30 μmol/min</code>；<code>[S]=1</code>时速度<code>30×1/(1+1)=15</code>；<code>[S]=9</code>时速度<code>30×9/(1+9)=27 μmol/min</code>。即使<code>[S]→∞</code>，也只逼近30而不是90，因为最大有效催化能力已下降。</p>
+<p><strong>B06</strong>
+粗提比活<code>1600/320=5 U/mg</code>；纯化后<code>1000/40=25 U/mg</code>；纯化倍数<code>25/5=5</code>；回收率<code>1000/1600×100%=62.5%</code>。去掉杂蛋白显著提高单位总蛋白活力，而纯化过程中同时损失部分目标酶，因此总活力下降并不矛盾。</p>
+<p><strong>B07</strong>
+从纵轴截距<code>1/Vmax=0.5</code>，求得<code>Vmax=2 μmol/min</code>；斜率<code>Km/Vmax=3</code>，故<code>Km=6 mmol/L</code>。有抑制后截距0.5不变
+→ Vmax不变；斜率6变大 → Km由6增为12 mmol/L，符合经典竞争性抑制。</p>
+</div></details><details class="answer"><summary>展开C档综合题解析</summary><div class="answer-body"><h3 id="c档综合题参考答案">C档综合题参考答案</h3>
+<p><strong>C01：</strong>
+用<code>Vmax,app=Vmax/α′</code>得<code>α′=2</code>；<code>Km,app=αKm/α′</code>得<code>4=α×2/2</code>，所以<code>α=4</code>，有<code>α≠α′</code>，属于<strong>混合型</strong>而非纯非竞争性。纯非竞争要求α=α′且Km不变。验证建议：①使用多个[S]、[I]浓度点，比较四种抑制模型的全局拟合与残差；②独立进行E/I或ES/I结合研究，或者用适当的竞争性位点探针；③检验药物对读数的光谱或化学干扰。</p>
+<p><strong>C02：</strong>
+丙二酸结构与琥珀酸类似，是琥珀酸脱氢酶的典型竞争性抑制剂；高[S]可减弱相同[I]下的相对抑制。该酶参与琥珀酸→延胡索酸，同时在线粒体内膜作为复合体Ⅱ将电子输入泛醌池。真实实验须固定反应体系条件、使用适宜底物浓度，考虑反应产物累积、膜蛋白状态及检测方法可能干扰。</p>
+<p><strong>C03：</strong>
+建立含0、低、中、高抑制剂浓度×多个底物浓度矩阵，测初速度；对不同经典可逆抑制模型做非线性全局拟合；基于最佳参数与生物学合理性区分Km、Vmax、Ki、Ki′；设置预孵育时间和去除游离药物后的恢复测试以筛查慢结合/时间依赖失活；若可逆恢复很差，还需进一步排除超慢解离、高亲和力非共价结合、酶变性或实验基质改变等其他原因。单凭“透析后仍抑制”不能自动证明共价不可逆。</p>
+<p><strong>C04：</strong>
+原命题<strong>错误</strong>。典型竞争性抑制是在普通简单米氏模型中I与底物竞争游离酶结合，表现<code>Km↑、Vmax不变</code>；变构抑制剂结合调节位点，其构象变化也可能使协同型曲线右移，但机制并不等于竞争性抑制。若观察到典型S形协同性，普通米氏方程及其简单Km解释不一定适用，常用<code>K0.5</code>（达到半最大速度的底物浓度）等描述性指标，并根据别构/协同模型具体分析。</p>
+<hr/>
+</div></details></section><section class="chapter-section practice-section" data-chapter="7"><h2 id="第七部分教材课后习题112逐题导学原题见原书p7677">第七部分｜教材课后习题1—12逐题导学（原题见原书p76—77）</h2>
+<blockquote>
+<p>题号和题意由<strong>教材扫描页直接核查</strong>，这里用转述与解析代替照抄完整题干。第4题原表数据存在偏离简单米氏方程的问题，第10题原书单位存在不明确之处，均如实标注；不擅改源文。</p>
+</blockquote>
+<div class="textbook-question"><h3 id="课后题1为什么某些不直接催化的残基也很重要教材p76题1">课后题1：为什么某些不直接催化的残基也很重要？[教材p76·题1]</h3><p><strong>题目核心：</strong>
+将溶菌酶的Asp101或Arg114替换为Ala时，未明显改变酶的整体三级结构，却显著降低催化活性，如何解释？</p><p class="source-note"><span class="source-note">教材定位：PDF第96页（印刷第76页；请使用自备教材）</span></p><details class="answer"><summary>查看参考答案与解析</summary><div class="answer-body">
+<p><strong>解析：</strong>
+活性部位是一个多残基组成的功能网络，不止包含直接参与化学反应的催化残基（如Glu35、Asp52），也包含帮助底物识别、定位、调节局部电荷、稳定过渡态和限制局部构象的残基。Asp101或Arg114虽然未必直接发生共价化学反应，其替换仍可能破坏局部静电作用/氢键网络，使底物不能精准定位，或改变局部催化环境。<strong>整体三级结构基本不变≠活性部位微观结构与能量网络不变。</strong></p>
+</div></details></div><div class="textbook-question"><h3 id="课后题2质子化his作为酸催化基团的ph依赖性教材p76题2">课后题2：质子化His作为酸催化基团的pH依赖性[教材p76·题2]</h3><p><strong>题目核心：</strong>
+某His残基以质子供体身份参与催化，当pH超过其侧链pK后，酶活性如何变化？</p><p class="source-note"><span class="source-note">教材定位：PDF第96页（印刷第76页；请使用自备教材）</span></p><details class="answer"><summary>查看参考答案与解析</summary><div class="answer-body">
+<p><strong>解析：</strong>
+若该His必须在质子化状态下作为广义酸提供H⁺，当pH增大并超过其pKa，His侧链的质子化分数会降低，酸催化所需状态减少，故这一路径的催化效率通常下降。可用Henderson–Hasselbalch关系说明：</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi mathvariant="normal">H</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">s</mi><msup><mi mathvariant="normal">H</mi><mo mathvariant="normal">+</mo></msup></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mn>10</mn><mrow><mrow><mi mathvariant="normal">p</mi><mi mathvariant="normal">H</mi></mrow><mo>−</mo><mi mathvariant="normal">p</mi><msub><mi>K</mi><mi>a</mi></msub></mrow></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">f_{\mathrm{HisH^+}}=\frac{1}{1+10^{\mathrm{pH}-\mathrm{p}K_a}}</annotation></semantics></math></p>
+<p>但全酶实际pH—速度曲线还受到其他残基和蛋白稳定性的影响，不一定是单调下降。</p>
+</div></details></div><div class="textbook-question"><h3 id="课后题3三个变量的关系图p7677图3.34">课后题3｜三个变量的关系图（p76—77，图3.34）</h3><p>原书要求在底物过量假设下，分别画产物浓度<code>[P]</code>—时间、酶—底物复合物浓度<code>[ES]</code>—时间、初速度<code>v₀</code>—总酶浓度<code>[E]T</code>。</p><p class="source-note"><span class="source-note">教材定位：PDF第97页（印刷第77页；请使用自备教材）</span></p><details class="answer"><summary>查看参考答案与解析</summary><div class="answer-body">
+<p><strong>答题要点：</strong>
+初速度测定时间窗内，产物随时间近似线性累积；稳态建立后<code>[ES]</code>近似恒定（初始短暂上升）；在底物浓度足够大且其余条件相同的情况下<code>v₀∝[E]T</code>，从原点出发呈直线。这里的图为<strong>教学近似</strong>，不是整段反应一直线性增长。</p>
+</div></details></div><div class="textbook-question"><h3 id="课后题4从原书表3.5估计km和vmax教材p77题4">课后题4：从原书表3.5估计Km和Vmax[教材p77·题4]</h3>
+<p>教材表3.5给出一组初速度数据（底物浓度单位mmol/L，速度单位mmol/min）：</p>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">[S]</th>
+<th style="text-align: right;">0.00125</th>
+<th style="text-align: right;">0.01</th>
+<th style="text-align: right;">0.04</th>
+<th style="text-align: right;">0.10</th>
+<th style="text-align: right;">2.0</th>
+<th style="text-align: right;">10</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">v0</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;"><span class="source-note">56（教材印刷页）</span></td>
+<td style="text-align: right;">66</td>
+<td style="text-align: right;">69</td>
+<td style="text-align: right;">70</td>
+</tr>
+</tbody>
+</table></div><p class="source-note"><span class="source-note">教材定位：PDF第97页（印刷第77页；请使用自备教材）</span></p><details class="answer"><summary>查看参考答案与解析</summary><div class="answer-body">
+<p>观察高浓度区，<code>Vmax</code>约为<strong>70
+mmol/min</strong>；在<code>[S]=0.01 mmol/L</code>时<code>v=35</code>正好是Vmax的一半，因此<code>Km≈0.01 mmol/L</code>。<code>[S]=0.04</code>的56也与<code>70×0.04/(0.01+0.04)=56</code>吻合。</p>
+<p><strong>资料核对提示：</strong>
+第1组<code>[S]=0.00125</code>配<code>v=14</code>与<code>Vmax=70、Km=0.01</code>并不完全一致（米氏预测约7.78）。因此此题宜理解为<strong>根据整体趋势估算</strong>，不能声称六个数据点精确符合一组米氏参数。这可能是教材表格数据或实验误差；在未见勘误之前，不臆改原表的首组数字。</p>
+</div></details></div><div class="textbook-question"><h3 id="课后题5三组双倒数图辨认酶浓度p77图3.35">课后题5｜三组双倒数图辨认酶浓度（p77，图3.35）</h3><p>根据原书图3.35的(a)、(b)、(c)三组双倒数直线，判断哪组对应同一酶的三种不同浓度，并解释截距与斜率。</p><p class="source-note"><span class="source-note">教材定位：PDF第97页（印刷第77页；请使用自备教材）</span></p><details class="answer"><summary>查看参考答案与解析</summary><div class="answer-body">
+<p><strong>结论：图（b）。</strong>
+在同一酶、同一底物、相同测定条件下，改变酶总浓度会改变<code>Vmax</code>，而<code>Km</code>保持不变。双倒数直线的<strong>横轴截距<code>−1/Km</code>相同</strong>，纵截距<code>1/Vmax</code>与斜率<code>Km/Vmax</code>随酶浓度改变。教材图（b）的三条直线通过同一负横截距；（c）同纵截距更接近竞争性抑制图形。</p>
+</div></details></div><div class="textbook-question"><h3 id="课后题6同一底物被两种酶竞争教材p77题6">课后题6：同一底物被两种酶竞争[教材p77·题6]</h3><p>给定酶A：<code>Km,A=50 μmol/L、Vmax,A=100 nmol/s</code>；酶B：<code>Km,B=5 mmol/L、Vmax,B=120 nmol/s</code>，底物初始浓度<code>[S]=100 μmol/L</code>。</p><p class="source-note"><span class="source-note">教材定位：PDF第97页（印刷第77页；请使用自备教材）</span></p><details class="answer"><summary>查看参考答案与解析</summary><div class="answer-body">
+<p><strong>先统一单位</strong>：<code>Km,B=5000 μmol/L</code>。</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>A</mi></msub><mo>=</mo><mfrac><mrow><mn>100</mn><mo>×</mo><mn>100</mn></mrow><mrow><mn>50</mn><mo>+</mo><mn>100</mn></mrow></mfrac><mo>=</mo><mn>66.67</mn><mspace width="0.222em"></mspace><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow><annotation encoding="application/x-tex">v_A=\frac{100\times100}{50+100}=66.67\ \mathrm{nmol/s}</annotation></semantics></math>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>B</mi></msub><mo>=</mo><mfrac><mrow><mn>120</mn><mo>×</mo><mn>100</mn></mrow><mrow><mn>5000</mn><mo>+</mo><mn>100</mn></mrow></mfrac><mo>≈</mo><mn>2.35</mn><mspace width="0.222em"></mspace><mrow><mi mathvariant="normal">n</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow><annotation encoding="application/x-tex">v_B=\frac{120\times100}{5000+100}\approx2.35\ \mathrm{nmol/s}</annotation></semantics></math></p>
+<p>酶A对该浓度底物的初速度远高于酶B，因此在其他实验条件可比时，<strong>初期产物P的生成速度大于产物Q</strong>。原题询问1分钟后两种产物的相对量，按初速度比较应判断P较多。但因反应总体积、底物耗竭及时间依赖性未完全给出，不宜用<code>初速度×60秒</code>直接断言1分钟后准确的总产物摩尔数。</p>
+</div></details></div><div class="textbook-question"><h3 id="课后题7乒乓机制与有序顺序机制的同位素交换p77">课后题7｜乒乓机制与有序顺序机制的同位素交换（p77）</h3><p>原题将<strong>标记的第一个产物P*</strong>加入仅含酶E和第一底物A的体系，且<strong>没有第二底物B、第二产物Q</strong>，问P*的标记能否进入重新生成的A*。</p><p class="source-note"><span class="source-note">教材定位：PDF第97页（印刷第77页；请使用自备教材）</span></p><details class="answer"><summary>查看参考答案与解析</summary><div class="answer-body">
+<p><strong>乒乓机制：</strong>
+E与A先反应，生成P并留下修饰态酶E′；逆反应<code>E′+P*→E+A*</code>可进行，<strong>可能发生标记交换</strong>，无须有B/Q。</p>
+<p><strong>有序顺序机制：</strong>
+若该机制必须先依次结合A、B形成三元复合物才进行化学反应，则在缺少B的情况下不能完成相应的P↔︎A交换，<strong>通常不发生标记进入
+<code>A*</code></strong>。这一判定依赖原题机制与标记位置的假定，是经典单向有序模型的结论。</p>
+</div></details></div><div class="textbook-question"><h3 id="课后题8改变底物浓度后的初速度教材p77题8">课后题8：改变底物浓度后的初速度[教材p77·题8]</h3><p>原书给定<code>Km=1 μmol/L</code>，当<code>[S]=100 μmol/L</code>时<code>v0=0.1 μmol/s</code>。分别求[S]=1 mmol/L、1 μmol/L、2 μmol/L时的初速度。</p><p class="source-note"><span class="source-note">教材定位：PDF第97页（印刷第77页；请使用自备教材）</span></p><details class="answer"><summary>查看参考答案与解析</summary><div class="answer-body">
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mo>max</mo></msub><mo>=</mo><mn>0.1</mn><mo>×</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mn>100</mn></mrow><mn>100</mn></mfrac><mo>=</mo><mn>0.101</mn><mspace width="0.222em"></mspace><mrow><mi mathvariant="normal">μ</mi><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">/</mi><mi mathvariant="normal">s</mi></mrow></mrow><annotation encoding="application/x-tex">V_{\max}=0.1\times\frac{1+100}{100}=0.101\ \mathrm{\mu mol/s}</annotation></semantics></math></p>
+<ul>
+<li><ol type="a">
+<li><code>[S]=1 mmol/L =1000 μmol/L</code>：<code>v≈0.101×1000/(1+1000)≈0.1009 μmol/s</code>。</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li><code>[S]=1 μmol/L</code>：<code>v=0.101/(1+1)=0.0505 μmol/s</code>。</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li><code>[S]=2 μmol/L</code>：<code>v=0.101×2/(1+2)≈0.0673 μmol/s</code>。</li>
+</ol></li>
+</ul>
+<p><strong>易错点</strong>：把<code>1 mmol/L</code>与<code>1 μmol/L</code>直接看成同一数值会造成1000倍浓度换算错误。</p>
+</div></details></div><div class="textbook-question"><h3 id="课后题9双残基的最佳酸碱状态教材p77题9">课后题9：双残基的最佳酸碱状态[教材p77·题9]</h3><p>已知His侧链pKa=6.0、Asp侧链pKa=4.25。若催化要求His质子化、Asp去质子化，假设两者独立且速率与相应分数乘积成正比，估算最佳pH并说明模型条件。</p><p class="source-note"><span class="source-note">教材定位：PDF第97页（印刷第77页；请使用自备教材）</span></p><details class="answer"><summary>查看参考答案与解析</summary><div class="answer-body">
+<p>若反应需要His侧链处于<strong>质子化态</strong>（pKa约6.0），同时Asp侧链处于<strong>去质子化态</strong>（pKa约4.25），则pH应位于两种pKa之间，使两种功能状态尽可能同时存在。若假定速率与这两个状态的分数乘积成正比、二者独立，则最佳pH约为两pKa的中点：</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">p</mi><mi mathvariant="normal">H</mi></mrow><mrow><mi mathvariant="normal">o</mi><mi mathvariant="normal">p</mi><mi mathvariant="normal">t</mi></mrow></msub><mo>≈</mo><mfrac><mrow><mn>6.0</mn><mo>+</mo><mn>4.25</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>5.125</mn></mrow><annotation encoding="application/x-tex">\mathrm{pH}_{\mathrm{opt}}\approx\frac{6.0+4.25}{2}=5.125</annotation></semantics></math></p>
+<p>这是一道基于简化酸碱模型的估算题；真实酶的活性中心残基pKa可能因局部环境而偏移，不能把5.125当作所有相关酶的实际最适pH。</p>
+</div></details></div><div class="textbook-question"><h3 id="课后题10hiv-1蛋白酶vmax与抑制类型p77">课后题10｜HIV-1蛋白酶Vmax与抑制类型（p77）</h3><p>题面给相对分子质量<code>Mr=21500</code>、<code>kcat=1000 s⁻¹</code>，酶浓度<code>0.2 mg/mL</code>。</p><p>另给Km=0.075 mol/L；加入2.5 μmol/L抑制剂后，原书报告Vmax=9.3×10⁻³ mol/s。先计算原始Vmax，再讨论两组数据是否可比、可作何种抑制判断。</p><p class="source-note"><span class="source-note">教材定位：PDF第97页（印刷第77页；请使用自备教材）</span></p><details class="answer"><summary>查看参考答案与解析</summary><div class="answer-body">
+<p><strong>(a)
+统一单位计算</strong>：<code>0.2 mg/mL=0.2 g/L</code>，活性酶摩尔浓度<code>[E]T=0.2/21500 mol/L≈9.302×10⁻⁶ mol/L</code>；故<code>Vmax=kcat[E]T≈9.302×10⁻³ mol·L⁻¹·s⁻¹</code>（约9.30
+mmol·L⁻¹·s⁻¹），假定每分子一有效催化位点。</p>
+<p><strong>(b) 类型判别：</strong>
+题面加入抑制剂后给出数值<code>Vmax=9.3×10⁻³ mol/s</code>，与(a)的数字相同，但单位写成了<code>mol/s</code>。<strong>原题存在未说明反应体积的量纲歧义</strong>：只有在默认1
+L体系，或将题面中的单位按<code>mol·L⁻¹·s⁻¹</code>理解时，才能据“Vmax没有改变”判断其<strong>与竞争性抑制相容</strong>；还需要Km变化或多组数据才能确认是经典竞争模型。请先正确说明这一条件，不应默默把原书的<code>mol/s</code>当作浓度变化率。</p>
+</div></details></div><div class="textbook-question"><h3 id="课后题11为什么许多酶先合成为酶原p77">课后题11｜为什么许多酶先合成为酶原？（p77）</h3><p>许多酶为何先合成为没有活性的酶原？按保护作用、激活时空和级联响应说明。</p><p class="source-note"><span class="source-note">教材定位：PDF第97页（印刷第77页；请使用自备教材）</span></p><details class="answer"><summary>查看参考答案与解析</summary><div class="answer-body">
+<ol type="1">
+<li><strong>保护合成和储存部位</strong>：如胰蛋白酶原的合成细胞不会被提前蛋白水解。</li>
+<li><strong>控制激活时空</strong>：使酶在适当部位、适当条件下发挥作用，减少误伤。</li>
+<li><strong>快速、可放大的响应</strong>：例如凝血相关蛋白水解级联。</li>
+</ol>
+<p>限定：并非所有酶都以酶原形式合成，常见于消化系统、凝血和一些其他蛋白酶级联。</p>
+</div></details></div><div class="textbook-question"><h3 id="课后题12甜玉米存储失甜与沸水漂烫p77">课后题12｜甜玉米存储失甜与沸水漂烫（p77）</h3><p>新鲜甜玉米放置后甜味下降；为何短时沸水漂烫后冷却、冷冻有助于保留甜味？从酶活性变化解释。</p><p class="source-note"><span class="source-note">教材定位：PDF第97页（印刷第77页；请使用自备教材）</span></p><details class="answer"><summary>查看参考答案与解析</summary><div class="answer-body">
+<p><strong>原因：</strong>
+收获后种子中的活跃酶促代谢继续进行，一部分可溶性糖可被转化为淀粉等储存物，导致甜味下降。<strong>短时漂烫</strong>通过较高温度使参与这一过程的相关酶失活，减缓此后糖向淀粉的转化，因此可在后续储存过程中更好地保留甜度。注意：需要适当控制漂烫时间，以免过度加热影响质构、风味或造成可溶性成分流失。</p>
+</div></details></div></section><section class="chapter-section reading-section" data-chapter="8"><h2 id="第八部分考纲来源试题核验与科学校订">第八部分｜考纲来源、试题核验与科学校订</h2>
+<h3 id="考纲教材配套材料索引考纲-主教材-配套资料">考纲—教材—配套材料索引：考纲
+→ 主教材 → 配套资料</h3>
+<p>本表“教材页码”指<strong>纸质书印刷页</strong>；上传扫描PDF页码=印刷页码+20（第3章范围内）。讲义页码表示对应上传PDF的可视页号，部分资料为图像版，故按能直接核查的章段而不是声称已经逐字检索全书。</p>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table style="width:100%;">
+<colgroup>
+<col style="width: 23%"/>
+<col style="width: 30%"/>
+<col style="width: 23%"/>
+<col style="width: 23%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>考纲</th>
+<th style="text-align: right;">教材页</th>
+<th>重点教材图表</th>
+<th>配套资料定位/自测建议</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.1 命名分类</td>
+<td style="text-align: right;"><span class="source-note">52—53（教材印刷页）</span></td>
+<td>六大类、EC编码</td>
+<td>《生物化学基础笔记(上)-讲义》酶催化作用章；《客观题》“06酶的催化作用”</td>
+</tr>
+<tr class="even">
+<td>3.2 活性与比活</td>
+<td style="text-align: right;"><span class="source-note">53—54（教材印刷页）</span></td>
+<td>表3.1 酶纯化</td>
+<td>《名词解释》“06 酶的催化作用”；本册B06</td>
+</tr>
+<tr class="odd">
+<td>3.3 活性部位</td>
+<td style="text-align: right;"><span class="source-note">54—56（教材印刷页）</span></td>
+<td>表3.2、图3.7/3.8</td>
+<td>《生物化学基础笔记(上)-讲义》活性部位；模拟卷一判断1</td>
+</tr>
+<tr class="even">
+<td>3.4 活化能</td>
+<td style="text-align: right;"><span class="source-note">56—57（教材印刷页）</span></td>
+<td>反应活化自由能图</td>
+<td>《思维导图》“06酶的催化作用”；<a href="#figure-03">本册图03</a></td>
+</tr>
+<tr class="odd">
+<td>3.5 催化机制</td>
+<td style="text-align: right;"><span class="source-note">57—59（教材印刷页）</span></td>
+<td>3.5.1—3.5.4</td>
+<td>《生物化学基础笔记(上)-讲义》酶催化机制；<a href="#subjective-02">本册S02：催化机制</a></td>
+</tr>
+<tr class="even">
+<td>3.6 米氏方程</td>
+<td style="text-align: right;"><span class="source-note">59—63（教材印刷页）</span></td>
+<td>图3.12/3.13、双倒数图</td>
+<td>《生物化学基础笔记(上)-讲义》酶动力学；《名词解释》“07
+酶动力学”；<a href="#figure-01">本册图01</a></td>
+</tr>
+<tr class="odd">
+<td>3.7 可逆抑制</td>
+<td style="text-align: right;"><span class="source-note">63—65（教材印刷页）</span></td>
+<td>图3.16—3.19、表3.4</td>
+<td>《生物化学基础笔记(上)-讲义》酶动力学；模拟卷一选择5；模拟卷二简答2；<a href="#figure-02">本册图02</a>／<a href="#figure-04">图04</a></td>
+</tr>
+<tr class="even">
+<td>3.8 不可逆抑制</td>
+<td style="text-align: right;"><span class="source-note">65—67（教材印刷页）</span></td>
+<td>不可逆性抑制药物实例</td>
+<td>《名词解释》“07 酶动力学”；本册J09、C03</td>
+</tr>
+<tr class="odd">
+<td>3.9—3.10 pH与温度</td>
+<td style="text-align: right;"><span class="source-note">67—68（教材印刷页）</span></td>
+<td>活性—环境因素曲线</td>
+<td>模拟卷二判断5；本册J05</td>
+</tr>
+<tr class="even">
+<td>3.11 酶调节</td>
+<td style="text-align: right;"><span class="source-note">68—74（教材印刷页）</span></td>
+<td>酶原、别构模型、共价修饰</td>
+<td>《思维导图》“08
+酶作用机制和酶活性调节”；《生化大题背诵最小范围》“酶的调节机制”</td>
+</tr>
+<tr class="odd">
+<td>3.12 同工酶</td>
+<td style="text-align: right;"><span class="source-note">74（教材印刷页）</span></td>
+<td>图3.32 LDH</td>
+<td>本册A09及第3.12节；相关调控的比较见<a href="#subjective-04">S04：酶的调节</a></td>
+</tr>
+<tr class="even">
+<td>3.13 抗体酶</td>
+<td style="text-align: right;"><span class="source-note">74—75（教材印刷页）</span></td>
+<td>图3.33</td>
+<td>《名词解释》“06 酶的催化作用”</td>
+</tr>
+<tr class="odd">
+<td>3.14 酶作为生产工具</td>
+<td style="text-align: right;"><span class="source-note">75（教材印刷页）</span></td>
+<td>枯草杆菌蛋白酶改造</td>
+<td>本册应用说明</td>
+</tr>
+<tr class="even">
+<td>3.15 酶作为活性药物</td>
+<td style="text-align: right;"><span class="source-note">75—76（教材印刷页）</span></td>
+<td>天冬酰胺酶案例</td>
+<td>本册应用说明、校订记录</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>原始资料跨章关系</strong>：教材第4章“辅酶和维生素”、第13章“三羧酸循环”、第18章“核苷酸代谢”、第19章“生物化学技术”，均能为酶学的应用题提供例证，但不应被机械并入第3章的15个直接条目。</p>
+<h3 id="真题与模拟题来源核验矩阵">“真题”与模拟题来源核验矩阵</h3>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>题目或说法</th>
+<th>文件中的明确出处</th>
+<th>可否确认为正式841原卷</th>
+<th>处理方式</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>“竞争性抑制作用特点中，哪项错误？”</td>
+<td>《841模拟卷一》选择5，题旁标注“2022.12 真题”</td>
+<td><strong>未独立核实</strong></td>
+<td>可按教材3.7.1当作练习；禁止标注“已核实2022原题”</td>
+</tr>
+<tr class="even">
+<td>“酶的抑制作用有哪些类型？”</td>
+<td>《841模拟卷二》简答2</td>
+<td><strong>明确为模拟题</strong></td>
+<td>可作为10分默写训练</td>
+</tr>
+<tr class="odd">
+<td>“最适pH是酶固有常数”</td>
+<td>《841模拟卷二》判断5</td>
+<td><strong>明确为模拟题</strong></td>
+<td>按教材p67—68判断为错误</td>
+</tr>
+<tr class="even">
+<td>“反竞争抑制Km增加，Vmax降低”</td>
+<td>《841模拟卷二》判断6</td>
+<td><strong>明确为模拟题</strong></td>
+<td>按教材表3.4判断为错误</td>
+</tr>
+<tr class="odd">
+<td>“Km值最小的底物是否最适？”</td>
+<td>《841模拟卷三》选择13</td>
+<td><strong>明确为模拟题</strong></td>
+<td>教材常规考法；严谨解释须考虑kcat/Km等</td>
+</tr>
+<tr class="even">
+<td>“活性中心只由序列相邻氨基酸组成”</td>
+<td>《841模拟卷三》判断3</td>
+<td><strong>明确为模拟题</strong></td>
+<td>错；参考教材图3.7</td>
+</tr>
+<tr class="odd">
+<td>“2020—2026历年酶题”</td>
+<td>《清华841生物化学_分章笔记与真题精解》所标年份</td>
+<td><strong>目前未找到可逐题独立核对的官方完整原卷</strong></td>
+<td>降级标识为“配套资料整理题（未核验）”</td>
+</tr>
+<tr class="even">
+<td>“2021酶原激活无需其他酶参与”为正确答案</td>
+<td>分章笔记第3章“2021·选择”</td>
+<td><strong>题干、答案均存在疑点</strong></td>
+<td>不记该错误说法；详见下表</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>核验方法与边界</strong>：已用清华SIGS
+<strong>2027年正式发布的考试大纲</strong>核查科目与范围；但大纲并不载有历年试卷和答案。上传文件中的模拟题有时附“真题”年份，分章笔记还自述部分教材页码是估计值。这些材料适合推测<strong>复习切入点</strong>，不适合单独证明<strong>某年真题原文及分值</strong>。若以后获取带可靠来源的试卷扫描件，可逐题替换C级标注。</p>
+<h3 id="必须纠正或加限定条件的资料条目">必须纠正或加限定条件的资料条目</h3>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>项目</th>
+<th>原资料/容易误记的口径</th>
+<th>本册校订口径</th>
+<th>校订依据</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>教材页码</td>
+<td>部分分章笔记将第3章对应p124以后</td>
+<td>第3章印刷p51—77；上传扫描PDF p71—97</td>
+<td>已核查刘玉乐第5版原书目录及章页</td>
+</tr>
+<tr class="even">
+<td>酶的类别</td>
+<td>六大类</td>
+<td><strong>教材六类；现行EC分类七类，新增EC7转位酶</strong></td>
+<td>教材3.1；IUBMB官方目录</td>
+</tr>
+<tr class="odd">
+<td>催化机制</td>
+<td>酸碱、共价、金属、趋近、过渡态稳定“五个小节”</td>
+<td><strong>原书3.5有四个编号小节</strong>；过渡态稳定可作为综合说明</td>
+<td>教材目录及p57—59</td>
+</tr>
+<tr class="even">
+<td>Km代表亲和力</td>
+<td>Km越小一定结合越紧</td>
+<td>在相同条件和适用模型下可作经验比较；严格<code>Km≈Kd</code>需要<code>k2≪k-1</code></td>
+<td>米氏模型推导</td>
+</tr>
+<tr class="odd">
+<td>可逆抑制</td>
+<td>所有非竞争抑制Km不变</td>
+<td><strong>仅纯非竞争</strong>Km不变，混合型可增加或减小</td>
+<td>教材表3.4</td>
+</tr>
+<tr class="even">
+<td>不可逆抑制</td>
+<td>一律与酶氨基酸共价键结合</td>
+<td>常见共价灭活，但不要把所有持续性失活一律等同于特定残基共价修饰</td>
+<td>教材3.8、机制辨析</td>
+</tr>
+<tr class="odd">
+<td>反应因素</td>
+<td>最适pH和温度是固定酶常数</td>
+<td>受测定条件与时间影响，不是无条件固定值</td>
+<td>教材3.9—3.10</td>
+</tr>
+<tr class="even">
+<td>2021“酶原激活无需其他酶参与”</td>
+<td>分章笔记判为正确，同时描述“由肠肽酶催化”</td>
+<td><strong>不能无条件判正确</strong>：肠肽酶先启动胰蛋白酶原激活，已形成的胰蛋白酶又可促进自催化</td>
+<td>教材3.11.1与机制对照</td>
+</tr>
+<tr class="odd">
+<td>L-天冬酰胺酶的治疗病种</td>
+<td>部分教材/笔记表述“急性粒细胞白血病”</td>
+<td>药物的经典适应证为<strong>急性淋巴细胞白血病（ALL）</strong></td>
+<td>NCI药物词典</td>
+</tr>
+<tr class="even">
+<td>模拟题年份</td>
+<td>题旁写“2022.12真题”等</td>
+<td><strong>年份属于上传资料中的未核验来源声明</strong></td>
+<td>未独立找到可核对的官方原卷</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="外部核验参考仅供校订使用不覆盖教材">外部核验参考（仅供校订使用，不覆盖教材）</h3>
+<ul>
+<li>清华大学深圳国际研究生院：《2027年硕士研究生入学考试专业课考试大纲》，2026-07-01。<a href="https://www.sigs.tsinghua.edu.cn/2026/0701/c7770a291965/page.psp" target="_blank" rel="noopener">https://www.sigs.tsinghua.edu.cn/2026/0701/c7770a291965/page.psp</a></li>
+<li>清华SIGS
+2027版841大纲原PDF：<a href="https://www.sigs.tsinghua.edu.cn/_upload/article/files/7b/63/cdcae132405782b04f99d0df5560/2c4a034a-1490-4ec5-a9e8-036f8c53fe1b.pdf" target="_blank" rel="noopener">https://www.sigs.tsinghua.edu.cn/_upload/article/files/7b/63/cdcae132405782b04f99d0df5560/2c4a034a-1490-4ec5-a9e8-036f8c53fe1b.pdf</a></li>
+<li>IUBMB《Enzyme
+Nomenclature》，EC1—EC7目录：<a href="https://iubmb.qmul.ac.uk/enzyme/" target="_blank" rel="noopener">https://iubmb.qmul.ac.uk/enzyme/</a></li>
+<li>NCI《L-asparaginase》药物词典：<a href="https://www.cancer.gov/publications/dictionaries/cancer-terms/def/l-asparaginase" target="_blank" rel="noopener">https://www.cancer.gov/publications/dictionaries/cancer-terms/def/l-asparaginase</a></li>
+</ul>
+<hr/>
+</section><section class="chapter-section practice-section" data-chapter="9"><h2 id="第九部分90分钟闭卷验收">第九部分｜80分钟闭卷＋10分钟订正</h2>
+<h3 id="分钟闭卷验收建议">固定题组验收（总计90分钟）</h3>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>时间</th>
+<th>行动</th>
+<th>满分或完成标准</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0—10分钟</td>
+<td>默写米氏方程、双倒数方程、关键参数单位</td>
+<td>公式和三种截距/斜率均正确</td>
+</tr>
+<tr class="even">
+<td>10—25分钟</td>
+<td>画四种抑制示意图，并说明E/ES结合对象</td>
+<td>4种全部正确，特别不混淆纯非竞和混合型</td>
+</tr>
+<tr class="odd">
+<td>25—45分钟</td>
+<td>固定完成A01—A12、J01—J10</td>
+<td>≥20/22，且错误点说得清楚</td>
+</tr>
+<tr class="even">
+<td>45—65分钟</td>
+<td>固定完成B02、B04、B06及下方E01参数迁移题</td>
+<td>写出代入过程、单位及物理意义</td>
+</tr>
+<tr class="odd">
+<td>65—80分钟</td>
+<td>固定完成S04：比较三种酶调节方式</td>
+<td>至少5个核心给分点，没有概念性错误</td>
+</tr>
+<tr class="even">
+<td>80—90分钟</td>
+<td>结束闭卷，展开答案订正，再查来源校订表</td>
+<td>单列独立作答结果与订正内容，不把看答案后的修正计入首答</td>
+</tr>
+</tbody>
+</table></div>
+<hr/>
+<div class="exam-transfer" id="question-E01"><h3>E01｜参数迁移题（原创验收题，另计）</h3><p>固定酶浓度，未抑制时Km=3 mmol/L、Vmax=150 μmol/min；加入抑制剂后Km,app=1.5 mmol/L、Vmax,app=75 μmol/min。假设服从经典可逆抑制模型，求α、α′，判断类型；再求[S]=3 mmol/L时有、无抑制剂的初速度，并说明为什么不能归为纯非竞争性。</p><details class="answer"><summary>查看参考答案与解析</summary><div class="answer-body"><p>α′=150/75=2；α=(1.5/3)×2=1。因此为反竞争性抑制，两参数同比例下降。未抑制时v=150×3/(3+3)=75 μmol/min；抑制后v=75×3/(1.5+3)=50 μmol/min。纯非竞争要求α=α′且Km不变，与题设不符。</p></div></details></div><p>E01不计入前述45道原创分级训练。首次作答前请收起全部答案；若已看过同题答案，本次结果用于复习，不作为新题迁移证据。</p></section><section class="chapter-section practice-section" data-chapter="10"><h2 id="第十部分考纲薄弱点专项补强12题含详细解析">第十部分｜考纲薄弱点专项补强（12题，含详细解析）</h2>
+<blockquote>
+<p><strong>[新增·原创]</strong>
+原版33题明显偏向米氏动力学和可逆抑制，3.8—3.15练习偏少。本节补足这些内容。与原33题合计<strong>45道原创训练题</strong>；原书12题另计，不与原创题混用。</p>
+</blockquote>
+<h3 id="专项题目先完成再看答案">专项题目（先完成，再看答案）</h3>
+<section id="question-D01" aria-label="选择题 D01" class="quiz-card"><div class="quiz-stem"><strong>D01·选择</strong>
+下列哪项最能区分某种可逆抑制剂与不可逆灭活剂？</div><div aria-label="D01题备选答案" class="quiz-options" role="group"><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">A</span><span class="quiz-choice">固定底物浓度时，初速度是否降低</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">B</span><span class="quiz-choice">抑制剂浓度增大时，抑制程度是否增强</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">C</span><span class="quiz-choice">在适当条件下移去游离抑制剂后，活性是否恢复</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">D</span><span class="quiz-choice">抑制作用是否随预孵育时间延长而增强</span></div></div></section>
+<p id="question-D02"><strong>D02·判断</strong>
+“只要增加底物浓度，所有不可逆抑制都能被完全解除。”</p>
+<p id="question-D03"><strong>D03·判断</strong>
+“某酶在4℃保存时反应很慢，因此4℃一定已使它永久变性。”</p>
+<p id="question-D04"><strong>D04·解释</strong>
+用“两个不同残基的酸碱状态”解释为什么某酶的pH—活性曲线可能呈钟形。</p>
+<section id="question-D05" aria-label="选择题 D05" class="quiz-card"><div class="quiz-stem"><strong>D05·选择</strong>
+与酶原激活相比，同工酶最具识别性的特点是：</div><div aria-label="D05题备选答案" class="quiz-options" role="group"><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">A</span><span class="quiz-choice">同一前体经特定肽键切割而获得催化活性</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">B</span><span class="quiz-choice">不同分子形式催化同一化学反应</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">C</span><span class="quiz-choice">同一分子与效应物结合后在T/R构象间转换</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">D</span><span class="quiz-choice">同一酶分子经磷酸化与去磷酸化改变活性</span></div></div></section>
+<p id="question-D06"><strong>D06·判断</strong>
+“LDH1和LDH5催化不同的化学反应，所以叫同工酶。”</p>
+<p id="question-D07"><strong>D07·简答（5分）</strong>
+解释抗体酶的设计原则及其不能把结合能力直接等同于催化能力的原因。</p>
+<section id="question-D08" aria-label="选择题 D08" class="quiz-card"><div class="quiz-stem"><strong>D08·选择</strong>
+教材中枯草杆菌蛋白酶Met222位点改造的主要教学意义是：</div><div aria-label="D08题备选答案" class="quiz-options" role="group"><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">A</span><span class="quiz-choice">用底物结合更紧直接证明耐氧化性提高</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">B</span><span class="quiz-choice">通过位点替换改变氧化敏感性，并验证活性与稳定性</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">C</span><span class="quiz-choice">用提高反应温度代替酶分子结构改造</span></div><div class="quiz-option"><span aria-hidden="true" class="quiz-letter">D</span><span class="quiz-choice">将蛋白水解酶原激活视为定点突变的结果</span></div></div></section>
+<p id="question-D09"><strong>D09·比较（5分）</strong>
+“酶作为生产工具”和“酶作为活性药物”的区别，分别给出教材相关实例。</p>
+<p id="question-D10"><strong>D10·判断</strong>
+“把L-天冬酰胺酶直接写成急性粒细胞白血病的典型治疗酶，是现行医学规范术语。”</p>
+<p id="question-D11"><strong>D11·应用（6分）</strong> 某药用酶突变体<code>Km</code>从2
+mM降低到1 mM，但<code>kcat</code>从80 s⁻¹降低到20
+s⁻¹。按<code>kcat/Km</code>比较突变前后低底物浓度的催化效率，并解释不能只看Km的原因。</p>
+<p id="question-D12"><strong>D12·实验（6分）</strong>
+有人发现某抗体强烈结合“过渡态类似物”，随即宣称其能催化指定反应。提出至少三项应补做的实验或对照。</p>
+<details class="answer"><summary>展开D01—D12专项解析</summary><div class="answer-body"><h3 id="逐题解析与标准答案">逐题解析与标准答案</h3>
+<div aria-label="数据对照表，横向可滚动" class="table-scroll" role="region" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>题号</th>
+<th>结论</th>
+<th>解析要点</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="#question-D01">D01</a></td>
+<td><strong>C</strong></td>
+<td>C是重要实验线索：移去游离抑制剂后观察活性恢复。A、B都可见于可逆和不可逆抑制；D也可能由慢结合可逆抑制引起，不能单独确证不可逆。慢解离的强非共价结合恢复可能很慢，仍须结合时间依赖和化学证据。</td>
+</tr>
+<tr class="even">
+<td><a href="#question-D02">D02</a></td>
+<td><strong>错</strong></td>
+<td>典型共价不可逆失活即使底物浓度很高也难以逆转；底物可在某些条件下提供保护，不代表能够恢复已灭活的酶。</td>
+</tr>
+<tr class="odd">
+<td><a href="#question-D03">D03</a></td>
+<td><strong>错</strong></td>
+<td>低温速率下降往往是可逆的动力学效应，不能据此认定蛋白质永久变性。</td>
+</tr>
+<tr class="even">
+<td><a href="#question-D04">D04</a></td>
+<td><strong>解释题</strong></td>
+<td>某残基需质子化、另一残基需去质子化，pH过低或过高分别损失一种必要状态，只有中间范围两者同时适当存在，可能出现钟形曲线；其他因素也会影响曲线形状。</td>
+</tr>
+<tr class="odd">
+<td><a href="#question-D05">D05</a></td>
+<td><strong>B</strong></td>
+<td>B正确：多种分子形式催化同一反应。A描述酶原激活；C描述同一酶的别构状态；D描述共价修饰，三者都不等于不同同工酶。</td>
+</tr>
+<tr class="even">
+<td><a href="#question-D06">D06</a></td>
+<td><strong>错</strong></td>
+<td>两者催化的是同一种LDH反应，但由H/M亚基组成、组织分布与动力学可能不同。</td>
+</tr>
+<tr class="odd">
+<td><a href="#question-D07">D07</a></td>
+<td><strong>5分</strong></td>
+<td>过渡态类似物设计与免疫/筛选（2分）；抗体结合过渡态可能降低能垒（1分）；应测实际产物形成速率、周转及底物选择性，结合不等于催化（2分）。</td>
+</tr>
+<tr class="even">
+<td><a href="#question-D08">D08</a></td>
+<td><strong>B</strong></td>
+<td>B正确：改变氧化敏感位点是蛋白质工程思路，改造效果需实验验证。A把底物结合和耐氧化性混为一谈；C属于反应条件调整；D混淆蛋白水解激活与序列突变。</td>
+</tr>
+<tr class="odd">
+<td><a href="#question-D09">D09</a></td>
+<td><strong>5分</strong></td>
+<td>工具酶作用于药物制造过程，如半合成抗生素改造（2分）；活性药物中酶制剂本身用于治疗，如L-天冬酰胺酶催化天冬酰胺水解（2分）；区分催化发生地点和治疗功能（1分）。</td>
+</tr>
+<tr class="even">
+<td><a href="#question-D10">D10</a></td>
+<td><strong>错</strong></td>
+<td>NCI规范信息明确用于急性淋巴细胞白血病（ALL）；教材旧表述必须注明与现行临床术语的差异。</td>
+</tr>
+<tr class="odd">
+<td><a href="#question-D11">D11</a></td>
+<td><strong>前：40 mM⁻¹s⁻¹；后：20 mM⁻¹s⁻¹，下降一半</strong></td>
+<td>前<code>80/2=40</code>，后<code>20/1=20</code>；Km虽然下降，但kcat降幅更大，所以<code>kcat/Km</code>降低。</td>
+</tr>
+<tr class="even">
+<td><a href="#question-D12">D12</a></td>
+<td><strong>6分</strong></td>
+<td>设置无抗体/非特异IgG对照；连续测定产物并确定周转而非一次性结合；比较活性抗体与热失活抗体；检测过渡态类似物或检测体系干扰；测底物梯度和动力学参数（任选三项，各2分）。</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>专项验收</strong>：D01—D06和D08、D10要快速正确；D07、D09、D11、D12能按得分点写出机制与实验依据。</p>
+<hr/>
+</div></details></section><section class="chapter-section reading-section" data-chapter="11"><h2 id="附录资料使用边界和排版依据">附录｜资料使用边界和排版依据</h2>
+<p><strong>资料等级</strong>：教材/官方考纲为本章学习依据；本册<code>[原创]</code>题及建议分值仅供自测，不属于清华大学正式题目。所有<code>[校订]</code>与<code>[拓展]</code>均独立标注，不将外部资料无提示地写成原教材结论。</p>
+<p><strong>排版说明（编辑依据，非学科考点）</strong>：参考U.S. Web
+Design System排版指南、W3C WCAG 2.2和Nielsen Norman
+Group的长文目录原则。正文采用适读字号、可识别标题层级与留白；重点、易错、校订分设提示块，且通过文字标签说明含义，不仅依靠颜色；目录分组、适合直接定位章节。</p>
+<ul>
+<li><a class="uri" href="https://designsystem.digital.gov/components/typography/">https://designsystem.digital.gov/components/typography/</a></li>
+<li><a class="uri" href="https://www.w3.org/TR/WCAG22/">https://www.w3.org/TR/WCAG22/</a></li>
+<li><a class="uri" href="https://www.nngroup.com/articles/table-of-contents/">https://www.nngroup.com/articles/table-of-contents/</a></li>
+<li><a class="uri" href="https://design-system.service.gov.uk/components/inset-text/">https://design-system.service.gov.uk/components/inset-text/</a></li>
+</ul>
+</section></main><dialog class="figure-dialog" id="figure-dialog" aria-labelledby="figure-title"><div class="figure-controls"><strong id="figure-title">图表放大</strong><button type="button" id="figure-minus" aria-label="缩小图表">缩小</button><button type="button" id="figure-plus" aria-label="放大图表">放大</button><button type="button" id="figure-close">关闭</button></div><p class="figure-hint">左右、上下滑动查看全图；可用缩放按钮调整，按Esc关闭。</p><div class="figure-stage" id="figure-stage" tabindex="0" aria-label="放大图表，可滚动"></div></dialog><div class="bottom">支持在线阅读和下载后离线使用；打印请使用顶部“打印 / PDF”。教材页码供自备教材定位。</div></div></div><script>
+(()=>{
+  const root=document.documentElement, body=document.body;
+  const answers=[...document.querySelectorAll('details.answer')];
+  const toggle=document.getElementById('questions-toggle'), status=document.getElementById('view-status');
+  let fs=16;
+  document.getElementById('larger').addEventListener('click',()=>{fs=Math.min(fs+1,21);root.style.fontSize=fs+'px';});
+  document.getElementById('smaller').addEventListener('click',()=>{fs=Math.max(fs-1,14);root.style.fontSize=fs+'px';});
+  function setQuestions(on){
+    body.classList.toggle('questions-only',on);toggle.setAttribute('aria-pressed',String(on));
+    toggle.textContent=on?'返回完整讲义':'仅看题目';
+    status.textContent=on?'自测模式：仅显示题面；完成后返回讲义核对答案。':'阅读模式：可按题型展开答案；图表支持横向滚动和放大。';
+  }
+  toggle.addEventListener('click',()=>{setQuestions(!body.classList.contains('questions-only'));document.getElementById('main').scrollIntoView();});
+  document.getElementById('answers-hide').addEventListener('click',()=>{answers.forEach(d=>d.open=false);status.textContent='已收起全部答案。';});
+  document.getElementById('answers-show').addEventListener('click',()=>{setQuestions(false);answers.forEach(d=>d.open=true);status.textContent='已展开全部参考答案与解析。';});
+
+  // 打印时按选项展开讲义，完成或取消打印后恢复原阅读状态。
+  let printState=null;
+  function preparePrint(){
+    if(printState)return;
+    printState={open:answers.map(d=>d.open),questions:body.classList.contains('questions-only')};
+    body.classList.remove('questions-only');
+    const only=document.getElementById('print-mode').value==='questions';
+    body.classList.toggle('print-questions',only);
+    answers.forEach(d=>d.open=!only);
+  }
+  function restorePrint(){
+    if(!printState)return;
+    answers.forEach((d,i)=>d.open=printState.open[i]);
+    body.classList.toggle('questions-only',printState.questions);body.classList.remove('print-questions');printState=null;
+  }
+  addEventListener('beforeprint',preparePrint);addEventListener('afterprint',restorePrint);
+  document.getElementById('print').addEventListener('click',()=>window.print());
+
+  const dialog=document.getElementById('figure-dialog'), stage=document.getElementById('figure-stage');
+  let width=1200;
+  function sizeFigure(){const svg=stage.querySelector('svg');if(svg)svg.style.width=width+'px';}
+  document.querySelectorAll('.figure-open').forEach(button=>button.addEventListener('click',()=>{
+    const figure=document.getElementById(button.dataset.figure), svg=figure.querySelector('svg').cloneNode(true);
+    // 拷贝图表时重命名内部ID，避免双倒数图的裁剪路径与原图冲突。
+    const ids=new Map();svg.querySelectorAll('[id]').forEach(el=>{ids.set(el.id,'zoom-'+el.id);el.id='zoom-'+el.id;});
+    svg.querySelectorAll('*').forEach(el=>[...el.attributes].forEach(attr=>{let v=attr.value;ids.forEach((newId,oldId)=>{if(v==='#'+oldId)v='#'+newId;v=v.replaceAll('url(#'+oldId+')','url(#'+newId+')');});if(v!==attr.value)el.setAttributeNS(attr.namespaceURI,attr.name,v);}));
+    stage.replaceChildren(svg);width=Math.max(1000,svg.viewBox.baseVal.width*1.4);sizeFigure();
+    document.getElementById('figure-title').textContent=figure.querySelector('figcaption').textContent;
+    dialog.showModal();stage.scrollTo(0,0);
+  }));
+  document.getElementById('figure-minus').addEventListener('click',()=>{width=Math.max(500,width-200);sizeFigure();});
+  document.getElementById('figure-plus').addEventListener('click',()=>{width=Math.min(3000,width+200);sizeFigure();});
+  document.getElementById('figure-close').addEventListener('click',()=>dialog.close());
+  dialog.addEventListener('close',()=>stage.replaceChildren());
+
+  // 从目录或答案返回题面时，必要时退出自测模式并展开折叠祖先。
+  function revealHash(){
+    let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}
+    if(!id)return;const el=document.getElementById(id);if(!el)return;
+    if(el.closest('.reading-section,.solutions-section,.answer'))setQuestions(false);
+    let parent=el.parentElement;while(parent){if(parent.matches('details'))parent.open=true;parent=parent.parentElement;}
+    requestAnimationFrame(()=>el.scrollIntoView({block:'start'}));
+  }
+  addEventListener('hashchange',revealHash);revealHash();
+  function progress(){const max=root.scrollHeight-innerHeight;document.getElementById('progress').style.width=(max>0?Math.min(100,100*scrollY/max):0)+'%';}
+  addEventListener('scroll',progress,{passive:true});addEventListener('resize',progress);document.addEventListener('toggle',progress,true);progress();
+  const links=[...document.querySelectorAll('.sidebar .side-link')];
+  if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{for(const e of entries)if(e.isIntersecting)links.forEach(a=>a.classList.toggle('active',decodeURIComponent(a.hash.slice(1))===e.target.id));},{rootMargin:'-80px 0px -76% 0px'});document.querySelectorAll('h2[id]').forEach(h=>observer.observe(h));}
+})();
+</script></body></html>
